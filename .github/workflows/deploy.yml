@@ -15,4 +15,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 9e9792db3a7afbcd8d2d01b863ec23f3
-          command: pages deploy . --project-name=exitkompass --branch=main --commit-dirty=true
+          command: pages deploy public --project-name=exitkompass --branch=main --commit-dirty=true
