@@ -4628,6 +4628,8 @@ function pathFor(l, cc) {
   const q = new URLSearchParams(location.search);
   const h = LANG_HOME[l] || LANG_HOME.SE;
   if (cc !== h[1]) q.set("c", cc.toLowerCase()); else q.delete("c");
+  /* On exitkompass.eu the bare "/" opens the English page (a Cloudflare rule); ?l=se keeps the Swedish page */
+  if (/\.eu$/i.test(location.hostname)) { if (l === "SE") q.set("l", "se"); else q.delete("l"); }
   const s = q.toString();
   return h[0] + (s ? "?" + s : "");
 }
