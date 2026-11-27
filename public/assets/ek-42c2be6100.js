@@ -63,13 +63,25 @@
       debt: [/gjeld til kredittinstitusjoner/, /^kassekreditt/],
       thousand: /\b(tnok|knok|tusen kroner|i tusen|nok 1000|nok 1 000|beløp i 1000)\b/,
       org: /\b(?:org(?:anisasjons)?\.?\s*n(?:umme)?r\.?:?\s*)?(\d{3}\s?\d{3}\s?\d{3})\b/
+    },
+    FI: {
+      is: /^tuloslaskelma/, bs: /^tase\b/,
+      rev: [/^liikevaihto/], revAlt: [/^liiketoiminnan tuotot/],
+      ebit: [/^liikevoitto/, /^liiketulos/, /^liiketappio/, /^liikevoitto\/-tappio/],
+      dep: [/^suunnitelman mukaiset poistot/, /^poistot ja arvonalentumiset/, /^poistot/],
+      cash: [/^rahat ja pankkisaamiset/, /^rahavarat/],
+      debt: [/lainat rahoituslaitoksilta/, /^pankkilainat/],
+      thousand: /(\bt€|\bteur\b|1 ?000 ?€|\btuhatta euroa\b|\btuhansina euroina\b)/,
+      org: /\b(\d{7}-\d)\b/
     }
   };
 
   function detectLang(allLow) {
     const se = (allLow.match(/nettoomsättning|resultaträkning|balansräkning|rörelseresultat/g) || []).length;
     const no = (allLow.match(/driftsinntekter|resultatregnskap|driftsresultat|årsregnskap/g) || []).length;
-    if (!se && !no) return null;
+    const fi = (allLow.match(/liikevaihto|tuloslaskelma|liikevoitto|liiketulos|tilinpäätös/g) || []).length;
+    if (!se && !no && !fi) return null;
+    if (fi > se && fi > no) return "FI";
     return se >= no ? "SE" : "NO";
   }
 
@@ -78,6 +90,7 @@
     for (let i = start; i < Math.min(rows.length, start + 8); i++) {
       const t = rows[i].text;
       const ranges = [...t.matchAll(/(20\d\d)-\d\d-\d\d\s*[-–]\s*(20\d\d)-\d\d-\d\d/g)].map(m => +m[2]);
+      if (!ranges.length) ranges.push(...[...t.matchAll(/\d{1,2}\.\d{1,2}\.(20\d\d)\s*[-–]\s*\d{1,2}\.\d{1,2}\.(20\d\d)/g)].map(m => +m[2]));
       if (ranges.length >= 1) return ranges;
       const ys = [...t.matchAll(/\b(20\d\d)(?:-\d\d-\d\d)?\b/g)].map(m => +m[1]);
       const uniq = ys.filter((y, k) => ys.indexOf(y) === k);
@@ -142,7 +155,8 @@
     if (!rev && !is.ebit) return { ok: false, lang, reason: "NO_FIGURES" };
 
     let thousands = L.thousand.test(unitWindow);
-    if (!thousands && !/belopp i kr|beløp i nok|belopp i kronor|beløp i kroner/.test(unitWindow)) {
+    /* Finnish statements are almost always in whole euros (with cents) unless a thousands unit is stated */
+    if (!thousands && lang !== "FI" && !/belopp i kr|beløp i nok|belopp i kronor|beløp i kroner/.test(unitWindow)) {
       // No unit stated: assume whole kronor if revenue looks like it (SMEs rarely exceed 1 bn in thousands)
       thousands = rev && Math.abs(rev[0]) < 1e6;
     }
@@ -161,8 +175,8 @@
     const orgM = allLow.match(L.org);
     let org = orgM ? orgM[1].replace(/\s/g, "") : null;
     if (lang === "NO" && org) org = org.replace(/(\d{3})(\d{3})(\d{3})/, "$1 $2 $3");
-    const nameRow = rows.slice(0, 40).find(r => lang === "SE" ? /\b(AB|Aktiebolag)(\s*\(publ\))?$/.test(r.label) : /\b(AS|ASA)$/.test(r.label));
-    let name = nameRow ? nameRow.label.replace(/^(årsredovisning|årsregnskap)\s+(för\s+)?/i, "").trim() : null;
+    const nameRow = rows.slice(0, 40).find(r => lang === "SE" ? /\b(AB|Aktiebolag)(\s*\(publ\))?$/.test(r.label) : lang === "FI" ? /\b(Oy|Oyj|Ab|Ltd)$/i.test(r.label) : /\b(AS|ASA)$/.test(r.label));
+    let name = nameRow ? nameRow.label.replace(/^(årsredovisning|årsregnskap|tilinpäätös)\s+(för\s+)?/i, "").trim() : null;
     if (name && name.length > 70) name = null;
 
     return {
