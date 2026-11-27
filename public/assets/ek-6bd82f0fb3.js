@@ -3115,12 +3115,15 @@ function render() {
   if ($("bridge")) $("bridge").innerHTML = rows;
 
   /* Large companies: SME multiples do not apply, so no number; hand over to a partner */
-  const big = isLarge(d, v), small = !big && FREE() && isSmall(d, v), large = big || small;
+  const excl = FREE() && isExcluded(d), big = !excl && isLarge(d, v), small = !excl && !big && FREE() && isSmall(d, v), large = excl || big || small;
   $("large").hidden = !large;
   { const st = SMALL_T[lang] || SMALL_T.EN, q = (sel, t) => { const el = $("large").querySelector(sel); if (el) el.textContent = t; };
     if (big) { $("large-p").textContent = u.largeP(fmtM(d.rev[2]), fmtM(Math.max(0, d.eb[2]))); q("h3", u.largeH); q('[data-t="largeP2"]', u.largeP2); q('[data-t="largeNote"]', u.largeNote); }
+    if (excl) { const xt = EXCL_T[lang] || EXCL_T.EN; $("large-p").textContent = xt[1]; q("h3", xt[0]); q('[data-t="largeP2"]', xt[2]); q('[data-t="largeNote"]', st[3]); }
     if (small) { $("large-p").textContent = st[1](fmtT(Math.max(0, v.norm)) + " " + C().unit); q("h3", st[0]); q('[data-t="largeP2"]', st[2]); q('[data-t="largeNote"]', st[3]); } }
   if (large) window.EK_LAST = null;
+  if ($("blend")) $("blend").hidden = large;
+  if (large) $("top-act").hidden = true;
   document.querySelector("#step-3 .kpis").hidden = large;
   document.querySelector("#step-3 .basis").hidden = large;
   $("plan-sec").hidden = large;
@@ -3596,6 +3599,23 @@ const SMALL_T = {
   LT: ["Vertinimo šiuo metu atlikti negalima", e => `Kai EBITDA yra ${e}, rezultatas per mažas, kad vertinimas daugikliais parodytų teisingą vaizdą. Vertė praktiškai remtųsi tik pajamomis ir būtų klaidinanti, todėl skaičiaus nerodome.`, "Jei rezultatą sumažino vienkartinės išlaidos arba savininko atlyginimas viršija rinkos lygį, galite pakoreguoti skaičius ankstesniame žingsnyje. Kitu atveju užsisakykite nemokamą, konfidencialų susitikimą su Adsco Capital Partners partneriu – aptarsime, kas lemia jūsų įmonės vertę.", "Pasirengimo pardavimui įvertinimas ir išvados žemiau visiškai tinka ir jūsų įmonei."],
   NL: ["Een waardering is op dit moment niet mogelijk", e => `Met een EBITDA van ${e} is het resultaat te klein voor een waardering op basis van multiples die een eerlijk beeld geeft. De waarde zou vrijwel alleen op de omzet rusten en misleidend zijn, dus we tonen geen bedrag.`, "Is het resultaat gedrukt door eenmalige kosten of een salaris van de eigenaar boven marktniveau, dan kunt u de cijfers in de vorige stap aanpassen. Anders plant u een gratis, vertrouwelijk gesprek met een partner van Adsco Capital Partners en bespreken we wat de waarde van uw bedrijf bepaalt.", "De score voor verkoopgereedheid en de bevindingen hieronder gelden volledig ook voor uw bedrijf."],
   FI: ["Arvonmääritystä ei voida tehdä tällä hetkellä", e => `Kun EBITDA on ${e}, tulos on liian pieni, jotta kertoimiin perustuva arvio antaisi oikean kuvan. Arvo perustuisi käytännössä pelkkään liikevaihtoon ja olisi harhaanjohtava, joten emme näytä lukua.`, "Jos tulosta ovat rasittaneet kertaluonteiset kulut tai markkinatasoa suurempi omistajan palkka, voit korjata luvut edellisessä vaiheessa. Muuten varaa maksuton, luottamuksellinen tapaaminen Adsco Capital Partnersin partnerin kanssa, niin käymme läpi, mikä ohjaa yrityksesi arvoa.", "Myyntivalmiuspisteet ja havainnot alla koskevat täysin myös yritystäsi."],
+};
+/* Companies we work with: never valued on the public page (advisors still see it). Stored as hashes of the org number and the bare name, so no names are in the page source. */
+const EXCL = new Set(["16vuyxi", "1oji9i0", "5ze7za", "5mxwjc", "z2685i"]);
+const fnv = s => { let x = 0x811c9dc5; for (const c of s) { x ^= c.codePointAt(0); x = Math.imul(x, 0x01000193) >>> 0; } return x.toString(36); };
+function isExcluded(d) {
+  const o = String(lastOrgNumber || $("org").value || "").replace(/\D/g, "");
+  const n = String(d.name || "").toLowerCase().replace(/\b(ab|oy|oyj|as|asa|ltd|aktiebolag|holdings?|global)\b/g, "").replace(/[^a-z0-9]/g, "");
+  return (o.length >= 7 && EXCL.has(fnv(o))) || (n.length >= 3 && EXCL.has(fnv("n:" + n)));
+}
+const EXCL_T = {
+  SE: ["Automatisk värdering är inte tillgänglig för det här bolaget", "Vi kan inte visa en automatisk värdering för det här bolaget.", "Boka gärna ett kostnadsfritt, konfidentiellt möte med en partner på Adsco Capital Partners, så går vi igenom värdet tillsammans."],
+  NO: ["Automatisk verdivurdering er ikke tilgjengelig for dette selskapet", "Vi kan ikke vise en automatisk verdivurdering for dette selskapet.", "Bestill gjerne et kostnadsfritt, konfidensielt møte med en partner i Adsco Capital Partners, så går vi gjennom verdien sammen."],
+  EN: ["An automatic valuation is not available for this company", "We cannot show an automatic valuation for this company.", "Book a free, confidential meeting with a partner at Adsco Capital Partners and we will go through the value together."],
+  PL: ["Automatyczna wycena nie jest dostępna dla tej spółki", "Nie możemy pokazać automatycznej wyceny tej spółki.", "Umów bezpłatne, poufne spotkanie z partnerem Adsco Capital Partners – omówimy wartość wspólnie."],
+  LT: ["Automatinis vertinimas šiai įmonei negalimas", "Negalime parodyti automatinio šios įmonės vertinimo.", "Užsisakykite nemokamą, konfidencialų susitikimą su Adsco Capital Partners partneriu – vertę aptarsime kartu."],
+  NL: ["Een automatische waardering is voor dit bedrijf niet beschikbaar", "We kunnen voor dit bedrijf geen automatische waardering tonen.", "Plan een gratis, vertrouwelijk gesprek met een partner van Adsco Capital Partners en we bespreken de waarde samen."],
+  FI: ["Automaattinen arvonmääritys ei ole saatavilla tälle yritykselle", "Emme voi näyttää automaattista arvonmääritystä tälle yritykselle.", "Varaa maksuton, luottamuksellinen tapaaminen Adsco Capital Partnersin partnerin kanssa, niin käymme arvon läpi yhdessä."],
 };
 function isLarge(d, v) { const f = EUR_FX[country] / EUR_FX.SE; return v.norm > LARGE_EBITDA * f || (d.rev[2] || 0) > LARGE_REV * f; }
 let orderFrom = 1;
