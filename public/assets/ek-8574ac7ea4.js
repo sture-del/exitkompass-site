@@ -3115,9 +3115,12 @@ function render() {
   if ($("bridge")) $("bridge").innerHTML = rows;
 
   /* Large companies: SME multiples do not apply, so no number; hand over to a partner */
-  const large = isLarge(d, v);
+  const big = isLarge(d, v), small = !big && FREE() && isSmall(d, v), large = big || small;
   $("large").hidden = !large;
-  if (large) $("large-p").textContent = u.largeP(fmtM(d.rev[2]), fmtM(Math.max(0, d.eb[2])));
+  { const st = SMALL_T[lang] || SMALL_T.EN, q = (sel, t) => { const el = $("large").querySelector(sel); if (el) el.textContent = t; };
+    if (big) { $("large-p").textContent = u.largeP(fmtM(d.rev[2]), fmtM(Math.max(0, d.eb[2]))); q("h3", u.largeH); q('[data-t="largeP2"]', u.largeP2); q('[data-t="largeNote"]', u.largeNote); }
+    if (small) { $("large-p").textContent = st[1](fmtT(Math.max(0, v.norm)) + " " + C().unit); q("h3", st[0]); q('[data-t="largeP2"]', st[2]); q('[data-t="largeNote"]', st[3]); } }
+  if (large) window.EK_LAST = null;
   document.querySelector("#step-3 .kpis").hidden = large;
   document.querySelector("#step-3 .basis").hidden = large;
   $("plan-sec").hidden = large;
@@ -3582,6 +3585,18 @@ function docNotes() {
   return l.join("\n");
 }
 const LARGE_EBITDA = 100000, LARGE_REV = 500000; /* thousands of SEK; other currencies are converted via EUR_FX */
+/* Very small earnings: under 50 TSEK (converted for other currencies) in both EBITDA and EBIT the value would rest on revenue alone and mislead, so no figure is shown */
+const SMALL_EB = 50;
+function isSmall(d, v) { const f = EUR_FX[country] / EUR_FX.SE; return !d.noEb && v.norm < SMALL_EB * f && v.ebit < SMALL_EB * f; }
+const SMALL_T = {
+  SE: ["Värdering kan inte göras för tillfället", e => `Med en EBITDA på ${e} är resultatet för litet för att en multipelvärdering ska ge en rättvisande bild. Värdet skulle i praktiken bara bygga på omsättningen och bli missvisande, så vi visar ingen siffra.`, "Har resultatet belastats av engångskostnader eller en ägarlön över marknadsnivå kan du justera siffrorna i föregående steg. Annars bokar du gärna ett kostnadsfritt, konfidentiellt möte med en partner på Adsco Capital Partners, så går vi igenom vad som driver värdet i ert bolag.", "Exitberedskapen och iakttagelserna nedan gäller fullt ut även för ert bolag."],
+  NO: ["Verdivurdering kan ikke gjøres for øyeblikket", e => `Med en EBITDA på ${e} er resultatet for lite til at en multippelvurdering gir et riktig bilde. Verdien ville i praksis bare bygge på omsetningen og bli misvisende, så vi viser ikke noe tall.`, "Er resultatet belastet med engangskostnader eller en eierlønn over markedsnivå, kan du justere tallene i forrige steg. Ellers er du velkommen til å bestille et kostnadsfritt, konfidensielt møte med en partner i Adsco Capital Partners, så går vi gjennom hva som driver verdien i selskapet.", "Exit-beredskapen og funnene nedenfor gjelder fullt ut også for ditt selskap."],
+  EN: ["A valuation cannot be made at the moment", e => `With EBITDA of ${e}, earnings are too small for a multiple-based valuation to give a fair picture. The value would rest on revenue alone and be misleading, so we do not show a figure.`, "If earnings were hit by one-off costs or an owner's salary above the market rate, you can adjust the figures in the previous step. Otherwise, book a free, confidential meeting with a partner at Adsco Capital Partners and we will go through what drives the value of your company.", "The exit readiness score and findings below apply in full to your company too."],
+  PL: ["Wycena nie jest obecnie możliwa", e => `Przy EBITDA na poziomie ${e} wynik jest zbyt niski, aby wycena mnożnikowa dawała rzetelny obraz. Wartość opierałaby się praktycznie wyłącznie na przychodach i wprowadzałaby w błąd, dlatego nie pokazujemy liczby.`, "Jeśli wynik obciążyły koszty jednorazowe lub wynagrodzenie właściciela powyżej poziomu rynkowego, możesz poprawić liczby w poprzednim kroku. W przeciwnym razie umów bezpłatne, poufne spotkanie z partnerem Adsco Capital Partners – omówimy, co napędza wartość Twojej spółki.", "Ocena gotowości do sprzedaży i wnioski poniżej w pełni dotyczą także Twojej spółki."],
+  LT: ["Vertinimo šiuo metu atlikti negalima", e => `Kai EBITDA yra ${e}, rezultatas per mažas, kad vertinimas daugikliais parodytų teisingą vaizdą. Vertė praktiškai remtųsi tik pajamomis ir būtų klaidinanti, todėl skaičiaus nerodome.`, "Jei rezultatą sumažino vienkartinės išlaidos arba savininko atlyginimas viršija rinkos lygį, galite pakoreguoti skaičius ankstesniame žingsnyje. Kitu atveju užsisakykite nemokamą, konfidencialų susitikimą su Adsco Capital Partners partneriu – aptarsime, kas lemia jūsų įmonės vertę.", "Pasirengimo pardavimui įvertinimas ir išvados žemiau visiškai tinka ir jūsų įmonei."],
+  NL: ["Een waardering is op dit moment niet mogelijk", e => `Met een EBITDA van ${e} is het resultaat te klein voor een waardering op basis van multiples die een eerlijk beeld geeft. De waarde zou vrijwel alleen op de omzet rusten en misleidend zijn, dus we tonen geen bedrag.`, "Is het resultaat gedrukt door eenmalige kosten of een salaris van de eigenaar boven marktniveau, dan kunt u de cijfers in de vorige stap aanpassen. Anders plant u een gratis, vertrouwelijk gesprek met een partner van Adsco Capital Partners en bespreken we wat de waarde van uw bedrijf bepaalt.", "De score voor verkoopgereedheid en de bevindingen hieronder gelden volledig ook voor uw bedrijf."],
+  FI: ["Arvonmääritystä ei voida tehdä tällä hetkellä", e => `Kun EBITDA on ${e}, tulos on liian pieni, jotta kertoimiin perustuva arvio antaisi oikean kuvan. Arvo perustuisi käytännössä pelkkään liikevaihtoon ja olisi harhaanjohtava, joten emme näytä lukua.`, "Jos tulosta ovat rasittaneet kertaluonteiset kulut tai markkinatasoa suurempi omistajan palkka, voit korjata luvut edellisessä vaiheessa. Muuten varaa maksuton, luottamuksellinen tapaaminen Adsco Capital Partnersin partnerin kanssa, niin käymme läpi, mikä ohjaa yrityksesi arvoa.", "Myyntivalmiuspisteet ja havainnot alla koskevat täysin myös yritystäsi."],
+};
 function isLarge(d, v) { const f = EUR_FX[country] / EUR_FX.SE; return v.norm > LARGE_EBITDA * f || (d.rev[2] || 0) > LARGE_REV * f; }
 let orderFrom = 1;
 function buy(k) {
