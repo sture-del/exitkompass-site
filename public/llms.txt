@@ -8,7 +8,7 @@ Exitkompass is a free online valuation tool for unlisted Swedish and Norwegian l
 
 ## Method
 
-- Med Exitkompass kan du värdera ditt företag gratis och få svar på frågan vad är mitt företag värt för en köpare. Verktyget ger en indikativ värdering av ett onoterat svenskt eller norskt aktiebolag, ungefär som en köpare eller rådgivare skulle göra en första bedömning, och passar dig som funderar på att sälja aktiebolaget nu eller om några år. Du anger organisationsnummer eller företagsnamn, så hämtar vi de senaste årsredovisningarna och fyller i siffrorna åt dig.
+- Med Exitkompass kan du värdera ditt företag gratis och få svar på frågan vad är mitt företag värt för en köpare. Verktyget ger en indikativ värdering av ett onoterat aktiebolag i Sverige, Norge, Finland, Nederländerna, Polen eller Litauen, ungefär som en köpare eller rådgivare skulle göra en första bedömning, och passar dig som funderar på att sälja aktiebolaget nu eller om några år. Du anger organisationsnummer eller företagsnamn, så hämtar vi de senaste årsredovisningarna och fyller i siffrorna åt dig.
 - Värderingen bygger på de tre multiplar som används mest vid företagsförvärv: EV/EBITDA, EV/EBIT och EV/omsättning. EBITDA-multipeln visar vad rörelsen genererar, EBIT-multipeln tar hänsyn till bolagets egna avskrivningar och därmed hur kapitalkrävande verksamheten är, och omsättningsmultipeln väger tyngre när marginalen är låg. Multiplarna utgår från branschnivåer och marknadsläget och justeras för räntenivån (Riksbankens styrränta), konjunkturen i branschen (Konjunkturinstitutet) och hur bolagets marginal står sig mot branschen (SCB). Multipeln justeras sedan för de faktorer som köpare betalar för: spridning av kunder, återkommande intäkter, hur beroende verksamheten är av ägaren, tillväxt, skriftliga avtal och kvaliteten i den finansiella rapporteringen. Nettokassan läggs till, så att resultatet visar ett intervall för aktievärdet.
 - Du ser också en poäng för exitberedskap och de åtgärder som höjer värdet mest. Den fullständiga rapporten innehåller känslighetsanalys, en värdeskapandeplan för 12–24 månader och vilka typer av köpare som betalar mest för ett bolag som ditt.
 
@@ -53,8 +53,8 @@ På historiska siffror från årsredovisningarna, om inget annat laddas upp. Lad
 ### Passar Exitkompass för stora bolag och koncerner?
 Exitkompass är byggt för små och medelstora bolag med en omsättning upp till cirka 500 MSEK, där multiplar för onoterade bolag ger en rimlig första bedömning. Mindre koncerner värderas på koncernens siffror. För större bolag och koncerner styrs värdet av noterade jämförelsebolag och strategiska transaktioner, så där visar verktyget ingen automatisk värdering utan erbjuder i stället ett kostnadsfritt möte med en partner på Adsco Capital Partners.
 
-### Fungerar Exitkompass för norska bolag?
-Ja. Den norska versionen finns på exitkompass.se/no och använder norska registeruppgifter och norska kronor.
+### Vilka länder fungerar Exitkompass för?
+Sverige, Norge, Finland, Nederländerna, Polen och Litauen. Vi hämtar bokslut från respektive lands register: Bolagsverket och Allabolag i Sverige, Brønnøysundregistren i Norge, PRH i Finland, KVK i Nederländerna, KRS i Polen och Registrų centras i Litauen. Beloppen visas i lokal valuta, och verktyget finns på svenska, norska, engelska, finska, nederländska, polska och litauiska – du kan välja vilket språk som helst för vilket land som helst.
 
 ## FAQ (Norwegian)
 
@@ -97,8 +97,8 @@ På historiske tall fra årsregnskapene, hvis ikke noe annet lastes opp. Laster 
 ### Passer Exitkompass for store selskaper og konsern?
 Exitkompass er laget for små og mellomstore selskaper med omsetning opp til rundt 500 MNOK, der multipler for unoterte selskaper gir en rimelig første vurdering. Mindre konsern verdsettes på konserntallene. For større selskaper og konsern styres verdien av børsnoterte sammenlignbare selskaper og strategiske transaksjoner, så der viser verktøyet ingen automatisk verdivurdering, men tilbyr i stedet et kostnadsfritt møte med en partner i Adsco Capital Partners.
 
-### Fungerer Exitkompass for svenske selskaper?
-Ja. Den svenske versjonen finnes på exitkompass.se og bruker svenske registeropplysninger fra Bolagsverket og svenske kroner.
+### Hvilke land fungerer Exitkompass for?
+Sverige, Norge, Finland, Nederland, Polen og Litauen. Vi henter regnskap fra registeret i hvert land: Bolagsverket og Allabolag i Sverige, Brønnøysundregistrene i Norge, PRH i Finland, KVK i Nederland, KRS i Polen og Registrų centras i Litauen. Beløpene vises i lokal valuta, og verktøyet finnes på norsk, svensk, engelsk, finsk, nederlandsk, polsk og litauisk – du kan velge hvilket som helst språk for hvilket som helst land.
 
 ## FAQ (English)
 
@@ -132,6 +132,18 @@ The quick valuation is free and needs no sign-up. The full report costs 2,995 SE
 ### Is my information handled confidentially?
 Yes. Most of what we fetch, such as annual reports and accounts, is public information. What you enter yourself and the documents you upload, such as a business plan, budget and monthly reports, are used only to produce your valuation and are never shared with anyone. You can ask us to delete them at any time.
 
+### How does Exitkompass calculate the valuation?
+We use three multiples – EV/EBITDA, EV/EBIT and EV/revenue – on a weighted average of the last few years' earnings, adjusted for customer concentration, share of recurring revenue, owner dependence, growth, contracts and reporting. When margins are low, revenue carries more weight. The multiples also follow the interest rate level, the business cycle in the industry and the company's margin compared with its industry, and they are set per market. Finally, net cash is added to arrive at the equity value.
+
+### How is a limited company valued when it is sold?
+In a sale, the company is valued on what a buyer is willing to pay: normalised earnings over the last few years times an industry multiple, adjusted for risk and quality. Cash is then added and interest-bearing debt deducted to get the value of the shares. Exitkompass calculates this for free and shows what raises the value before a sale.
+
+### How accurate is the valuation?
+The valuation is indicative and based on historical figures and your answers. What a buyer actually pays depends on, among other things, market conditions, the type of buyer, financing, due diligence and the terms of the deal. Use it as a starting point and talk to an adviser before making decisions.
+
+### What information do I need?
+The company's registration number or name is enough to get started. We fetch the filed accounts from the national business register in each country. If the figures are not available there, you can upload the financial statements or enter revenue and EBITDA yourself. Then you answer seven questions about the business.
+
 ## FAQ (Polish)
 
 ### Ile jest warta moja firma?
@@ -164,6 +176,18 @@ Szybka wycena jest bezpłatna i nie wymaga rejestracji. Pełny raport kosztuje 1
 ### Czy moje dane są bezpieczne?
 Tak. Dane z KRS są publiczne. To, co wpisujesz, i dokumenty, które wgrywasz, np. sprawozdania, biznesplan, budżet czy raporty miesięczne, wykorzystujemy wyłącznie do przygotowania Twojej wyceny i nikomu ich nie udostępniamy. W każdej chwili możesz poprosić o ich usunięcie.
 
+### Jak Exitkompass oblicza wycenę?
+Stosujemy trzy mnożniki – EV/EBITDA, EV/EBIT i EV/przychody – do ważonej średniej wyników z ostatnich lat, z korektami za koncentrację klientów, udział przychodów powtarzalnych, zależność od właściciela, wzrost, umowy i jakość raportowania. Przy niskich marżach większą wagę mają przychody. Mnożniki uwzględniają też poziom stóp procentowych, koniunkturę w branży i marżę spółki na tle branży. Na koniec dodajemy gotówkę netto, aby otrzymać wartość kapitału własnego.
+
+### Jak wycenia się spółkę przy sprzedaży?
+Przy sprzedaży spółkę wycenia się według tego, ile kupujący jest gotów zapłacić: znormalizowany wynik z ostatnich lat razy mnożnik branżowy, skorygowany o ryzyko i jakość. Następnie dodaje się gotówkę i odejmuje dług oprocentowany, co daje wartość udziałów. Exitkompass oblicza to bezpłatnie i pokazuje, co podnosi wartość przed sprzedażą.
+
+### Jak dokładna jest wycena?
+Wycena ma charakter orientacyjny i opiera się na danych historycznych oraz Twoich odpowiedziach. To, ile kupujący faktycznie zapłaci, zależy m.in. od sytuacji rynkowej, rodzaju kupującego, finansowania, due diligence i warunków umowy. Traktuj ją jako punkt wyjścia i porozmawiaj z doradcą przed podjęciem decyzji.
+
+### Jakich danych potrzebuję?
+Na początek wystarczy numer KRS lub nazwa spółki. Dane rejestrowe pobieramy z KRS. Sprawozdanie finansowe możesz przesłać jako plik XML z Repozytorium Dokumentów Finansowych albo wpisać przychody i EBITDA samodzielnie. Następnie odpowiadasz na siedem pytań o działalność.
+
 ## FAQ (Lithuanian)
 
 ### Kiek verta mano įmonė?
@@ -195,6 +219,18 @@ Greitas vertinimas nemokamas ir nereikalauja registracijos. Išsami ataskaita ka
 
 ### Ar mano duomenys saugūs?
 Taip. Registro duomenys yra vieši. Tai, ką įrašote, ir įkeltus dokumentus, pavyzdžiui, finansines ataskaitas, verslo planą, biudžetą ar mėnesio ataskaitas, naudojame tik jūsų vertinimui ir su niekuo nesidalijame. Bet kada galite paprašyti juos ištrinti.
+
+### Kaip Exitkompass apskaičiuoja vertę?
+Taikome tris daugiklius – EV/EBITDA, EV/EBIT ir EV/pajamos – paskutinių metų rezultatų svertiniam vidurkiui, koreguodami pagal klientų koncentraciją, pasikartojančių pajamų dalį, priklausomybę nuo savininko, augimą, sutartis ir ataskaitų kokybę. Kai marža maža, didesnį svorį turi pajamos. Daugikliai taip pat atsižvelgia į palūkanų normų lygį, ekonomikos ciklą sektoriuje ir įmonės maržą, palyginti su sektoriumi. Galiausiai pridedami grynieji pinigai, kad gautume nuosavo kapitalo vertę.
+
+### Kaip vertinama įmonė, kai ji parduodama?
+Pardavimo atveju įmonė vertinama pagal tai, kiek pirkėjas pasirengęs sumokėti: normalizuotas paskutinių metų pelnas, padaugintas iš sektoriaus daugiklio ir pakoreguotas pagal riziką ir kokybę. Tada pridedami grynieji pinigai ir atimama palūkanų skola – taip gaunama akcijų vertė. Exitkompass tai apskaičiuoja nemokamai ir parodo, kas padidina vertę prieš pardavimą.
+
+### Koks tikslus vertinimas?
+Vertinimas yra orientacinis ir remiasi istoriniais skaičiais bei jūsų atsakymais. Kiek pirkėjas iš tikrųjų sumokės, priklauso, be kita ko, nuo rinkos padėties, pirkėjo tipo, finansavimo, išsamaus patikrinimo ir sandorio sąlygų. Naudokite jį kaip atspirties tašką ir prieš priimdami sprendimus pasitarkite su patarėju.
+
+### Kokių duomenų man reikia?
+Pradėti pakanka įmonės kodo arba pavadinimo. Finansinių ataskaitų duomenis automatiškai paimame iš Registrų centro atvirųjų duomenų. Jei duomenų trūksta, pajamas ir EBITDA galite įvesti patys. Tada atsakote į septynis klausimus apie veiklą.
 
 ## Guides
 
