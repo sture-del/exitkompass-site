@@ -2945,7 +2945,7 @@ function setCountry(cc) {
 /* ---------- Steps ---------- */
 function go(n, focus) {
   if (n === 3 && !validate()) return;
-  if (n === 3) { maxStep = 3; render(); if (typeof track === "function") track("result", { org: (typeof lastOrgNumber !== "undefined" && lastOrgNumber) || "" }); }
+  if (n === 3) { maxStep = 3; render(); if (typeof track === "function") track("result", { org: (typeof lastOrgNumber !== "undefined" && lastOrgNumber) || "", val: window.EK_LAST || null }); }
   step = n;
   $("step-o").hidden = true;
   [1, 2, 3].forEach(i => {
@@ -3059,6 +3059,8 @@ function render() {
 
   const fs = readiness(d);
   const score = Math.round(fs.reduce((s, f) => s + f.w * f.s, 0));
+  /* Sent with the "result" step so the deal database gets the valuation per company (thousands, local currency) */
+  window.EK_LAST = { name: d.name, cur: C().cur, ind: rt.industries[d.industry] || "", rev: d.noRev ? null : d.rev[2], eb: d.noEb ? null : d.eb[2], evLo: v.evLo, evHi: v.evHi, eqLo: v.eqLo, eqHi: v.eqHi, mult: v.mult, score };
   const Cc = 2 * Math.PI * 50;
   $("g-arc").setAttribute("stroke-dasharray", (Cc * score / 100).toFixed(1) + " " + Cc.toFixed(1));
   $("g-arc").setAttribute("stroke", score >= 70 ? "var(--good)" : score >= 45 ? "var(--warn)" : "var(--bad)");
@@ -3314,7 +3316,7 @@ const tracked = {};
 function track(ev, extra) {
   try {
     if (!API_URL || INIT.advisor || new URLSearchParams(location.search).has("advisor")) return;
-    const k = ev + (extra && extra.pkg ? ":" + extra.pkg : "");
+    const k = ev + (extra && extra.pkg ? ":" + extra.pkg : "") + (extra && extra.org && (ev === "result" || ev === "lookup") ? ":" + extra.org : "");
     let seen = tracked[k]; try { seen = seen || sessionStorage.getItem("ek_t_" + k); sessionStorage.setItem("ek_t_" + k, "1"); } catch (e) {}
     if (seen) return; tracked[k] = 1;
     const body = JSON.stringify({ fn: "track", args: [Object.assign({ s: SID, ev, lang, cc: country, page: location.pathname }, extra || {})] });
