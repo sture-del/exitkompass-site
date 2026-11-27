@@ -1,0 +1,301 @@
+# Exitkompass
+
+> Värdera ditt företag gratis på några minuter. Vi hämtar årsredovisningarna, räknar med EBITDA-, EBIT- och omsättningsmultiplar och visar vad som höjer värdet.
+
+Tagline: Built for cross-border M&A in Europe.
+
+Exitkompass is a free online valuation tool for unlisted Swedish and Norwegian limited companies (SMEs), built by Adsco Capital Partners, an independent M&A and capital markets advisory firm in Stockholm. Swedish version: https://www.exitkompass.se/ · Norwegian version: https://www.exitkompass.se/no/ · English version: https://www.exitkompass.se/en/. It also covers Polish companies (sp. z o.o., P.S.A., S.A.; data from KRS, Polish version https://www.exitkompass.se/pl/) and Lithuanian companies (UAB, AB; data from Registrų centras open data, Lithuanian version https://www.exitkompass.se/lt/), with Nordic multiples adjusted down 15%, and Dutch companies (B.V.; data from the KVK open dataset of filed annual accounts, Dutch version https://www.exitkompass.se/nl/), with Nordic multiples adjusted up 10%.
+
+## Method
+
+- Med Exitkompass kan du värdera ditt företag gratis och få svar på frågan vad är mitt företag värt för en köpare. Verktyget ger en indikativ värdering av ett onoterat svenskt eller norskt aktiebolag, ungefär som en köpare eller rådgivare skulle göra en första bedömning, och passar dig som funderar på att sälja aktiebolaget nu eller om några år. Du anger organisationsnummer eller företagsnamn, så hämtar vi de senaste årsredovisningarna och fyller i siffrorna åt dig.
+- Värderingen bygger på de tre multiplar som används mest vid företagsförvärv: EV/EBITDA, EV/EBIT och EV/omsättning. EBITDA-multipeln visar vad rörelsen genererar, EBIT-multipeln tar hänsyn till bolagets egna avskrivningar och därmed hur kapitalkrävande verksamheten är, och omsättningsmultipeln väger tyngre när marginalen är låg. Multiplarna utgår från branschnivåer och marknadsläget och justeras för räntenivån (Riksbankens styrränta), konjunkturen i branschen (Konjunkturinstitutet) och hur bolagets marginal står sig mot branschen (SCB). Multipeln justeras sedan för de faktorer som köpare betalar för: spridning av kunder, återkommande intäkter, hur beroende verksamheten är av ägaren, tillväxt, skriftliga avtal och kvaliteten i den finansiella rapporteringen. Nettokassan läggs till, så att resultatet visar ett intervall för aktievärdet.
+- Du ser också en poäng för exitberedskap och de åtgärder som höjer värdet mest. Den fullständiga rapporten innehåller känslighetsanalys, en värdeskapandeplan för 12–24 månader och vilka typer av köpare som betalar mest för ett bolag som ditt.
+
+## FAQ (Swedish)
+
+### Vad är mitt företag värt?
+I praktiken är ett företag värt det en köpare är beredd att betala. För små och medelstora onoterade bolag utgår man oftast från rörelseresultatet före avskrivningar (EBITDA) och multiplicerar med en multipel som beror på bransch, storlek och risk. I Exitkompass ligger grundmultiplerna mellan cirka 4 och 8,5 gånger EBITDA beroende på bransch, enligt Dealsuite Nordic M&A Monitor, som sammanställer nordiska M&A-rådgivares affärer. Mindre bolag värderas lägre än större, och därefter justeras för bolagets egna styrkor och svagheter.
+
+### Hur räknar Exitkompass fram värderingen?
+Vi räknar med tre multiplar – EV/EBITDA, EV/EBIT och EV/omsättning – på ett viktat genomsnitt av de senaste årens resultat, med justeringar för kundkoncentration, andel återkommande intäkter, ägarberoende, tillväxt, avtal och rapportering. Vid låga marginaler väger omsättningen tyngre. Multiplarna följer också räntenivån, konjunkturen i branschen och bolagets marginal jämfört med branschen. Vi läser också texten i årsredovisningen och revisionsberättelsen; till exempel sänker en revisorsanmärkning om fortsatt drift multipeln. Till sist läggs nettokassan till för att få aktievärdet.
+
+### Vilka multiplar använder Exitkompass – EBITDA, EBIT eller omsättning?
+Alla tre, eftersom det är så köpare räknar vid företagsförvärv. EV/EBITDA är vanligast för små och medelstora bolag. EV/EBIT ger en mer rättvisande bild för kapitalkrävande bolag med stora avskrivningar, och EV/omsättning används när lönsamheten är låg eller tillfälligt svag. Resultatdelen vägs 60 % på EBITDA och 40 % på EBIT, och omsättningen får 20–50 % beroende på marginalen. I resultatet ser du multipeln och värdet för varje metod.
+
+### Hur värderas ett aktiebolag när man ska sälja det?
+Vid en försäljning värderas aktiebolaget utifrån vad en köpare är beredd att betala: det normaliserade resultatet de senaste åren gånger en branschmultipel, justerat för risk och kvalitet. Därefter läggs kassan till och räntebärande skulder dras av, så får man värdet på aktierna. Exitkompass räknar ut detta gratis och visar vad som höjer värdet inför en försäljning.
+
+### Vad är skillnaden mellan företagsvärde och aktievärde?
+Företagsvärdet (enterprise value) är värdet på själva verksamheten, oberoende av hur den är finansierad. Aktievärdet är det ägarna får: företagsvärdet plus kassa minus räntebärande skulder. Exitkompass visar båda.
+
+### Vad höjer värdet inför en försäljning?
+Köpare betalar mer för bolag med spridda och återkommande intäkter, som fungerar utan ägaren, har skriftliga avtal med kunder och nyckelpersoner, växer stabilt och har en tydlig och tillförlitlig finansiell rapportering. Exitkompass visar vilka av dessa åtgärder som påverkar just ditt bolag mest.
+
+### Kan jag använda värderingen vid bodelning, bouppteckning eller tvist?
+Nej. Exitkompass är byggt för försäljning och visar vad en köpare kan tänkas betala för bolaget, det vill säga marknadsvärdet vid fortsatt drift baserat på multiplar. Vid bodelning, bouppteckning, arvskifte, tvister, inlösen av minoritetsaktier eller skatteärenden används ofta andra metoder, till exempel substansvärde, och det krävs en formell värdering. Vill du sälja nu eller om några år är Exitkompass rätt verktyg.
+
+### Hur exakt är värderingen?
+Värderingen är indikativ och bygger på historiska siffror och dina svar. Vad en köpare faktiskt betalar beror bland annat på marknadsläge, typ av köpare, finansiering, due diligence och avtalsvillkor. Använd den som ett underlag och prata med en rådgivare innan du fattar beslut.
+
+### Vilka uppgifter behöver jag?
+Organisationsnummer eller företagsnamn räcker för att komma igång. För svenska bolag hämtar vi digitalt inlämnade årsredovisningar från Bolagsverket och nyckeltal från Allabolag; för norska bolag hämtar vi uppgifter från Brønnøysundregistren. Saknas årsredovisningar kan du ladda upp dem som PDF. Därefter svarar du på sju frågor om verksamheten.
+
+### Vad kostar det?
+Snabbvärderingen är gratis och kräver ingen registrering. Den fullständiga rapporten kostar 2 995 kr exkl. moms och rapport med genomgång tillsammans med en partner 6 995 kr exkl. moms. Rapporten levereras inom 1–2 arbetsdagar och faktureras tillsammans med rapporten med 10 dagars betalningsvillkor.
+
+### Hanteras mina uppgifter konfidentiellt?
+Ja. Det mesta vi hämtar, som årsredovisningar och bokslutssiffror, är offentlig information. Det du själv fyller i och de dokument du laddar upp, till exempel affärsplan, budget och månadsrapporter, används bara för att ta fram din värdering och delas aldrig med någon. Du kan när som helst be oss radera dem.
+
+### Bygger värderingen på historiska siffror eller på budget?
+På historiska siffror från årsredovisningarna, om inget annat laddas upp. Laddar du upp månadsrapporter, budget eller affärsplan vägs de in i rapporten. Månadsrapporterna ger de senaste tolv månaderna, som får störst vikt i resultatbasen. Budgeten ger ett tillväxtvärde som vägs in med 20 %, plus 5 % om en affärsplan förklarar den och plus 10 % om utfallet hittills i år följer budgeten. Ligger utfallet mer än 15 % efter dras 10 % av, och växer budgeten mycket snabbare än historiken halveras vikten. Vikten är högst 35 %, eftersom köpare främst betalar för bevisat resultat.
+
+### Passar Exitkompass för stora bolag och koncerner?
+Exitkompass är byggt för små och medelstora bolag med en omsättning upp till cirka 500 MSEK, där multiplar för onoterade bolag ger en rimlig första bedömning. Mindre koncerner värderas på koncernens siffror. För större bolag och koncerner styrs värdet av noterade jämförelsebolag och strategiska transaktioner, så där visar verktyget ingen automatisk värdering utan erbjuder i stället ett kostnadsfritt möte med en partner på Adsco Capital Partners.
+
+### Fungerar Exitkompass för norska bolag?
+Ja. Den norska versionen finns på exitkompass.se/no och använder norska registeruppgifter och norska kronor.
+
+## FAQ (Norwegian)
+
+### Hva er selskapet mitt verdt?
+I praksis er et selskap verdt det en kjøper er villig til å betale. For små og mellomstore unoterte selskaper tar man som regel utgangspunkt i driftsresultatet før avskrivninger (EBITDA) og multipliserer med en multippel som avhenger av bransje, størrelse og risiko. I Exitkompass ligger grunnmultiplene mellom ca. 4 og 8,5 ganger EBITDA avhengig av bransje, ifølge Dealsuite Nordic M&A Monitor, som sammenstiller nordiske M&A-rådgiveres transaksjoner. Mindre selskaper verdsettes lavere enn større, og deretter justeres det for selskapets egne styrker og svakheter.
+
+### Hvordan regner Exitkompass ut verdien?
+Vi regner med tre multipler – EV/EBITDA, EV/EBIT og EV/omsetning – på et vektet gjennomsnitt av de siste årenes resultat, med justeringer for kundekonsentrasjon, andel gjentakende inntekter, eieravhengighet, vekst, avtaler og rapportering. Ved lave marginer veier omsetningen tyngre. Multiplene følger også rentenivået, konjunkturen og selskapets margin sammenlignet med næringen. Vi leser også teksten i årsregnskapet og revisjonsberetningen; for eksempel senker en presisering om fortsatt drift multippelen. Til slutt legges netto kontanter til for å få aksjeverdien.
+
+### Hvilke multipler bruker Exitkompass – EBITDA, EBIT eller omsetning?
+Alle tre, fordi det er slik kjøpere regner ved oppkjøp. EV/EBITDA er vanligst for små og mellomstore selskaper. EV/EBIT gir et mer riktig bilde for kapitalkrevende selskaper med store avskrivninger, og EV/omsetning brukes når lønnsomheten er lav eller midlertidig svak. Resultatdelen vektes 60 % på EBITDA og 40 % på EBIT, og omsetningen får 20–50 % avhengig av marginen. I resultatet ser du multippelen og verdien for hver metode.
+
+### Hvordan verdsettes et aksjeselskap når man skal selge det?
+Ved et salg verdsettes aksjeselskapet ut fra hva en kjøper er villig til å betale: det normaliserte resultatet de siste årene ganger en bransjemultippel, justert for risiko og kvalitet. Deretter legges kontantene til og rentebærende gjeld trekkes fra, så får man verdien av aksjene. Exitkompass regner dette ut gratis og viser hva som øker verdien før et salg.
+
+### Hva er forskjellen på selskapsverdi og aksjeverdi?
+Selskapsverdien (enterprise value) er verdien av selve virksomheten, uavhengig av hvordan den er finansiert. Aksjeverdien er det eierne får: selskapsverdien pluss kontanter minus rentebærende gjeld. Exitkompass viser begge.
+
+### Hva øker verdien før et salg?
+Kjøpere betaler mer for selskaper med spredte og gjentakende inntekter, som fungerer uten eieren, har skriftlige avtaler med kunder og nøkkelpersoner, vokser stabilt og har en tydelig og pålitelig finansiell rapportering. Exitkompass viser hvilke av disse tiltakene som betyr mest for akkurat ditt selskap.
+
+### Kan jeg bruke verdivurderingen ved skifte, arveoppgjør eller tvist?
+Nei. Exitkompass er laget for salg og viser hva en kjøper kan tenkes å betale for selskapet, altså markedsverdien ved fortsatt drift basert på multipler. Ved skifte, arveoppgjør, tvister, innløsning av minoritetsaksjer eller skattesaker brukes ofte andre metoder, for eksempel substansverdi, og det kreves en formell verdivurdering. Vil du selge nå eller om noen år, er Exitkompass riktig verktøy.
+
+### Hvor nøyaktig er verdivurderingen?
+Verdivurderingen er indikativ og bygger på historiske tall og svarene dine. Hva en kjøper faktisk betaler avhenger blant annet av markedsforhold, type kjøper, finansiering, due diligence og avtalevilkår. Bruk den som et grunnlag og snakk med en rådgiver før du tar beslutninger.
+
+### Hvilke opplysninger trenger jeg?
+Organisasjonsnummer eller selskapsnavn er nok til å komme i gang. For norske selskaper henter vi opplysninger fra Brønnøysundregistrene, og du kan laste opp årsregnskapene som PDF for en sikrere vurdering. Deretter svarer du på sju spørsmål om virksomheten.
+
+### Hva koster det?
+Hurtigvurderingen er gratis og krever ingen registrering. Den fullstendige rapporten koster 2 995 kr og rapport med gjennomgang sammen med en partner 6 995 kr, uten mva. Rapporten leveres innen 1–2 virkedager og faktureres sammen med rapporten med 10 dagers betalingsfrist.
+
+### Behandles opplysningene mine konfidensielt?
+Ja. Det meste vi henter, som årsregnskap og regnskapstall, er offentlig informasjon. Det du selv fyller inn og dokumentene du laster opp, for eksempel forretningsplan, budsjett og månedsrapporter, brukes bare til å lage verdivurderingen din og deles aldri med noen. Du kan når som helst be oss slette dem.
+
+### Bygger verdivurderingen på historiske tall eller på budsjett?
+På historiske tall fra årsregnskapene, hvis ikke noe annet lastes opp. Laster du opp månedsrapporter, budsjett eller forretningsplan, vektes de inn i rapporten. Månedsrapportene gir de siste tolv månedene, som får størst vekt i resultatgrunnlaget. Budsjettet gir en vekstverdi som vektes inn med 20 %, pluss 5 % hvis en forretningsplan forklarer det og pluss 10 % hvis resultatet hittil i år følger budsjettet. Ligger resultatet mer enn 15 % etter, trekkes 10 % fra, og vokser budsjettet mye raskere enn historikken, halveres vekten. Vekten er høyst 35 %, fordi kjøpere først og fremst betaler for dokumentert resultat.
+
+### Passer Exitkompass for store selskaper og konsern?
+Exitkompass er laget for små og mellomstore selskaper med omsetning opp til rundt 500 MNOK, der multipler for unoterte selskaper gir en rimelig første vurdering. Mindre konsern verdsettes på konserntallene. For større selskaper og konsern styres verdien av børsnoterte sammenlignbare selskaper og strategiske transaksjoner, så der viser verktøyet ingen automatisk verdivurdering, men tilbyr i stedet et kostnadsfritt møte med en partner i Adsco Capital Partners.
+
+### Fungerer Exitkompass for svenske selskaper?
+Ja. Den svenske versjonen finnes på exitkompass.se og bruker svenske registeropplysninger fra Bolagsverket og svenske kroner.
+
+## FAQ (English)
+
+### What is my company worth?
+In practice a company is worth what a buyer is willing to pay. For small and medium-sized unlisted companies the starting point is usually earnings before interest, tax, depreciation and amortisation (EBITDA) multiplied by a multiple that depends on industry, size and risk. In Exitkompass the base multiples range from about 4 to 8.5 times EBITDA depending on the industry, according to the Dealsuite Nordic M&A Monitor, which compiles deals reported by Nordic M&A advisers. Smaller companies are valued lower than larger ones, and the multiple is then adjusted for the company's own strengths and weaknesses.
+
+### Is the valuation based on historical figures or on a budget?
+On historical figures from the annual reports, unless you upload something else. If you upload monthly reports, a budget or a business plan, they are weighted into the report. The monthly reports give the last twelve months, which get the largest weight in the earnings base. The budget gives a growth value weighted in at 20%, plus 5% if a business plan explains it and plus 10% if results so far this year are on budget. If results are more than 15% behind, 10% is deducted, and if the budget grows much faster than history, the weight is halved. The weight is at most 35%, because buyers mainly pay for proven earnings.
+
+### Is Exitkompass suitable for large companies and groups?
+Exitkompass is built for small and medium-sized companies with revenue up to about 50 million euros (500 million SEK or NOK), where multiples for unlisted companies give a reasonable first assessment. Smaller groups are valued on the consolidated figures. For larger companies and groups, value is driven by listed peers and strategic transactions, so the tool shows no automatic valuation there and instead offers a free meeting with a partner at Adsco Capital Partners.
+
+### Which countries does Exitkompass cover?
+Sweden, Norway, Finland, the Netherlands, Poland and Lithuania. We fetch accounts from each national register: Bolagsverket and Allabolag in Sweden, the Brønnøysund Register Centre in Norway, the Finnish Patent and Registration Office (PRH), the Dutch Chamber of Commerce (KVK), the Polish National Court Register (KRS) and the Lithuanian Registry Centre. Small Dutch companies often file only a balance sheet, so you add revenue and EBITDA yourself. Amounts are shown in the local currency: SEK, NOK, PLN or euros. The tool is available in English, Swedish, Norwegian, Finnish, Dutch, Polish and Lithuanian, and you can choose any language for any country.
+
+### Which multiples does Exitkompass use – EBITDA, EBIT or revenue?
+All three, because that is how buyers calculate in acquisitions. EV/EBITDA is the most common for small and medium-sized companies. EV/EBIT gives a fairer picture for capital-intensive companies with large depreciation, and EV/revenue is used when profitability is low or temporarily weak. The earnings part is weighted 60% EBITDA and 40% EBIT, and revenue gets 20–50% depending on the margin.
+
+### What is the difference between enterprise value and equity value?
+Enterprise value is the value of the business itself, regardless of how it is financed. Equity value is what the owners receive: enterprise value plus cash minus interest-bearing debt. Exitkompass shows both.
+
+### What raises the value before a sale?
+Buyers pay more for companies with spread and recurring revenue, that run without the owner, have written contracts with customers and key people, grow steadily and have clear, reliable financial reporting. Exitkompass shows which of these actions matter most for your company.
+
+### Can I use the valuation for divorce, probate or a dispute?
+No. Exitkompass is built for a sale and shows what a buyer might pay for the company, that is the going-concern market value based on multiples. Divorce, estate settlement, inheritance, disputes, minority buy-outs and tax matters often require other methods, such as net asset value, and a formal valuation.
+
+### What does it cost?
+The quick valuation is free and needs no sign-up. The full report costs 2,995 SEK or NOK in Sweden and Norway, €490 in Finland and the Netherlands, 1,190 PLN in Poland and €290 in Lithuania. The report with a review by a partner costs 6,995 SEK or NOK, €1,190, 2,790 PLN or €690. Prices exclude VAT. The report is delivered within 1–2 working days and invoiced with 10 days' payment terms.
+
+### Is my information handled confidentially?
+Yes. Most of what we fetch, such as annual reports and accounts, is public information. What you enter yourself and the documents you upload, such as a business plan, budget and monthly reports, are used only to produce your valuation and are never shared with anyone. You can ask us to delete them at any time.
+
+## FAQ (Polish)
+
+### Ile jest warta moja firma?
+W praktyce firma jest warta tyle, ile kupujący jest gotów za nią zapłacić. W przypadku małych i średnich spółek niepublicznych punktem wyjścia jest zwykle zysk przed odsetkami, podatkami i amortyzacją (EBITDA) pomnożony przez mnożnik zależny od branży, wielkości i ryzyka. Mnożnik jest następnie korygowany o mocne i słabe strony spółki. Mniejsze spółki wycenia się niżej niż większe.
+
+### Skąd pochodzą mnożniki dla polskich spółek?
+Brak publicznego, regularnego badania mnożników transakcyjnych dla polskich MŚP. Dlatego wychodzimy od mnożników branżowych z Dealsuite Nordic M&A Monitor, badania transakcji raportowanych przez doradców M&A w krajach nordyckich, i obniżamy je dla Polski o 15% na podstawie oceny Adsco Capital Partners. Korekta jest pokazana jako osobny krok w pomoście mnożnika, więc widzisz jej wpływ.
+
+### Skąd wziąć sprawozdanie finansowe w formacie XML?
+Spółki wpisane do KRS składają sprawozdania finansowe w formie elektronicznej (XML) do Repozytorium Dokumentów Finansowych. Otwórz Przeglądarkę Dokumentów Finansowych na stronie Ministerstwa Sprawiedliwości, wpisz numer KRS, przy pozycji „Roczne sprawozdanie finansowe” wybierz pobranie i wgraj plik w Exitkompass. Jeden plik zawiera dane za dwa lata. Plik możesz też otrzymać od swojej księgowej lub biura rachunkowego.
+
+### Czy wycena opiera się na danych historycznych, czy na budżecie?
+Na danych historycznych ze sprawozdań finansowych, chyba że wgrasz coś więcej. Raporty miesięczne, budżet lub biznesplan uwzględniamy w raporcie. Raporty miesięczne dają ostatnie dwanaście miesięcy, które mają największą wagę w bazie wyników. Budżet daje wartość wzrostu z wagą 20%, plus 5%, jeśli wyjaśnia go biznesplan, i plus 10%, jeśli wyniki od początku roku są zgodne z budżetem. Waga wynosi maksymalnie 35%, ponieważ kupujący płacą głównie za udokumentowane wyniki.
+
+### Jakie mnożniki stosuje Exitkompass – EBITDA, EBIT czy przychody?
+Wszystkie trzy, bo tak liczą kupujący przy przejęciach. EV/EBITDA jest najczęstszy dla małych i średnich spółek. EV/EBIT daje bardziej sprawiedliwy obraz spółek kapitałochłonnych z wysoką amortyzacją, a EV/przychody stosuje się, gdy rentowność jest niska lub przejściowo słaba. Część wynikowa to w 60% EBITDA i w 40% EBIT, a przychody mają wagę 20–50% w zależności od marży.
+
+### Czym różni się wartość przedsiębiorstwa od wartości kapitału własnego?
+Wartość przedsiębiorstwa (EV) to wartość samej działalności, niezależnie od sposobu finansowania. Wartość kapitału własnego to to, co otrzymują właściciele: wartość przedsiębiorstwa plus środki pieniężne minus zadłużenie oprocentowane. Exitkompass pokazuje obie.
+
+### Co podnosi wartość firmy przed sprzedażą?
+Kupujący płacą więcej za spółki z rozproszonymi i powtarzalnymi przychodami, które działają bez właściciela, mają pisemne umowy z klientami i kluczowymi pracownikami, rosną stabilnie i mają przejrzystą, wiarygodną sprawozdawczość. Exitkompass pokazuje, które z tych działań są najważniejsze dla Twojej spółki.
+
+### Czy mogę użyć wyceny do podziału majątku, spadku lub sporu?
+Nie. Exitkompass służy do sprzedaży i pokazuje, ile kupujący może zapłacić za spółkę, czyli wartość rynkową przy kontynuacji działalności opartą na mnożnikach. Podział majątku, spadek, spory, wykup wspólników i sprawy podatkowe często wymagają innych metod, np. wyceny majątkowej, oraz formalnej wyceny.
+
+### Ile to kosztuje?
+Szybka wycena jest bezpłatna i nie wymaga rejestracji. Pełny raport kosztuje 1 190 zł netto, a raport z omówieniem z partnerem 2 790 zł netto. Raport jest dostarczany w ciągu 1–2 dni roboczych i fakturowany z 10-dniowym terminem płatności.
+
+### Czy moje dane są bezpieczne?
+Tak. Dane z KRS są publiczne. To, co wpisujesz, i dokumenty, które wgrywasz, np. sprawozdania, biznesplan, budżet czy raporty miesięczne, wykorzystujemy wyłącznie do przygotowania Twojej wyceny i nikomu ich nie udostępniamy. W każdej chwili możesz poprosić o ich usunięcie.
+
+## FAQ (Lithuanian)
+
+### Kiek verta mano įmonė?
+Praktikoje įmonė verta tiek, kiek pirkėjas pasirengęs už ją sumokėti. Mažų ir vidutinių nebiržinių įmonių vertinimo atspirties taškas paprastai yra pelnas prieš palūkanas, mokesčius, nusidėvėjimą ir amortizaciją (EBITDA), padaugintas iš daugiklio, kuris priklauso nuo sektoriaus, dydžio ir rizikos. Daugiklis koreguojamas pagal įmonės stipriąsias ir silpnąsias puses. Mažesnės įmonės vertinamos mažiau nei didesnės.
+
+### Iš kur Exitkompass gauna mano įmonės duomenis?
+Iš Registrų centro Juridinių asmenų registro ir Valstybinės mokesčių inspekcijos atvirų duomenų, skelbiamų data.gov.lt: įmonės pavadinimas, pagrindinė veikla (EVRK) ir finansinių ataskaitų rodikliai – pardavimo pajamos, pelnas prieš apmokestinimą, grynasis pelnas, nuosavas kapitalas ir įsipareigojimai. Registras neskelbia veiklos pelno, nusidėvėjimo ir pinigų, todėl juos patikrinate ir įrašote patys.
+
+### Kodėl EBITDA laukuose yra pelnas prieš apmokestinimą?
+Viešai skelbiamose finansinių ataskaitų santraukose nėra nusidėvėjimo ir palūkanų sąnaudų, todėl kaip pradžią naudojame pelną prieš apmokestinimą. EBITDA = pelnas prieš apmokestinimą + palūkanų sąnaudos + nusidėvėjimas ir amortizacija. Šias sumas rasite savo finansinėse ataskaitose; jas pridėjus vertė dažnai gerokai padidėja.
+
+### Iš kur paimti daugikliai Lietuvos įmonėms?
+Viešo, reguliaraus Lietuvos MVĮ sandorių daugiklių tyrimo nėra. Todėl remiamės Dealsuite Nordic M&A Monitor – Šiaurės šalių M&A patarėjų pateikiamų sandorių tyrimu – ir sumažiname daugiklius Lietuvai 15 % pagal Adsco Capital Partners vertinimą. Korekcija parodyta atskirai daugiklio tilte, todėl matote jos poveikį.
+
+### Ar vertinimas grindžiamas istoriniais duomenimis, ar biudžetu?
+Istoriniais duomenimis, nebent įkelsite daugiau. Mėnesio ataskaitos, biudžetas ar verslo planas įvertinami ataskaitoje. Mėnesio ataskaitos parodo paskutinius dvylika mėnesių, kuriems suteikiamas didžiausias svoris. Biudžetas suteikia augimo vertę su 20 % svoriu, plius 5 %, jei jį paaiškina verslo planas, ir plius 10 %, jei šių metų rezultatai atitinka biudžetą. Didžiausias svoris – 35 %, nes pirkėjai daugiausia moka už įrodytus rezultatus.
+
+### Kuo skiriasi įmonės vertė nuo nuosavo kapitalo vertės?
+Įmonės vertė (EV) – tai pačios veiklos vertė, nepriklausomai nuo finansavimo. Nuosavo kapitalo vertė – tai, ką gauna savininkai: įmonės vertė plius pinigai minus palūkanų skola. Exitkompass rodo abi.
+
+### Kas padidina įmonės vertę prieš pardavimą?
+Pirkėjai moka daugiau už įmones su išsklaidytomis ir pasikartojančiomis pajamomis, kurios veikia be savininko, turi rašytines sutartis su klientais ir pagrindiniais darbuotojais, stabiliai auga ir turi aiškią, patikimą atskaitomybę. Exitkompass parodo, kurie veiksmai svarbiausi jūsų įmonei.
+
+### Ar galiu naudoti vertinimą turto padalijimui, paveldėjimui ar ginčui?
+Ne. Exitkompass skirtas pardavimui ir parodo, kiek pirkėjas galėtų sumokėti už įmonę, t. y. rinkos vertę veiklos tęstinumo prielaida pagal daugiklius. Turto padalijimui, paveldėjimui, ginčams, išpirkimui ir mokesčių klausimams dažnai reikia kitų metodų ir oficialaus vertinimo.
+
+### Kiek tai kainuoja?
+Greitas vertinimas nemokamas ir nereikalauja registracijos. Išsami ataskaita kainuoja 290 € be PVM, o ataskaita su aptarimu su partneriu – 690 € be PVM. Ataskaita pateikiama per 1–2 darbo dienas, sąskaita apmokama per 10 dienų.
+
+### Ar mano duomenys saugūs?
+Taip. Registro duomenys yra vieši. Tai, ką įrašote, ir įkeltus dokumentus, pavyzdžiui, finansines ataskaitas, verslo planą, biudžetą ar mėnesio ataskaitas, naudojame tik jūsų vertinimui ir su niekuo nesidalijame. Bet kada galite paprašyti juos ištrinti.
+
+## Guides
+
+- [Värdera företag gratis](https://www.exitkompass.se/vardera-foretag-gratis/): Så värderar du ditt företag gratis online: vilka siffror som behövs, hur multiplar fungerar och vad en gratis värdering kan och inte kan säga. Med gratis verktyg.
+- [Vad är mitt företag värt?](https://www.exitkompass.se/vad-ar-mitt-foretag-vart/): Vad är ditt företag värt för en köpare? Så fungerar multiplar på EBITDA, EBIT och omsättning, och vad som höjer värdet inför en försäljning.
+- [Sälja aktiebolag – så värderas bolaget](https://www.exitkompass.se/salja-aktiebolag-vardering/): Ska du sälja ditt aktiebolag? Så värderas bolaget inför en försäljning, vilka köpare som finns och hur du höjer värdet åren före. Med gratis värdering online.
+- [Verdivurdering av selskap gratis](https://www.exitkompass.se/no/verdivurdering-selskap-gratis/): Slik får du en gratis verdivurdering av selskapet ditt på nett: hvilke tall som trengs, hvordan multipler fungerer og hva en gratis verdivurdering kan og ikke kan si.
+- [Hva er selskapet mitt verdt?](https://www.exitkompass.se/no/hva-er-selskapet-mitt-verdt/): Hva er selskapet ditt verdt for en kjøper? Slik fungerer multipler på EBITDA, EBIT og omsetning, hva som øker verdien og forskjellen på selskapsverdi og aksjeverdi.
+- [Selge aksjeselskap – slik verdsettes selskapet](https://www.exitkompass.se/no/selge-aksjeselskap-verdivurdering/): Skal du selge aksjeselskapet ditt? Slik verdsettes selskapet før et salg, hvilke kjøpere som finnes og hvordan du øker verdien årene før. Med gratis verdivurdering.
+- [How to value a Swedish company](https://www.exitkompass.se/en/how-to-value-a-swedish-company/): How buyers value a Swedish limited company (aktiebolag): where to find the figures, how EBITDA, EBIT and revenue multiples work, and what moves the price. Free valuation tool.
+- [What is my company worth?](https://www.exitkompass.se/en/what-is-my-company-worth/): What is your company worth to a buyer? How EBITDA, EBIT and revenue multiples work for Nordic small and medium-sized companies, and what raises the value before a sale.
+- [Selling a company in Norway](https://www.exitkompass.se/en/selling-a-company-in-norway/): Selling a Norwegian limited company (aksjeselskap): how buyers value it, what the sale process looks like and how to prepare. Free indicative valuation.
+- [Ile jest warta moja firma?](https://www.exitkompass.se/pl/ile-jest-warta-moja-firma/): Ile jest warta Twoja spółka dla kupującego? Jak działają mnożniki EV/EBITDA, EV/EBIT i EV/przychody dla polskich MŚP i co podnosi wartość przed sprzedażą.
+- [Sprzedaż firmy w Polsce krok po kroku](https://www.exitkompass.se/pl/sprzedaz-firmy-w-polsce/): Jak przebiega sprzedaż spółki w Polsce: przygotowanie, wycena, kupujący, due diligence i umowa sprzedaży udziałów. Ile to trwa i na co zwrócić uwagę.
+- [Kiek verta mano įmonė?](https://www.exitkompass.se/lt/kiek-verta-mano-imone/): Kiek jūsų įmonė verta pirkėjui? Kaip veikia EV/EBITDA, EV/EBIT ir EV/pajamų daugikliai Lietuvos mažoms ir vidutinėms įmonėms ir kas didina vertę prieš pardavimą.
+- [Įmonės pardavimas Lietuvoje žingsnis po žingsnio](https://www.exitkompass.se/lt/imones-pardavimas-lietuvoje/): Kaip vyksta įmonės pardavimas Lietuvoje: pasiruošimas, vertinimas, pirkėjai, patikrinimas ir akcijų pirkimo–pardavimo sutartis. Kiek tai trunka ir į ką atkreipti dėmesį.
+- [Wat is mijn bedrijf waard?](https://www.exitkompass.se/nl/wat-is-mijn-bedrijf-waard/): Wat is uw bedrijf waard voor een koper? Hoe EV/EBITDA-, EV/EBIT- en omzetmultiples werken voor Nederlandse mkb-bedrijven en wat de waarde verhoogt vóór een verkoop.
+- [Uw bedrijf verkopen in Nederland, stap voor stap](https://www.exitkompass.se/nl/bedrijf-verkopen-in-nederland/): Hoe verloopt de verkoop van een bv in Nederland: voorbereiding, waardering, kopers, due diligence, koopovereenkomst en levering bij de notaris. Hoe lang het duurt en waar u op let.
+- [Mitä yritykseni on arvoinen?](https://www.exitkompass.se/fi/mita-yritykseni-on-arvoinen/): Mitä yrityksesi on arvoinen ostajalle? Näin EV/EBITDA-, EV/EBIT- ja liikevaihtokertoimet toimivat suomalaisissa pk-yrityksissä ja mikä nostaa arvoa ennen myyntiä.
+- [Yrityksen myynti Suomessa vaihe vaiheelta](https://www.exitkompass.se/fi/yrityksen-myynti-suomessa/): Näin yrityksen myynti etenee Suomessa: valmistelu, arvonmääritys, ostajat, due diligence ja osakekauppakirja. Kuinka kauan se kestää ja mihin kannattaa kiinnittää huomiota.
+- [Värdering per bransch](https://www.exitkompass.se/vardering/): Typiska EV/EBITDA-multipler för små och medelstora bolag i elva branscher, enligt Dealsuite Nordic M&A Monitor augusti 2026. Med sidor per bransch och gratis värdering.
+- [Verdivurdering per bransje](https://www.exitkompass.se/no/verdivurdering/): Typiske EV/EBITDA-multipler for små og mellomstore selskaper i elleve bransjer, ifølge Dealsuite Nordic M&A Monitor august 2026. Med sider per bransje og gratis verdivurdering.
+- [Valuation by industry](https://www.exitkompass.se/en/valuation/): Typical EV/EBITDA multiples for small and medium-sized Nordic companies in eleven industries, from the Dealsuite Nordic M&A Monitor August 2026. With a page per industry and a free valuation.
+- [Wycena według branży](https://www.exitkompass.se/pl/wycena/): Typowe mnożniki EV/EBITDA dla małych i średnich spółek w Polsce w jedenastu branżach, ze stroną dla każdej branży i bezpłatną wyceną.
+- [Vertinimas pagal sektorių](https://www.exitkompass.se/lt/vertinimas/): Tipiniai EV/EBITDA daugikliai Lietuvos mažoms ir vidutinėms įmonėms vienuolikoje sektorių, su atskiru puslapiu kiekvienam sektoriui ir nemokamu vertinimu.
+- [Waardering per sector](https://www.exitkompass.se/nl/waardering/): Typische EV/EBITDA-multiples voor Nederlandse mkb-bedrijven in elf sectoren, met een pagina per sector en een gratis waardering.
+- [Arvonmääritys toimialoittain](https://www.exitkompass.se/fi/arvonmaaritys/): Tyypilliset EV/EBITDA-kertoimet suomalaisille pk-yrityksille yhdellätoista toimialalla, oma sivu jokaiselle toimialalle ja maksuton arvio.
+- [Vad är ett mjukvaru- eller SaaS-bolag värt?](https://www.exitkompass.se/vardering/mjukvarubolag-saas/): Värdering av bolag inom mjukvara och saas: typisk EV/EBITDA-multipel cirka 7,9 gånger enligt Dealsuite, hur storleken påverkar och vad som höjer värdet. Gratis värdering.
+- [Vad är ett healthtech- eller medicinteknikbolag värt?](https://www.exitkompass.se/vardering/healthtech-medicinteknik/): Värdering av bolag inom healthtech och medicinteknik: typisk EV/EBITDA-multipel cirka 8,4 gånger enligt Dealsuite, hur storleken påverkar och vad som höjer värdet. Gratis värdering.
+- [Vad är ett IT-konsultbolag värt?](https://www.exitkompass.se/vardering/it-konsultbolag/): Värdering av bolag inom it-konsulting: typisk EV/EBITDA-multipel cirka 7,1 gånger enligt Dealsuite, hur storleken påverkar och vad som höjer värdet. Gratis värdering.
+- [Vad är ett vård- eller omsorgsbolag värt?](https://www.exitkompass.se/vardering/vard-och-omsorg/): Värdering av bolag inom vård och omsorg: typisk EV/EBITDA-multipel cirka 6,5 gånger enligt Dealsuite, hur storleken påverkar och vad som höjer värdet. Gratis värdering.
+- [Vad är ett tjänste- eller konsultbolag värt?](https://www.exitkompass.se/vardering/foretagstjanster-konsultbolag/): Värdering av bolag inom företagstjänster och konsulting: typisk EV/EBITDA-multipel cirka 5,9 gånger enligt Dealsuite, hur storleken påverkar och vad som höjer värdet. Gratis värdering.
+- [Vad är ett tillverknings- eller industribolag värt?](https://www.exitkompass.se/vardering/tillverkningsbolag-industri/): Värdering av bolag inom tillverkning och industri: typisk EV/EBITDA-multipel cirka 5,0 gånger enligt Dealsuite, hur storleken påverkar och vad som höjer värdet. Gratis värdering.
+- [Vad är ett bygg- eller installationsbolag värt?](https://www.exitkompass.se/vardering/bygg-och-installationsbolag/): Värdering av bolag inom bygg och installation: typisk EV/EBITDA-multipel cirka 4,5 gånger enligt Dealsuite, hur storleken påverkar och vad som höjer värdet. Gratis värdering.
+- [Vad är ett partihandels- eller grossistbolag värt?](https://www.exitkompass.se/vardering/partihandel-grossist/): Värdering av bolag inom partihandel och distribution: typisk EV/EBITDA-multipel cirka 4,4 gånger enligt Dealsuite, hur storleken påverkar och vad som höjer värdet. Gratis värdering.
+- [Vad är ett åkeri eller transportbolag värt?](https://www.exitkompass.se/vardering/akeri-transportbolag/): Värdering av bolag inom transport och logistik: typisk EV/EBITDA-multipel cirka 4,4 gånger enligt Dealsuite, hur storleken påverkar och vad som höjer värdet. Gratis värdering.
+- [Vad är ett detaljhandels- eller e-handelsbolag värt?](https://www.exitkompass.se/vardering/detaljhandel-ehandel/): Värdering av bolag inom detaljhandel och e-handel: typisk EV/EBITDA-multipel cirka 3,8 gånger enligt Dealsuite, hur storleken påverkar och vad som höjer värdet. Gratis värdering.
+- [Vad är en restaurang eller ett besöksnäringsbolag värt?](https://www.exitkompass.se/vardering/restaurang-hotell-besoksnaring/): Värdering av bolag inom restaurang och besöksnäring: typisk EV/EBITDA-multipel cirka 4,0 gånger enligt Dealsuite, hur storleken påverkar och vad som höjer värdet. Gratis värdering.
+- [Hva er et programvare- eller SaaS-selskap verdt?](https://www.exitkompass.se/no/verdivurdering/programvareselskap-saas/): Verdivurdering av selskaper innen programvare og saas: typisk EV/EBITDA-multippel rundt 7,9 ganger ifølge Dealsuite, hvordan størrelsen påvirker og hva som øker verdien. Gratis verdivurdering.
+- [Hva er et helseteknologi- eller medtechselskap verdt?](https://www.exitkompass.se/no/verdivurdering/helseteknologi-medtech/): Verdivurdering av selskaper innen helseteknologi og medtech: typisk EV/EBITDA-multippel rundt 8,4 ganger ifølge Dealsuite, hvordan størrelsen påvirker og hva som øker verdien. Gratis verdivurdering.
+- [Hva er et IT-konsulentselskap verdt?](https://www.exitkompass.se/no/verdivurdering/it-konsulentselskap/): Verdivurdering av selskaper innen it-konsulenter: typisk EV/EBITDA-multippel rundt 7,1 ganger ifølge Dealsuite, hvordan størrelsen påvirker og hva som øker verdien. Gratis verdivurdering.
+- [Hva er et helse- eller omsorgsselskap verdt?](https://www.exitkompass.se/no/verdivurdering/helse-og-omsorg/): Verdivurdering av selskaper innen helse og omsorg: typisk EV/EBITDA-multippel rundt 6,5 ganger ifølge Dealsuite, hvordan størrelsen påvirker og hva som øker verdien. Gratis verdivurdering.
+- [Hva er et tjeneste- eller rådgivningsselskap verdt?](https://www.exitkompass.se/no/verdivurdering/forretningstjenester-radgivning/): Verdivurdering av selskaper innen forretningstjenester og rådgivning: typisk EV/EBITDA-multippel rundt 5,9 ganger ifølge Dealsuite, hvordan størrelsen påvirker og hva som øker verdien. Gratis verdivurdering.
+- [Hva er et produksjons- eller industriselskap verdt?](https://www.exitkompass.se/no/verdivurdering/produksjonsselskap-industri/): Verdivurdering av selskaper innen produksjon og industri: typisk EV/EBITDA-multippel rundt 5,0 ganger ifølge Dealsuite, hvordan størrelsen påvirker og hva som øker verdien. Gratis verdivurdering.
+- [Hva er et bygg- eller installasjonsselskap verdt?](https://www.exitkompass.se/no/verdivurdering/bygg-og-installasjonsselskap/): Verdivurdering av selskaper innen bygg og installasjon: typisk EV/EBITDA-multippel rundt 4,5 ganger ifølge Dealsuite, hvordan størrelsen påvirker og hva som øker verdien. Gratis verdivurdering.
+- [Hva er et engros- eller distribusjonsselskap verdt?](https://www.exitkompass.se/no/verdivurdering/engros-distribusjon/): Verdivurdering av selskaper innen engros og distribusjon: typisk EV/EBITDA-multippel rundt 4,4 ganger ifølge Dealsuite, hvordan størrelsen påvirker og hva som øker verdien. Gratis verdivurdering.
+- [Hva er et transport- eller logistikkselskap verdt?](https://www.exitkompass.se/no/verdivurdering/transport-logistikkselskap/): Verdivurdering av selskaper innen transport og logistikk: typisk EV/EBITDA-multippel rundt 4,4 ganger ifølge Dealsuite, hvordan størrelsen påvirker og hva som øker verdien. Gratis verdivurdering.
+- [Hva er et detaljhandels- eller netthandelsselskap verdt?](https://www.exitkompass.se/no/verdivurdering/detaljhandel-netthandel/): Verdivurdering av selskaper innen detaljhandel og netthandel: typisk EV/EBITDA-multippel rundt 3,8 ganger ifølge Dealsuite, hvordan størrelsen påvirker og hva som øker verdien. Gratis verdivurdering.
+- [Hva er en restaurant eller et reiselivsselskap verdt?](https://www.exitkompass.se/no/verdivurdering/restaurant-reiseliv/): Verdivurdering av selskaper innen restaurant og reiseliv: typisk EV/EBITDA-multippel rundt 4,0 ganger ifølge Dealsuite, hvordan størrelsen påvirker og hva som øker verdien. Gratis verdivurdering.
+- [What is a software or SaaS company worth?](https://www.exitkompass.se/en/valuation/software-saas/): Valuing a software and saas company in Sweden or Norway: typical EV/EBITDA multiple around 7.9x according to Dealsuite, how size matters and what raises value. Free valuation.
+- [What is a healthtech or medtech company worth?](https://www.exitkompass.se/en/valuation/healthtech-medtech/): Valuing a healthtech and medtech company in Sweden or Norway: typical EV/EBITDA multiple around 8.4x according to Dealsuite, how size matters and what raises value. Free valuation.
+- [What is an IT consulting company worth?](https://www.exitkompass.se/en/valuation/it-consulting/): Valuing a it consulting company in Sweden or Norway: typical EV/EBITDA multiple around 7.1x according to Dealsuite, how size matters and what raises value. Free valuation.
+- [What is a health or social care company worth?](https://www.exitkompass.se/en/valuation/health-and-social-care/): Valuing a health and social care company in Sweden or Norway: typical EV/EBITDA multiple around 6.5x according to Dealsuite, how size matters and what raises value. Free valuation.
+- [What is a business services or consulting company worth?](https://www.exitkompass.se/en/valuation/business-services/): Valuing a business services and consulting company in Sweden or Norway: typical EV/EBITDA multiple around 5.9x according to Dealsuite, how size matters and what raises value. Free valuation.
+- [What is a manufacturing or industrial company worth?](https://www.exitkompass.se/en/valuation/manufacturing/): Valuing a manufacturing and industry company in Sweden or Norway: typical EV/EBITDA multiple around 5.0x according to Dealsuite, how size matters and what raises value. Free valuation.
+- [What is a construction or installation company worth?](https://www.exitkompass.se/en/valuation/construction-installation/): Valuing a construction and installation company in Sweden or Norway: typical EV/EBITDA multiple around 4.5x according to Dealsuite, how size matters and what raises value. Free valuation.
+- [What is a wholesale or distribution company worth?](https://www.exitkompass.se/en/valuation/wholesale-distribution/): Valuing a wholesale and distribution company in Sweden or Norway: typical EV/EBITDA multiple around 4.4x according to Dealsuite, how size matters and what raises value. Free valuation.
+- [What is a transport or logistics company worth?](https://www.exitkompass.se/en/valuation/transport-logistics/): Valuing a transport and logistics company in Sweden or Norway: typical EV/EBITDA multiple around 4.4x according to Dealsuite, how size matters and what raises value. Free valuation.
+- [What is a retail or e-commerce company worth?](https://www.exitkompass.se/en/valuation/retail-ecommerce/): Valuing a retail and e-commerce company in Sweden or Norway: typical EV/EBITDA multiple around 3.8x according to Dealsuite, how size matters and what raises value. Free valuation.
+- [What is a restaurant or hospitality company worth?](https://www.exitkompass.se/en/valuation/restaurants-hospitality/): Valuing a restaurants and hospitality company in Sweden or Norway: typical EV/EBITDA multiple around 4.0x according to Dealsuite, how size matters and what raises value. Free valuation.
+- [Ile jest warta spółka programistyczna lub SaaS?](https://www.exitkompass.se/pl/wycena/oprogramowanie-saas/): Wycena spółek z branży oprogramowanie i saas w Polsce: typowy mnożnik EV/EBITDA ok. 6,7x, wpływ wielkości i to, co podnosi wartość. Bezpłatna wycena.
+- [Ile jest warta spółka healthtech lub medtech?](https://www.exitkompass.se/pl/wycena/healthtech-medtech/): Wycena spółek z branży healthtech i medtech w Polsce: typowy mnożnik EV/EBITDA ok. 7,1x, wpływ wielkości i to, co podnosi wartość. Bezpłatna wycena.
+- [Ile jest warta firma IT lub doradcza?](https://www.exitkompass.se/pl/wycena/firma-it-doradztwo/): Wycena spółek z branży usługi i doradztwo it w Polsce: typowy mnożnik EV/EBITDA ok. 6,0x, wpływ wielkości i to, co podnosi wartość. Bezpłatna wycena.
+- [Ile jest warta placówka opieki zdrowotnej lub społecznej?](https://www.exitkompass.se/pl/wycena/opieka-zdrowotna/): Wycena spółek z branży opieka zdrowotna i społeczna w Polsce: typowy mnożnik EV/EBITDA ok. 5,5x, wpływ wielkości i to, co podnosi wartość. Bezpłatna wycena.
+- [Ile jest warta firma usługowa lub doradcza?](https://www.exitkompass.se/pl/wycena/uslugi-dla-biznesu/): Wycena spółek z branży usługi dla biznesu i doradztwo w Polsce: typowy mnożnik EV/EBITDA ok. 5,0x, wpływ wielkości i to, co podnosi wartość. Bezpłatna wycena.
+- [Ile jest warta firma produkcyjna?](https://www.exitkompass.se/pl/wycena/firma-produkcyjna/): Wycena spółek z branży produkcja i przemysł w Polsce: typowy mnożnik EV/EBITDA ok. 4,2x, wpływ wielkości i to, co podnosi wartość. Bezpłatna wycena.
+- [Ile jest warta firma budowlana lub instalacyjna?](https://www.exitkompass.se/pl/wycena/budownictwo-instalacje/): Wycena spółek z branży budownictwo i instalacje w Polsce: typowy mnożnik EV/EBITDA ok. 3,8x, wpływ wielkości i to, co podnosi wartość. Bezpłatna wycena.
+- [Ile jest warta hurtownia lub dystrybutor?](https://www.exitkompass.se/pl/wycena/hurtownia-dystrybucja/): Wycena spółek z branży hurt i dystrybucja w Polsce: typowy mnożnik EV/EBITDA ok. 3,7x, wpływ wielkości i to, co podnosi wartość. Bezpłatna wycena.
+- [Ile jest warta firma transportowa lub logistyczna?](https://www.exitkompass.se/pl/wycena/transport-logistyka/): Wycena spółek z branży transport i logistyka w Polsce: typowy mnożnik EV/EBITDA ok. 3,7x, wpływ wielkości i to, co podnosi wartość. Bezpłatna wycena.
+- [Ile jest warta sklep lub firma e-commerce?](https://www.exitkompass.se/pl/wycena/handel-ecommerce/): Wycena spółek z branży handel detaliczny i e-commerce w Polsce: typowy mnożnik EV/EBITDA ok. 3,2x, wpływ wielkości i to, co podnosi wartość. Bezpłatna wycena.
+- [Ile jest warta restauracja lub hotel?](https://www.exitkompass.se/pl/wycena/gastronomia-hotele/): Wycena spółek z branży gastronomia i hotelarstwo w Polsce: typowy mnożnik EV/EBITDA ok. 3,4x, wpływ wielkości i to, co podnosi wartość. Bezpłatna wycena.
+- [Kiek verta programinės įrangos ar SaaS įmonė?](https://www.exitkompass.se/lt/vertinimas/programine-iranga-saas/): Įmonių vertinimas sektoriuje „programinė įranga ir saas“ Lietuvoje: tipinis EV/EBITDA daugiklis apie 6,7x, dydžio įtaka ir kas didina vertę. Nemokamas vertinimas.
+- [Kiek verta sveikatos technologijų ar medicinos technikos įmonė?](https://www.exitkompass.se/lt/vertinimas/sveikatos-technologijos/): Įmonių vertinimas sektoriuje „sveikatos technologijos ir medicinos technika“ Lietuvoje: tipinis EV/EBITDA daugiklis apie 7,1x, dydžio įtaka ir kas didina vertę. Nemokamas vertinimas.
+- [Kiek verta IT paslaugų ar konsultacijų įmonė?](https://www.exitkompass.se/lt/vertinimas/it-paslaugu-imone/): Įmonių vertinimas sektoriuje „it paslaugos ir konsultacijos“ Lietuvoje: tipinis EV/EBITDA daugiklis apie 6,0x, dydžio įtaka ir kas didina vertę. Nemokamas vertinimas.
+- [Kiek verta sveikatos priežiūros ar socialinės globos įstaiga?](https://www.exitkompass.se/lt/vertinimas/sveikatos-prieziura/): Įmonių vertinimas sektoriuje „sveikatos priežiūra ir socialinė globa“ Lietuvoje: tipinis EV/EBITDA daugiklis apie 5,5x, dydžio įtaka ir kas didina vertę. Nemokamas vertinimas.
+- [Kiek verta verslo paslaugų ar konsultacijų įmonė?](https://www.exitkompass.se/lt/vertinimas/verslo-paslaugos/): Įmonių vertinimas sektoriuje „verslo paslaugos ir konsultacijos“ Lietuvoje: tipinis EV/EBITDA daugiklis apie 5,0x, dydžio įtaka ir kas didina vertę. Nemokamas vertinimas.
+- [Kiek verta gamybos įmonė?](https://www.exitkompass.se/lt/vertinimas/gamybos-imone/): Įmonių vertinimas sektoriuje „gamyba ir pramonė“ Lietuvoje: tipinis EV/EBITDA daugiklis apie 4,2x, dydžio įtaka ir kas didina vertę. Nemokamas vertinimas.
+- [Kiek verta statybos ar instaliacijos įmonė?](https://www.exitkompass.se/lt/vertinimas/statyba-instaliacija/): Įmonių vertinimas sektoriuje „statyba ir instaliacija“ Lietuvoje: tipinis EV/EBITDA daugiklis apie 3,8x, dydžio įtaka ir kas didina vertę. Nemokamas vertinimas.
+- [Kiek verta didmeninės prekybos ar platinimo įmonė?](https://www.exitkompass.se/lt/vertinimas/didmenine-prekyba/): Įmonių vertinimas sektoriuje „didmeninė prekyba ir platinimas“ Lietuvoje: tipinis EV/EBITDA daugiklis apie 3,7x, dydžio įtaka ir kas didina vertę. Nemokamas vertinimas.
+- [Kiek verta transporto ar logistikos įmonė?](https://www.exitkompass.se/lt/vertinimas/transportas-logistika/): Įmonių vertinimas sektoriuje „transportas ir logistika“ Lietuvoje: tipinis EV/EBITDA daugiklis apie 3,7x, dydžio įtaka ir kas didina vertę. Nemokamas vertinimas.
+- [Kiek verta mažmeninės ar e. prekybos įmonė?](https://www.exitkompass.se/lt/vertinimas/mazmenine-e-prekyba/): Įmonių vertinimas sektoriuje „mažmeninė ir e. prekyba“ Lietuvoje: tipinis EV/EBITDA daugiklis apie 3,2x, dydžio įtaka ir kas didina vertę. Nemokamas vertinimas.
+- [Kiek verta restorano ar viešbučio įmonė?](https://www.exitkompass.se/lt/vertinimas/restoranai-viesbuciai/): Įmonių vertinimas sektoriuje „restoranai ir apgyvendinimas“ Lietuvoje: tipinis EV/EBITDA daugiklis apie 3,4x, dydžio įtaka ir kas didina vertę. Nemokamas vertinimas.
+- [Wat is een software- of SaaS-bedrijf waard?](https://www.exitkompass.se/nl/waardering/software-saas/): Waardering van bedrijven in software en saas in Nederland: een typische EV/EBITDA-multiple van ongeveer 8,7x, het effect van omvang en wat de waarde verhoogt. Gratis waardering.
+- [Wat is een healthtech- of medtechbedrijf waard?](https://www.exitkompass.se/nl/waardering/healthtech-medtech/): Waardering van bedrijven in healthtech en medtech in Nederland: een typische EV/EBITDA-multiple van ongeveer 9,2x, het effect van omvang en wat de waarde verhoogt. Gratis waardering.
+- [Wat is een IT-dienstverlener of adviesbureau waard?](https://www.exitkompass.se/nl/waardering/it-dienstverlening/): Waardering van bedrijven in it-diensten en -advies in Nederland: een typische EV/EBITDA-multiple van ongeveer 7,8x, het effect van omvang en wat de waarde verhoogt. Gratis waardering.
+- [Wat is een zorg- of welzijnsorganisatie waard?](https://www.exitkompass.se/nl/waardering/zorg-welzijn/): Waardering van bedrijven in zorg en welzijn in Nederland: een typische EV/EBITDA-multiple van ongeveer 7,2x, het effect van omvang en wat de waarde verhoogt. Gratis waardering.
+- [Wat is een zakelijk dienstverlener of adviesbureau waard?](https://www.exitkompass.se/nl/waardering/zakelijke-dienstverlening/): Waardering van bedrijven in zakelijke dienstverlening en advies in Nederland: een typische EV/EBITDA-multiple van ongeveer 6,5x, het effect van omvang en wat de waarde verhoogt. Gratis waardering.
+- [Wat is een productiebedrijf waard?](https://www.exitkompass.se/nl/waardering/productiebedrijf/): Waardering van bedrijven in productie en industrie in Nederland: een typische EV/EBITDA-multiple van ongeveer 5,5x, het effect van omvang en wat de waarde verhoogt. Gratis waardering.
+- [Wat is een installatie- of bouwbedrijf waard?](https://www.exitkompass.se/nl/waardering/installatiebedrijf-bouw/): Waardering van bedrijven in bouw en installatie in Nederland: een typische EV/EBITDA-multiple van ongeveer 5,0x, het effect van omvang en wat de waarde verhoogt. Gratis waardering.
+- [Wat is een groothandel of distributeur waard?](https://www.exitkompass.se/nl/waardering/groothandel-distributie/): Waardering van bedrijven in groothandel en distributie in Nederland: een typische EV/EBITDA-multiple van ongeveer 4,8x, het effect van omvang en wat de waarde verhoogt. Gratis waardering.
+- [Wat is een transport- of logistiekbedrijf waard?](https://www.exitkompass.se/nl/waardering/transport-logistiek/): Waardering van bedrijven in transport en logistiek in Nederland: een typische EV/EBITDA-multiple van ongeveer 4,8x, het effect van omvang en wat de waarde verhoogt. Gratis waardering.
+- [Wat is een winkel of e-commercebedrijf waard?](https://www.exitkompass.se/nl/waardering/retail-ecommerce/): Waardering van bedrijven in detailhandel en e-commerce in Nederland: een typische EV/EBITDA-multiple van ongeveer 4,2x, het effect van omvang en wat de waarde verhoogt. Gratis waardering.
+- [Wat is een horeca- of hotelbedrijf waard?](https://www.exitkompass.se/nl/waardering/horeca-hotels/): Waardering van bedrijven in horeca en hotels in Nederland: een typische EV/EBITDA-multiple van ongeveer 4,4x, het effect van omvang en wat de waarde verhoogt. Gratis waardering.
+- [Mitä ohjelmisto- tai SaaS-yritys on arvoinen?](https://www.exitkompass.se/fi/arvonmaaritys/ohjelmistoyritys-saas/): Toimialan ohjelmistot ja saas yritysten arvonmääritys Suomessa: tyypillinen EV/EBITDA-kerroin noin 7,9x, koon vaikutus ja mikä nostaa arvoa. Maksuton arvio.
+- [Mitä terveysteknologia- tai medtech-yritys on arvoinen?](https://www.exitkompass.se/fi/arvonmaaritys/terveysteknologia-medtech/): Toimialan terveysteknologia ja lääkintätekniikka yritysten arvonmääritys Suomessa: tyypillinen EV/EBITDA-kerroin noin 8,4x, koon vaikutus ja mikä nostaa arvoa. Maksuton arvio.
+- [Mitä IT-palvelu- tai konsulttiyritys on arvoinen?](https://www.exitkompass.se/fi/arvonmaaritys/it-palveluyritys/): Toimialan it-palvelut ja konsultointi yritysten arvonmääritys Suomessa: tyypillinen EV/EBITDA-kerroin noin 7,1x, koon vaikutus ja mikä nostaa arvoa. Maksuton arvio.
+- [Mitä terveys- tai sosiaalipalveluyritys on arvoinen?](https://www.exitkompass.se/fi/arvonmaaritys/terveys-ja-sosiaalipalvelut/): Toimialan terveys- ja sosiaalipalvelut yritysten arvonmääritys Suomessa: tyypillinen EV/EBITDA-kerroin noin 6,5x, koon vaikutus ja mikä nostaa arvoa. Maksuton arvio.
+- [Mitä yrityspalvelu- tai konsulttiyritys on arvoinen?](https://www.exitkompass.se/fi/arvonmaaritys/yrityspalvelut/): Toimialan yrityspalvelut ja konsultointi yritysten arvonmääritys Suomessa: tyypillinen EV/EBITDA-kerroin noin 5,9x, koon vaikutus ja mikä nostaa arvoa. Maksuton arvio.
+- [Mitä valmistava yritys on arvoinen?](https://www.exitkompass.se/fi/arvonmaaritys/valmistava-teollisuus/): Toimialan valmistus ja teollisuus yritysten arvonmääritys Suomessa: tyypillinen EV/EBITDA-kerroin noin 5,0x, koon vaikutus ja mikä nostaa arvoa. Maksuton arvio.
+- [Mitä rakennus- tai asennusyritys on arvoinen?](https://www.exitkompass.se/fi/arvonmaaritys/rakentaminen-ja-asennus/): Toimialan rakentaminen ja asennus yritysten arvonmääritys Suomessa: tyypillinen EV/EBITDA-kerroin noin 4,5x, koon vaikutus ja mikä nostaa arvoa. Maksuton arvio.
+- [Mitä tukkukauppa- tai jakeluyritys on arvoinen?](https://www.exitkompass.se/fi/arvonmaaritys/tukkukauppa-ja-jakelu/): Toimialan tukkukauppa ja jakelu yritysten arvonmääritys Suomessa: tyypillinen EV/EBITDA-kerroin noin 4,4x, koon vaikutus ja mikä nostaa arvoa. Maksuton arvio.
+- [Mitä kuljetus- tai logistiikkayritys on arvoinen?](https://www.exitkompass.se/fi/arvonmaaritys/kuljetus-ja-logistiikka/): Toimialan kuljetus ja logistiikka yritysten arvonmääritys Suomessa: tyypillinen EV/EBITDA-kerroin noin 4,4x, koon vaikutus ja mikä nostaa arvoa. Maksuton arvio.
+- [Mitä vähittäis- tai verkkokauppa on arvoinen?](https://www.exitkompass.se/fi/arvonmaaritys/vahittais-ja-verkkokauppa/): Toimialan vähittäis- ja verkkokauppa yritysten arvonmääritys Suomessa: tyypillinen EV/EBITDA-kerroin noin 3,8x, koon vaikutus ja mikä nostaa arvoa. Maksuton arvio.
+- [Mitä ravintola- tai majoitusyritys on arvoinen?](https://www.exitkompass.se/fi/arvonmaaritys/ravintola-ja-majoitus/): Toimialan ravintolat ja majoitus yritysten arvonmääritys Suomessa: tyypillinen EV/EBITDA-kerroin noin 4,0x, koon vaikutus ja mikä nostaa arvoa. Maksuton arvio.
