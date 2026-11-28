@@ -2867,9 +2867,26 @@ const DRV_ICONS = [
 ];
 
 /* ---------- Language ---------- */
+const SEO_HOME = { SE: "/", NO: "/no/", EN: "/en/", PL: "/pl/", LT: "/lt/", NL: "/nl/", FI: "/fi/" };
+const seoLoading = {};
+function loadSeoText(l) {
+  const own = document.querySelector("[data-seo-lang]");
+  if (!own || !SEO_HOME[l] || seoLoading[l] || !window.fetch || !window.DOMParser) return;
+  seoLoading[l] = true;
+  fetch(SEO_HOME[l] + (SEO_HOME[l] === "/" && /\.eu$/i.test(location.hostname) ? "?l=se" : "")).then(r => r.ok ? r.text() : "").then(h => {
+    const sec = h && new DOMParser().parseFromString(h, "text/html").querySelector('[data-seo-lang="' + l + '"]');
+    if (!sec || document.querySelector('[data-seo-lang="' + l + '"]')) return;
+    sec.querySelectorAll("[id]").forEach(e => e.id = e.id + "-" + l.toLowerCase());
+    sec.removeAttribute("aria-labelledby");
+    sec.hidden = l !== lang;
+    own.parentNode.insertBefore(document.importNode(sec, true), own.nextSibling);
+  }).catch(() => {}).then(() => { seoLoading[l] = false; });
+}
 function applyLanguage() {
   /* The page's own explanatory text and FAQ are written in the page's language: hide them when another language is chosen */
   document.querySelectorAll("[data-seo-lang]").forEach(x => { x.hidden = x.dataset.seoLang !== lang; });
+  /* When the chosen language has no text on this page, fetch it from that language's own page and show it in place */
+  if (!document.querySelector('[data-seo-lang="' + lang + '"]')) loadSeoText(lang);
   const u = U(), rt = RT();
   document.documentElement.lang = u.html;
   if (typeof renderArNote === "function") renderArNote();
