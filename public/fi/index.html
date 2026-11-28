@@ -1029,7 +1029,7 @@ header.top .bb-right { display: flex; align-items: center; gap: 10px; flex-wrap:
             <div class="topact" id="top-act" hidden></div>
           </div>
           <div class="section" id="plan-sec">
-            <h3 data-t="planH">Arvonnostosuunnitelma</h3>
+            <h3 data-t="planH">Arvonluontisuunnitelma</h3>
             <p class="hint" data-t="planHint">Arvokkaimman toimenpiteen näytämme maksutta. Raportti asettaa kaikki toimenpiteet järjestykseen arvon, vaiheiden ja aikataulun mukaan.</p>
             <div class="tablewrap"><table id="plan"></table></div>
           </div>
@@ -1049,13 +1049,13 @@ header.top .bb-right { display: flex; align-items: center; gap: 10px; flex-wrap:
           <div class="lockcard"><h4 data-t="lockExit">Myyntivalmius osa-alueittain</h4><div class="blur" id="lock-exit"></div></div>
           <div class="lockcard"><h4 data-t="lockStrat">Strateginen arvo</h4><div class="blur" id="lock-strat"></div></div>
           <div class="lockcard"><h4 data-t="lockSens">Herkkyysanalyysi</h4><div class="blur" id="lock-sens"></div></div>
-          <div class="lockcard"><h4 data-t="lockPlan">Arvonnostosuunnitelma 12–24 kk</h4><div class="blur" id="lock-plan"></div></div>
+          <div class="lockcard"><h4 data-t="lockPlan">Arvonluontisuunnitelma 12–24 kk</h4><div class="blur" id="lock-plan"></div></div>
           <div class="lockcard"><h4 data-t="lockBuyers">Ostajatyypit ja kertoimet</h4><div class="blur" id="lock-buyers"></div></div>
         </div>
         <div class="lockover">
           <div class="lockicon"><svg aria-hidden="true"><use href="#i-lock"/></svg></div>
           <h3 data-t="lockH">Täydellisessä raportissa</h3>
-          <p data-t="lockP">Myyntivalmius osa-alueittain, strateginen arvo, herkkyysanalyysi, koko arvonnostosuunnitelma 12–24 kuukaudelle ja mitkä ostajat maksaisivat eniten kaltaisestasi yrityksestä.</p>
+          <p data-t="lockP">Myyntivalmius osa-alueittain, strateginen arvo, herkkyysanalyysi, koko arvonluontisuunnitelma 12–24 kuukaudelle ja mitkä ostajat maksaisivat eniten kaltaisestasi yrityksestä.</p>
           <button type="button" class="btn-primary" data-buy="report" id="lock-btn"></button>
           <p class="lockdeliv" data-t="lockDeliv">Toimitus 1–2 arkipäivässä, kokeneen neuvonantajan tarkistama.</p>
           <p class="samplep"><a class="samplelink" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-doc"/></svg><span></span></a></p>
@@ -1157,7 +1157,7 @@ header.top .bb-right { display: flex; align-items: center; gap: 10px; flex-wrap:
     <h2 id="seo-h">Maksuton yrityksen arvonmääritys – näin Exitkompass toimii</h2>
     <p>Exitkompass antaa maksuttoman, suuntaa antavan arvion listaamattomasta suomalaisesta osakeyhtiöstä, samaan tapaan kuin ostaja tai neuvonantaja tekisi ensimmäisen arvion. Työkalu on tarkoitettu omistajille, jotka harkitsevat yrityksen myyntiä nyt tai muutaman vuoden päästä. Kirjoitat yrityksen nimen tai Y-tunnuksen, ja haemme tiedot Patentti- ja rekisterihallituksen avoimesta datasta. Jos yritys on ilmoittanut tilinpäätöksensä digitaalisesti, täytämme liikevaihdon, liikevoiton ja poistot puolestasi.</p>
 <p>Arvio perustuu kolmeen yrityskaupoissa yleisimmin käytettyyn kertoimeen: EV/EBITDA, EV/EBIT ja EV/liikevaihto. Peruskertoimet tulevat pohjoismaisista yrityskaupoista, joihin Suomi kuuluu, ja niitä oikaistaan korkotason (EKP:n talletuskorko) ja sen mukaan, mistä ostajat maksavat: asiakkaiden hajautus, toistuva liikevaihto, omistajariippuvuus, kasvu, kirjalliset sopimukset ja raportoinnin laatu. Nettovelan jälkeen tulos on osakkeiden arvon haarukka.</p>
-<p>Saat myös myyntivalmiuspisteet ja toimenpiteet, jotka nostavat arvoa eniten. Täydellinen suomenkielinen raportti sisältää lisäksi herkkyysanalyysin, arvonnostosuunnitelman 12–24 kuukaudelle ja ne ostajatyypit, jotka maksaisivat eniten kaltaisestasi yrityksestä.</p>
+<p>Saat myös myyntivalmiuspisteet ja toimenpiteet, jotka nostavat arvoa eniten. Täydellinen suomenkielinen raportti sisältää lisäksi herkkyysanalyysin, arvonluontisuunnitelman 12–24 kuukaudelle ja ne ostajatyypit, jotka maksaisivat eniten kaltaisestasi yrityksestä.</p>
     <h2 id="faq-h">Usein kysyttyä yrityksen arvonmäärityksestä ja myynnistä</h2>
     <div class="faq"><details class="faq-item"><summary>Mitä yritykseni on arvoinen?</summary><p>Käytännössä yritys on arvoinen sen, mitä ostaja on valmis siitä maksamaan. Listaamattomien pk-yritysten arvonmäärityksen lähtökohta on yleensä tulos ennen korkoja, veroja ja poistoja (EBITDA) kerrottuna kertoimella, joka riippuu toimialasta, koosta ja riskistä. Kerrointa oikaistaan yrityksen vahvuuksien ja heikkouksien mukaan. Pienemmät yritykset arvostetaan alemmas kuin suuremmat.</p></details>
 <details class="faq-item"><summary>Mistä Exitkompass saa yritykseni tiedot?</summary><p>Patentti- ja rekisterihallituksen (PRH) avoimesta datasta: yrityksen nimi, päätoimiala ja digitaalisesti ilmoitetun tilinpäätöksen luvut, kuten liikevaihto, liikevoitto, poistot, oma pääoma, rahavarat ja lainat rahoituslaitoksilta. Vain digitaalisesti (XBRL) ilmoitetut tilinpäätökset ovat saatavilla; muissa tapauksissa syötät luvut itse tai lataat tilinpäätöksen.</p></details>
@@ -1194,11 +1194,11 @@ header.top .bb-right { display: flex; align-items: center; gap: 10px; flex-wrap:
 
 <script src="/assets/ek-d42bc2feb8.js"></script>
 
-<script src="/assets/ek-fa813f69a3.js"></script>
+<script src="/assets/ek-dd65d3545e.js"></script>
 
-<script src="/assets/ek-6062b8f03d.js"></script>
+<script src="/assets/ek-be734cbd51.js"></script>
 
-<script src="/assets/ek-8f254fbcc1.js"></script>
+<script src="/assets/ek-e46a9ab450.js"></script>
 
 <script src="/assets/ek-45b4b3bc6b.js"></script>
 
@@ -1206,7 +1206,7 @@ header.top .bb-right { display: flex; align-items: center; gap: 10px; flex-wrap:
 
 <script src="/assets/ek-a24c8312bf.js"></script>
 
-<script src="/assets/ek-b0cb9fa210.js"></script>
+<script src="/assets/ek-c86011f0eb.js"></script>
 
 <style>
 #qb-btn{position:fixed;right:20px;bottom:20px;z-index:900;display:flex;align-items:center;gap:8px;padding:12px 18px;border:0;border-radius:999px;background:#0f3b45;color:#fff;font:600 15px/1 Inter,system-ui,sans-serif;box-shadow:0 6px 20px rgba(15,59,69,.3);cursor:pointer}
@@ -1242,6 +1242,6 @@ header.top .bb-right { display: flex; align-items: center; gap: 10px; flex-wrap:
   <div class="qb-note" id="qb-note"></div>
 </section>
 <script>window.EK_QB_DEF = "FI";</script>
-<script src="/assets/ek-81f64c0505.js"></script>
+<script src="/assets/ek-3cc132491b.js"></script>
 </body>
 </html>

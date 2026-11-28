@@ -27,7 +27,7 @@
     dealsCols: ["Vuosi", "Maa", "Koko (EBITDA)", "Maksettu EV/EBITDA"], dealsCmp: (m, med) => `Yrityksen kerroin tässä arviossa on ${m}, kun vastaavien kauppojen mediaani on ${med}.`, dealsCc: { SE: "Ruotsi", NO: "Norja", PL: "Puola", LT: "Liettua", NL: "Alankomaat", FI: "Suomi" },
     sampleWm: "ESIMERKKI", sampleNote: "Esimerkkiraportti kuvitteellisesta yrityksestä. Luvut, nimet ja arviot ovat keksittyjä ja näyttävät vain, miltä raportti näyttää.",
     normNote: "Vuodet painotetaan suhteessa 1:2:3, eniten viimeisintä vuotta. Omistajan palkka oikaistaan palkatun toimitusjohtajan kustannukseen sivukuluineen. Kun luvut on haettu PRH:n digitaalisesta tilinpäätöksestä, EBITDA on liikevoitto plus poistot.",
-    bridgeTitle: "2.2 Kerroinsilta", bridgeCols: ["Tekijä", "Oikaisu", "Kerroin"], base: "Toimialan peruskerroin", final: "Yrityksen kerroin", floor: " (vähimmäistaso)",
+    bridgeTitle: "2.2 Kertoimen oikaisut", bridgeCols: ["Tekijä", "Oikaisu", "Kerroin"], base: "Toimialan peruskerroin", final: "Yrityksen kerroin", floor: " (vähimmäistaso)",
     adj: { size: "Koko", owner: "Omistajariippuvuus", mgmt: "Johtoryhmä", cust: "Asiakaskeskittymä", recur: "Toistuva liikevaihto", growth: "Liikevaihdon kasvu", trend: "Tulostrendi", reporting: "Taloudellinen raportointi", contracts: "Kirjalliset sopimukset", text: "Tilinpäätöksen teksti", bench: "Kate suhteessa toimialaan", rate: "Korko", cycle: "Toimialan suhdanne", country: "Maaoikaisu" },
     eqTitle: "2.4 Yritysarvosta osakkeiden arvoon", eqRows: ["Yritysarvo (EV)", "Korolliset velat", "Rahavarat", "Osakkeiden arvo"],
     scenTitle: "2.5 Skenaariot", scenCols: ["Matala", "Perus", "Korkea"], scenRows: ["Kerroin", "Yritysarvo", "Osakkeiden arvo"],
@@ -64,7 +64,7 @@
       recurOk: x => [`${x} % toistuvaa liikevaihtoa.`, "Ostajan on helpompi arvioida tulevia tuloksia."],
       buyers: (b, m) => [`Aktiivisia ostajia toimialalla: ${b}.`, `Listattuja sarjaostajia, jotka ostavat tämäntyyppisiä yrityksiä. Listaamattomien eurooppalaisten keskisuurten yritysten markkinan mediaani Argos Indexin mukaan oli ${m}.`]
     },
-    s5: "5. Arvonnostosuunnitelma",
+    s5: "5. Arvonluontisuunnitelma",
     s5intro: i => `Toimenpiteet on järjestetty sen mukaan, miten paljon kukin nostaa osakkeiden arvoa nykyisillä tuloksilla. Vaikutuksia ei voi täysin laskea yhteen, mutta yhdessä ne voisivat nostaa osakkeiden arvon noin ${i}:een.`,
     s5fields: ["Arvon nousu", "Aikataulu"], months: "kk",
     actions: {

@@ -159,7 +159,7 @@ Spółki wpisane do KRS składają sprawozdania finansowe w formie elektroniczne
 Na danych historycznych ze sprawozdań finansowych, chyba że wgrasz coś więcej. Raporty miesięczne, budżet lub biznesplan uwzględniamy w raporcie. Raporty miesięczne dają ostatnie dwanaście miesięcy, które mają największą wagę w bazie wyników. Budżet daje wartość wzrostu z wagą 20%, plus 5%, jeśli wyjaśnia go biznesplan, i plus 10%, jeśli wyniki od początku roku są zgodne z budżetem. Waga wynosi maksymalnie 35%, ponieważ kupujący płacą głównie za udokumentowane wyniki.
 
 ### Jakie mnożniki stosuje Exitkompass – EBITDA, EBIT czy przychody?
-Wszystkie trzy, bo tak liczą kupujący przy przejęciach. EV/EBITDA jest najczęstszy dla małych i średnich spółek. EV/EBIT daje bardziej sprawiedliwy obraz spółek kapitałochłonnych z wysoką amortyzacją, a EV/przychody stosuje się, gdy rentowność jest niska lub przejściowo słaba. Część wynikowa to w 60% EBITDA i w 40% EBIT, a przychody mają wagę 20–50% w zależności od marży.
+Wszystkie trzy, bo tak liczą kupujący przy przejęciach. EV/EBITDA jest najczęstszy dla małych i średnich spółek. EV/EBIT daje bardziej miarodajny obraz spółek kapitałochłonnych z wysoką amortyzacją, a EV/przychody stosuje się, gdy rentowność jest niska lub przejściowo słaba. Część wynikowa to w 60% EBITDA i w 40% EBIT, a przychody mają wagę 20–50% w zależności od marży.
 
 ### Czym różni się wartość przedsiębiorstwa od wartości kapitału własnego?
 Wartość przedsiębiorstwa (EV) to wartość samej działalności, niezależnie od sposobu finansowania. Wartość kapitału własnego to to, co otrzymują właściciele: wartość przedsiębiorstwa plus środki pieniężne minus zadłużenie oprocentowane. Exitkompass pokazuje obie.
@@ -186,7 +186,7 @@ Przy sprzedaży spółkę wycenia się według tego, ile kupujący jest gotów z
 Wycena ma charakter orientacyjny i opiera się na danych historycznych oraz Twoich odpowiedziach. To, ile kupujący faktycznie zapłaci, zależy m.in. od sytuacji rynkowej, rodzaju kupującego, finansowania, due diligence i warunków umowy. Traktuj ją jako punkt wyjścia i porozmawiaj z doradcą przed podjęciem decyzji.
 
 ### Jakich danych potrzebuję?
-Na początek wystarczy numer KRS lub nazwa spółki. Dane rejestrowe pobieramy z KRS. Sprawozdanie finansowe możesz przesłać jako plik XML z Repozytorium Dokumentów Finansowych albo wpisać przychody i EBITDA samodzielnie. Następnie odpowiadasz na siedem pytań o działalność.
+Na początek wystarczy numer KRS lub NIP. Dane rejestrowe pobieramy z KRS. Sprawozdanie finansowe możesz przesłać jako plik XML z Repozytorium Dokumentów Finansowych albo wpisać przychody i EBITDA samodzielnie. Następnie odpowiadasz na siedem pytań o działalność.
 
 ## FAQ (Lithuanian)
 
@@ -200,7 +200,7 @@ Iš Registrų centro Juridinių asmenų registro ir Valstybinės mokesčių insp
 Viešai skelbiamose finansinių ataskaitų santraukose nėra nusidėvėjimo ir palūkanų sąnaudų, todėl kaip pradžią naudojame pelną prieš apmokestinimą. EBITDA = pelnas prieš apmokestinimą + palūkanų sąnaudos + nusidėvėjimas ir amortizacija. Šias sumas rasite savo finansinėse ataskaitose; jas pridėjus vertė dažnai gerokai padidėja.
 
 ### Iš kur paimti daugikliai Lietuvos įmonėms?
-Viešo, reguliaraus Lietuvos MVĮ sandorių daugiklių tyrimo nėra. Todėl remiamės Dealsuite Nordic M&A Monitor – Šiaurės šalių M&A patarėjų pateikiamų sandorių tyrimu – ir sumažiname daugiklius Lietuvai 15 % pagal Adsco Capital Partners vertinimą. Korekcija parodyta atskirai daugiklio tilte, todėl matote jos poveikį.
+Viešo, reguliaraus Lietuvos MVĮ sandorių daugiklių tyrimo nėra. Todėl remiamės Dealsuite Nordic M&A Monitor – Šiaurės šalių M&A patarėjų pateikiamų sandorių tyrimu – ir sumažiname daugiklius Lietuvai 15 % pagal Adsco Capital Partners vertinimą. Korekcija parodyta atskirai daugiklio koregavimų lentelėje, todėl matote jos poveikį.
 
 ### Ar vertinimas grindžiamas istoriniais duomenimis, ar biudžetu?
 Istoriniais duomenimis, nebent įkelsite daugiau. Mėnesio ataskaitos, biudžetas ar verslo planas įvertinami ataskaitoje. Mėnesio ataskaitos parodo paskutinius dvylika mėnesių, kuriems suteikiamas didžiausias svoris. Biudžetas suteikia augimo vertę su 20 % svoriu, plius 5 %, jei jį paaiškina verslo planas, ir plius 10 %, jei šių metų rezultatai atitinka biudžetą. Didžiausias svoris – 35 %, nes pirkėjai daugiausia moka už įrodytus rezultatus.
@@ -226,7 +226,7 @@ Taikome tris daugiklius – EV/EBITDA, EV/EBIT ir EV/pajamos – paskutinių met
 ### Kaip vertinama įmonė, kai ji parduodama?
 Pardavimo atveju įmonė vertinama pagal tai, kiek pirkėjas pasirengęs sumokėti: normalizuotas paskutinių metų pelnas, padaugintas iš sektoriaus daugiklio ir pakoreguotas pagal riziką ir kokybę. Tada pridedami grynieji pinigai ir atimama palūkanų skola – taip gaunama akcijų vertė. Exitkompass tai apskaičiuoja nemokamai ir parodo, kas padidina vertę prieš pardavimą.
 
-### Koks tikslus vertinimas?
+### Kiek tikslus yra vertinimas?
 Vertinimas yra orientacinis ir remiasi istoriniais skaičiais bei jūsų atsakymais. Kiek pirkėjas iš tikrųjų sumokės, priklauso, be kita ko, nuo rinkos padėties, pirkėjo tipo, finansavimo, išsamaus patikrinimo ir sandorio sąlygų. Naudokite jį kaip atspirties tašką ir prieš priimdami sprendimus pasitarkite su patarėju.
 
 ### Kokių duomenų man reikia?

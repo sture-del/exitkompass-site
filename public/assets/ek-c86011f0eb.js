@@ -1327,14 +1327,14 @@ function mkLT() {
     planCols: ["Veiksmas", "Terminas", "Vertės padidėjimas"], inReport: "Ataskaitoje",
     planNone: "Įmonė jau gerai atitinka pagrindinius vertės veiksnius. Kitas žingsnis – pasiruošti pardavimo procesui.",
     buildH: "Kaip sudaromas vertinimas", buildHint: "Nuo sektoriaus bazinio daugiklio iki jūsų įmonės daugiklio ir EBITDA normalizavimo.",
-    veil: "Daugiklio tiltas ir normalizuota EBITDA – ataskaitoje",
+    veil: "Daugiklio koregavimų lentelė ir normalizuota EBITDA – ataskaitoje",
     yours: "Jūsų daugiklis", floor: " (minimumas)",
     sizeLbl: n => `Dydis (EBITDA ${n})`, growthLbl: p => `Pajamų augimas (${p}% per metus)`,
     upsellH: "Užsisakykite išsamią ataskaitą",
     upsellP: "PDF ataskaita lietuvių kalba iš Adsco Capital Partners: išsamus vertinimas su scenarijais ir jautrumo analize, visos pirkėjo išvados, vertės didinimo planas su žingsniais ir terminais, pirkėjų tipai, sandorio struktūra, išsamaus patikrinimo kontrolinis sąrašas ir pardavimo procesas.",
     cmpFree: "Nemokamai", freeList: ["Nuosavo kapitalo vertės intervalas", "Pasirengimo pardavimui balas", "Trys svarbiausios išvados", "Vertingiausias veiksmas"],
     cmpPaid: p => `Ataskaita · ${p}`,
-    paidList: ["Taškinis vertinimas su žemu, baziniu ir aukštu scenarijumi", "Jautrumo analizė", "Daugiklio tiltas ir EBITDA normalizavimas", "Visos išvados su veiksmais", "Visas vertės didinimo planas su žingsniais ir terminais", "Pirkėjų tipai, už ką jie moka, ir orientaciniai daugikliai", "Išsamaus patikrinimo kontrolinis sąrašas", "Pardavimo procesas ir sandorio struktūra"],
+    paidList: ["Taškinis vertinimas su žemu, baziniu ir aukštu scenarijumi", "Jautrumo analizė", "Daugiklio koregavimų lentelė ir EBITDA normalizavimas", "Visos išvados su veiksmais", "Visas vertės didinimo planas su žingsniais ir terminais", "Pirkėjų tipai, už ką jie moka, ir orientaciniai daugikliai", "Išsamaus patikrinimo kontrolinis sąrašas", "Pardavimo procesas ir sandorio struktūra"],
     emailPh: "jus@imone.lt", order: p => `Užsakyti ataskaitą · ${p}`,
     pricingH: "Kainos", vat: "be PVM", free: "Nemokamai", prices: ["290 €", "690 €"],
     plans: [
@@ -1461,7 +1461,7 @@ function mkLT() {
       ["Vertė pardavimo atveju, ne teisiniams tikslams.", "Exitkompass parodo, kiek įmonė gali būti verta pirkėjui ją parduodant (rinkos vertė veiklos tęstinumo prielaida, pagal daugiklius). Tai nėra turto, likvidacinė vertė ar vertinimas turto padalijimui, paveldėjimui, ginčams, mažumos akcininkų išpirkimui ar mokesčių tikslams. Tokiais atvejais reikia oficialaus vertinimo tikslui tinkamu metodu."],
       ["Faktinė kaina gali reikšmingai skirtis.", "Kiek sumokės pirkėjas, priklauso nuo rinkos sąlygų, pirkėjo tipo, finansavimo, išsamaus patikrinimo, sutarties sąlygų ir įmonės perspektyvų. Nepriimkite sprendimų remdamiesi vien šiuo įrankiu."],
       ["Šaltiniai.", "Įmonės duomenys ir finansinių ataskaitų rodikliai paimami iš Registrų centro ir Valstybinės mokesčių inspekcijos atvirų duomenų (data.gov.lt). Registras neskelbia veiklos pelno ir nusidėvėjimo, todėl EBITDA pradžioje lygi pelnui prieš apmokestinimą ir turi būti patikrinta. Duomenų netikriname ir neatsakome už klaidas šaltiniuose. Visada palyginkite su įmonės finansinėmis ataskaitomis."],
-      ["Daugikliai.", "Sektorių daugikliai paimti iš Šiaurės šalių sandorių tyrimo (Dealsuite) ir Lietuvai sumažinti pagal Adsco vertinimą, nes viešo Lietuvos MVĮ sandorių daugiklių šaltinio nėra. Korekcija atskirai parodyta daugiklio tilte."],
+      ["Daugikliai.", "Sektorių daugikliai paimti iš Šiaurės šalių sandorių tyrimo (Dealsuite) ir Lietuvai sumažinti pagal Adsco vertinimą, nes viešo Lietuvos MVĮ sandorių daugiklių šaltinio nėra. Korekcija atskirai parodyta daugiklio koregavimų lentelėje."],
       ["Jokio pavedimo.", "Įrankio naudojimas ar ataskaitos užsakymas nesukuria konsultavimo pavedimo. Tam reikia rašytinės sutarties su Adsco Capital Partners. Adsco neatsako už nuostolius dėl sprendimų, priimtų remiantis įrankiu ar ataskaita."],
       ["Jūsų duomenys.", "Įmonių kodus, skaičius ir įkeltus dokumentus saugo Adsco Capital Partners (Google Workspace) ir naudoja tik jūsų vertinimui ir ataskaitai parengti. Su trečiosiomis šalimis jais nesidalijame ir ištriname paprašius."]
     ],
@@ -1584,7 +1584,7 @@ function mkNL() {
   return {
     html: "nl", loc: "nl-NL", by: "Adsco Capital Partners", flSE: "Zweden", flNO: "Noorwegen", flPL: "Polen", flLT: "Litouwen", flNL: "Nederland", defName: "Uw bedrijf",
     h1: "Wat is uw bedrijf waard voor een koper, en hoe verhoogt u die waarde?",
-    heroP: "Een gratis indicatieve waardering in ongeveer drie minuten. We halen de gedeponeerde jaarrekening op bij de KVK, u vult aan wat ontbreekt en beantwoordt zeven vragen, en u krijgt een waardebandbreedte, een exit-score en de acties die de waarde het meest verhogen.",
+    heroP: "Een gratis indicatieve waardering in ongeveer drie minuten. We halen de gedeponeerde jaarrekening op bij de KVK, u vult aan wat ontbreekt en beantwoordt zeven vragen, en u krijgt een waardebandbreedte, een score voor verkoopgereedheid en de acties die de waarde het meest verhogen.",
     heroTrust: ["Gratis", "Zonder registratie", "Ongeveer 3 minuten", "Multiples uit M&A-transacties"],
     heroFit: "Gemaakt voor mkb-bedrijven met een omzet tot ongeveer 45 miljoen euro. Grotere bedrijven en groepen waardeert u het best in een gesprek met een partner.",
     step1: "Vul het KVK-nummer in, dan halen we de gedeponeerde jaarrekening op, of vul omzet en EBITDA in " + K + " zelf in.",
@@ -1611,7 +1611,7 @@ function mkNL() {
     kEq: "Waarde aandelen – historische cijfers", kEqSub: (m, nd) => `Midden ${m}, na aftrek van nettoschuld ${nd}`,
     kEv: "Ondernemingswaarde (EV)", kEvSub: "Vóór nettoschuld. Multiple en correcties in het rapport.",
     kPot: "Waarde als het bedrijf klaar is voor verkoop", kPotSub: g => `+${g} bij de huidige resultaten`, kPotNone: "Al dicht bij het beste niveau",
-    scoreH: "Exit-gereedheid", scoreHint: "Hoe het due-diligenceteam van een koper het bedrijf vandaag zou beoordelen, op 100.",
+    scoreH: "Verkoopgereedheid", scoreHint: "Hoe het due-diligenceteam van een koper het bedrijf vandaag zou beoordelen, op 100.",
     flagsH: "Wat een koper zal opmerken", flagsHint: "De drie belangrijkste bevindingen. Het rapport behandelt ze allemaal, met een actie per bevinding.",
     more: n => `+ nog ${n} ${n === 1 ? "bevinding" : "bevindingen"} in <a href="#order" target="_self">het volledige rapport</a>.`,
     noFlags: "Op basis van uw antwoorden zijn er geen grote rode vlaggen.",
@@ -1624,13 +1624,13 @@ function mkNL() {
     sizeLbl: n => `Omvang (EBITDA ${n})`, growthLbl: p => `Omzetgroei (${p}% per jaar)`,
     upsellH: "Bestel het volledige rapport",
     upsellP: "Een PDF-rapport in het Nederlands van Adsco Capital Partners: volledige waardering met scenario's en gevoeligheidsanalyse, alle bevindingen van de koper, een waardeverhogingsplan met stappen en planning, kopertypen, dealstructuur, due-diligencechecklist en het verkoopproces.",
-    cmpFree: "Gratis", freeList: ["Bandbreedte van de aandelenwaarde", "Exit-score", "De drie belangrijkste bevindingen", "De waardevolste actie"],
+    cmpFree: "Gratis", freeList: ["Bandbreedte van de aandelenwaarde", "Score voor verkoopgereedheid", "De drie belangrijkste bevindingen", "De waardevolste actie"],
     cmpPaid: p => `Rapport · ${p}`,
     paidList: ["Puntwaardering met laag, basis- en hoog scenario", "Gevoeligheidsanalyse", "Multiplebrug en normalisatie van de EBITDA", "Alle bevindingen met acties", "Volledig waardeverhogingsplan met stappen en planning", "Kopertypen, waar zij voor betalen en indicatieve multiples", "Due-diligencechecklist", "Verkoopproces en dealstructuur"],
     emailPh: "u@bedrijf.nl", order: p => `Rapport bestellen · ${p}`,
     pricingH: "Prijzen", vat: "excl. btw", free: "Gratis", prices: ["€ 490", "€ 1.190"],
     plans: [
-      ["Snelle waardering", ["Gegevens uit de KVK-jaarrekening", "Indicatieve waardebandbreedte", "Exit-score"]],
+      ["Snelle waardering", ["Gegevens uit de KVK-jaarrekening", "Indicatieve waardebandbreedte", "Score voor verkoopgereedheid"]],
       ["Rapport", ["Alles uit de snelle waardering", "PDF-rapport in het Nederlands", "Waardeverhogingsplan voor 12–24 maanden", "Kopertypen en verkoopproces"]],
       ["Rapport + bespreking met partner", ["Alles uit het rapport", "60 minuten met een partner van Adsco Capital Partners (in het Engels)", "Controle van uw normalisaties"]]
     ],
@@ -1685,7 +1685,7 @@ function mkNL() {
     extra3P: "De waardering hierboven is alleen gebaseerd op historische cijfers. Als u maandrapportages, een begroting of een businessplan uploadt, worden die in het rapport meegewogen: maandrapportages actualiseren de winstbasis en de begroting krijgt een gewicht van 20–35%, afhankelijk van hoe goed die onderbouwd is. Optioneel.",
     extraBtn: "Bestanden uploaden",
     chipUp: "wordt geüpload…", chipOk: "opgeslagen", chipErr: "mislukt",
-    leadH: "Bewaar het resultaat", leadP: "Nog niet aan het verkopen? Ontvang een kopie van de waardering per e-mail of een herinnering wanneer het tijd is om haar bij te werken. Optioneel en gratis.",
+    leadH: "Bewaar het resultaat", leadP: "Nog niet aan het verkopen? Ontvang een kopie van de waardering per e-mail of een herinnering wanneer het tijd is om deze bij te werken. Optioneel en gratis.",
     leadCopy: "Stuur een kopie van het resultaat naar mijn e-mail", leadRemind: "Herinner mij over 6 maanden om de waardering bij te werken", leadConsent: "Ik ga ermee akkoord dat Adsco Capital Partners mijn e-mailadres hiervoor bewaart.",
     leadBtn: "Versturen", leadBusy: "Wordt verstuurd…", leadNeed: "Vul een geldig e-mailadres in, kies ten minste één optie en geef toestemming.", leadErr: "Versturen lukt nu niet. Probeer het zo opnieuw.",
     leadOk: (c, r, e) => (c ? `Klaar! De kopie is verstuurd naar ${e}.` : "Klaar!") + (r ? " We herinneren u over zes maanden." : ""),
@@ -1701,7 +1701,7 @@ function mkNL() {
     skip: "Geen cijfers bij de hand? Vul ze zelf in",
     s1Fine: "Adsco Capital Partners bewaart documenten versleuteld, gebruikt ze alleen voor uw waardering en verwijdert ze op verzoek. We delen ze nooit met anderen.",
     howH: "Zo werkt het",
-    how: [["Vul het KVK-nummer in", "We halen de laatst gedeponeerde jaarrekening op uit de open data van de KVK en vullen in wat erin staat."], ["Direct resultaat", "Waardebandbreedte, exit-score en de belangrijkste acties."]],
+    how: [["Vul het KVK-nummer in", "We halen de laatst gedeponeerde jaarrekening op uit de open data van de KVK en vullen in wat erin staat."], ["Direct resultaat", "Waardebandbreedte, score voor verkoopgereedheid en de belangrijkste acties."]],
     ticks: ["Duurt ongeveer drie minuten", "Gratis, zonder registratie"],
     quote: "Kopers betalen voor wat ze kunnen controleren. Een goed voorbereid bedrijf krijgt een hogere prijs én betere voorwaarden.",
     quoteBy: "Adsco Capital Partners",
@@ -1717,7 +1717,7 @@ function mkNL() {
     ctaH: "Klaar! Hoe wilt u verder?", freeBtn: "Bekijk de gratis waardering →", ctaSub: "Beantwoord zeven korte vragen en zie direct het resultaat. Of bestel meteen een rapport:",
     mktLine: (q, med, pe, st) => `Markt: niet-beursgenoteerde Europese middelgrote bedrijven zijn verkocht voor een mediaan van ${med} EBITDA (Argos Index, ${q}). Fondsen betaalden ${pe} en strategische kopers ${st}. Kleinere bedrijven worden meestal lager gewaardeerd.`,
     mktBuyers: b => `Actieve kopers in de sector: ${b}.`,
-    gpIntro: "Zonder extra materiaal is het rapport gebaseerd op historische cijfers. Met materiaal gaat de adviseur zo te werk: maandrapportages geven de laatste twaalf maanden, die het zwaarst meewegen in de winstbasis. Een begroting geeft een groeiwaarde met een gewicht van 20%, tot 35% als een businessplan haar onderbouwt en de resultaten van dit jaar op koers liggen. Alles is optioneel en vertrouwelijk.",
+    gpIntro: "Zonder extra materiaal is het rapport gebaseerd op historische cijfers. Met materiaal gaat de adviseur zo te werk: maandrapportages geven de laatste twaalf maanden, die het zwaarst meewegen in de winstbasis. Een begroting geeft een groeiwaarde met een gewicht van 20%, tot 35% als een businessplan die onderbouwt en de resultaten van dit jaar op koers liggen. Alles is optioneel en vertrouwelijk.",
     gpPlanH: "Businessplan", gpPlanP: "Strategie, markt en doelen. PDF, Word of PowerPoint.",
     gpBudH: "Begroting of prognose", gpBudP: "De komende 1–3 jaar. Excel of PDF.",
     gpMonH: "Laatste maandrapportages", gpMonP: "Winst-en-verliesrekening en balans vanaf het begin van het jaar.",
@@ -1765,7 +1765,7 @@ function mkNL() {
     adTeam: [["Sture Stölen", "Oprichtend partner", "20+ jaar in investor relations en M&A · leidde 5 Scandinavische beursgangen 2016–2022"], ["Lars Carlson", "Oprichtend partner", "25+ jaar in de sector, waaronder ECM en M&A · investment banker sinds 1996"]],
     adIndep: "Onafhankelijk: geen leningen en geen beleggingsadvies. Alleen uw resultaat telt.",
     pkgs: [
-      { name: "Snelle waardering", items: ["Waardebandbreedte direct op de pagina", "Exit-score", "De drie belangrijkste bevindingen"] },
+      { name: "Snelle waardering", items: ["Waardebandbreedte direct op de pagina", "Score voor verkoopgereedheid", "De drie belangrijkste bevindingen"] },
       { name: "Rapport", tag: "Aanbevolen", items: ["Volledig PDF-rapport in het Nederlands", "Scenario's en gevoeligheidsanalyse", "Waardeverhogingsplan voor 12–24 maanden", "Groeiwaardering op basis van het businessplan", "Kopertypen en verkoopproces", "Beoordeeld door een ervaren adviseur, geleverd binnen 1–2 werkdagen"] },
       { name: "Rapport + bespreking", tag: "Met partner", items: ["Alles uit het rapport", "60 minuten met een partner van Adsco Capital Partners (in het Engels)", "Controle van normalisaties en volgende stappen"] }
     ],
@@ -1779,14 +1779,14 @@ function mkNL() {
     to3: "Toon mijn waardering", back1: "Terug",
     need: "Vul ten minste de omzet of de EBITDA van het laatste jaar in.",
     orgGo: "Waardering starten →", micro1: "Duurt ongeveer drie minuten", micro2: "Gratis, zonder registratie",
-    lockH: "In het volledige rapport", lockP: "Exit-gereedheid per gebied, strategische waarde, gevoeligheidsanalyse, het volledige waardeverhogingsplan voor 12–24 maanden en welke kopers het meest zouden betalen voor een bedrijf als het uwe.",
-    lockExit: "Exit-gereedheid per gebied", lockStrat: "Strategische waarde", lockSvPrem: "Strategische premie", lockSvVal: "Waarde met premie", lockSvDrv: "Waardedrijvers", lockSens: "Gevoeligheidsanalyse", lockPlan: "Waardeverhogingsplan 12–24 mnd.", lockBuyers: "Kopertypen en multiples",
+    lockH: "In het volledige rapport", lockP: "Verkoopgereedheid per gebied, strategische waarde, gevoeligheidsanalyse, het volledige waardeverhogingsplan voor 12–24 maanden en welke kopers het meest zouden betalen voor een bedrijf als het uwe.",
+    lockExit: "Verkoopgereedheid per gebied", lockStrat: "Strategische waarde", lockSvPrem: "Strategische premie", lockSvVal: "Waarde met premie", lockSvDrv: "Waardedrijvers", lockSens: "Gevoeligheidsanalyse", lockPlan: "Waardeverhogingsplan 12–24 mnd.", lockBuyers: "Kopertypen en multiples",
     lockBtn: p => `Ontgrendel in het rapport · ${p}`, lockDeliv: "Geleverd binnen 1–2 werkdagen, beoordeeld door een ervaren adviseur.",
     delivPaid: "⏱ Geleverd binnen 1–2 werkdagen", delivFree: "⚡ Direct op de pagina",
     largeH: "Uw bedrijf is groter dan waarvoor Exitkompass is gemaakt",
     largeP: (r, e) => `Bij een omzet van ${r} en een EBITDA van ${e} wordt de waarde bepaald door beursgenoteerde vergelijkbare bedrijven en strategische transacties, niet door mkb-multiples. Een automatisch getal zou hier misleidend zijn, meestal veel te laag, dus we tonen het niet.`,
     largeP2: "Plan een gratis, vertrouwelijk gesprek met een partner van Adsco Capital Partners. We bespreken het waardebeeld, waarschijnlijke kopers en uw strategische opties.",
-    largeNote: "De exit-score en bevindingen hieronder gelden ook volledig voor grotere bedrijven.",
+    largeNote: "De score voor verkoopgereedheid en de bevindingen hieronder gelden ook volledig voor grotere bedrijven.",
     largeBtn: "Plan een gesprek met een partner →",
     mName: "Gesprek met een partner", mPrice: "Gratis", mTag: "Vertrouwelijk",
     mItems: ["Waardebeeld op basis van beursgenoteerde bedrijven en transacties", "Kopers: strategische partijen en private-equityfondsen", "Strategische opties en timing", "60 minuten met een ervaren partner (in het Engels)"],
@@ -1801,7 +1801,7 @@ function mkNL() {
     oFine: "U betaalt nu niets. De factuur wordt met het rapport verstuurd, betaaltermijn 10 dagen. Prijzen excl. btw; voor btw-plichtige ondernemers in Nederland is de btw verlegd.",
     oSend: p => `Bestelling versturen · ${p}`, oSending: "Bestelling wordt verstuurd…",
     oNeed: "Vul uw naam, een geldig e-mailadres en het bedrijf in.", oNeedOk: "Bevestig dat we de informatie mogen verwerken.",
-    oFail: "De bestelling kon nu niet worden verstuurd.", oFailLink: "Verstuur haar via ons formulier →",
+    oFail: "De bestelling kon nu niet worden verstuurd.", oFailLink: "Verstuur deze via ons formulier →",
     oDocs: n => `${n} ${doc(n)} en uw waardering worden met de bestelling meegestuurd.`,
     oDelivery: "Levering", oDeliveryV: "1–2 werkdagen", oPayL: "Betaling", oPayV: "Factuur, 10 dagen, excl. btw", oDocsL: "Documenten", oDocsV: n => n ? `${n} ${doc(n)}` : "Kunnen later worden gestuurd",
     oWho: "Beoordeeld door een ervaren adviseur van Adsco Capital Partners.",
@@ -1910,23 +1910,23 @@ function mkFI() {
     flagsH: "Mitä ostaja huomaa", flagsHint: "Kolme tärkeintä havaintoa. Raportti käy läpi kaikki, ja jokaiselle on toimenpide.",
     more: n => `+ ${n} ${n === 1 ? "havainto" : "havaintoa"} lisää <a href="#order" target="_self">täydellisessä raportissa</a>.`,
     noFlags: "Vastaustesi perusteella ei ole suuria varoitusmerkkejä.",
-    planH: "Arvonnostosuunnitelma", planHint: "Arvokkaimman toimenpiteen näytämme maksutta. Raportti asettaa kaikki toimenpiteet järjestykseen arvon, vaiheiden ja aikataulun mukaan.",
+    planH: "Arvonluontisuunnitelma", planHint: "Arvokkaimman toimenpiteen näytämme maksutta. Raportti asettaa kaikki toimenpiteet järjestykseen arvon, vaiheiden ja aikataulun mukaan.",
     planCols: ["Toimenpide", "Aikataulu", "Arvon nousu"], inReport: "Raportissa",
     planNone: "Yritys täyttää jo hyvin tärkeimmät arvoajurit. Seuraava askel on myyntiprosessin valmistelu.",
     buildH: "Näin arvonmääritys muodostuu", buildHint: "Toimialan peruskertoimesta yrityksesi kertoimeen ja EBITDA:n normalisointiin.",
-    veil: "Kerroinsilta ja normalisoitu EBITDA raportissa",
+    veil: "Kertoimen oikaisut ja normalisoitu EBITDA raportissa",
     yours: "Yrityksesi kerroin", floor: " (vähimmäistaso)",
     sizeLbl: n => `Koko (EBITDA ${n})`, growthLbl: p => `Liikevaihdon kasvu (${p} % vuodessa)`,
     upsellH: "Tilaa täydellinen raportti",
-    upsellP: "Suomenkielinen PDF-raportti Adsco Capital Partnersilta: täydellinen arvonmääritys skenaarioineen ja herkkyysanalyyseineen, kaikki ostajan havainnot, arvonnostosuunnitelma vaiheineen ja aikatauluineen, ostajatyypit, kaupan rakenne, due diligence -tarkistuslista ja myyntiprosessi.",
+    upsellP: "Suomenkielinen PDF-raportti Adsco Capital Partnersilta: täydellinen arvonmääritys skenaarioineen ja herkkyysanalyyseineen, kaikki ostajan havainnot, arvonluontisuunnitelma vaiheineen ja aikatauluineen, ostajatyypit, kaupan rakenne, due diligence -tarkistuslista ja myyntiprosessi.",
     cmpFree: "Maksuton", freeList: ["Osakkeiden arvon haarukka", "Myyntivalmiuspisteet", "Kolme tärkeintä havaintoa", "Arvokkain toimenpide"],
     cmpPaid: p => `Raportti · ${p}`,
-    paidList: ["Piste-estimaatti matala-, perus- ja korkeaskenaarioineen", "Herkkyysanalyysi", "Kerroinsilta ja EBITDA:n normalisointi", "Kaikki havainnot toimenpiteineen", "Täydellinen arvonnostosuunnitelma vaiheineen ja aikatauluineen", "Ostajatyypit, mistä he maksavat ja suuntaa antavat kertoimet", "Due diligence -tarkistuslista", "Myyntiprosessi ja kaupan rakenne"],
+    paidList: ["Piste-estimaatti matala-, perus- ja korkeaskenaarioineen", "Herkkyysanalyysi", "Kertoimen oikaisut ja EBITDA:n normalisointi", "Kaikki havainnot toimenpiteineen", "Täydellinen arvonluontisuunnitelma vaiheineen ja aikatauluineen", "Ostajatyypit, mistä he maksavat ja suuntaa antavat kertoimet", "Due diligence -tarkistuslista", "Myyntiprosessi ja kaupan rakenne"],
     emailPh: "sinä@yritys.fi", order: p => `Tilaa raportti · ${p}`,
     pricingH: "Hinnat", vat: "alv 0 %", free: "Maksuton", prices: ["490 €", "1 190 €"],
     plans: [
       ["Pika-arvio", ["Luvut PRH:n tilinpäätöksestä", "Suuntaa antava arvohaarukka", "Myyntivalmiuspisteet"]],
-      ["Raportti", ["Kaikki pika-arviosta", "Suomenkielinen PDF-raportti", "Arvonnostosuunnitelma 12–24 kuukaudelle", "Ostajatyypit ja myyntiprosessi"]],
+      ["Raportti", ["Kaikki pika-arviosta", "Suomenkielinen PDF-raportti", "Arvonluontisuunnitelma 12–24 kuukaudelle", "Ostajatyypit ja myyntiprosessi"]],
       ["Raportti + läpikäynti partnerin kanssa", ["Kaikki raportista", "60 minuuttia Adsco Capital Partnersin partnerin kanssa (englanniksi tai ruotsiksi)", "Normalisointiesi tarkistus"]]
     ],
     aboutH: "Kokeneet neuvonantajat jokaisen arvonmäärityksen takana",
@@ -1984,7 +1984,7 @@ function mkFI() {
     leadCopy: "Lähetä kopio tuloksesta sähköpostiini", leadRemind: "Muistuta minua päivittämään arvio 6 kuukauden päästä", leadConsent: "Hyväksyn, että Adsco Capital Partners tallentaa sähköpostiosoitteeni tätä tarkoitusta varten.",
     leadBtn: "Lähetä", leadBusy: "Lähetetään…", leadNeed: "Anna kelvollinen sähköpostiosoite, valitse vähintään yksi vaihtoehto ja anna suostumus.", leadErr: "Lähettäminen ei onnistu juuri nyt. Yritä hetken kuluttua uudelleen.",
     leadOk: (c, r, e) => (c ? `Valmis! Kopio lähetettiin osoitteeseen ${e}.` : "Valmis!") + (r ? " Muistutamme sinua kuuden kuukauden päästä." : ""),
-    topActH: "Arvokkain toimenpiteesi", topActMore: n => `Vielä ${n} ${n === 1 ? "toimenpide" : "toimenpidettä"} vaikutuksineen ja aikatauluineen raportin arvonnostosuunnitelmassa.`,
+    topActH: "Arvokkain toimenpiteesi", topActMore: n => `Vielä ${n} ${n === 1 ? "toimenpide" : "toimenpidettä"} vaikutuksineen ja aikatauluineen raportin arvonluontisuunnitelmassa.`,
     normH: "Normalisoitu EBITDA", normRow1: "EBITDA, painotettu kolmen vuoden keskiarvo (kertaluonteiset kulut lisätty)", normRowLtm: "EBITDA viimeisimmät 12 kuukautta huomioiden (kertaluonteiset kulut lisätty)", normRow2: "Omistajan palkka markkinatasolle oikaistuna", normRow3: "Normalisoitu EBITDA – mihin ostaja katsoo",
     normHighSal: (own, mkt, d) => `Maksat itsellesi ${own}, enemmän kuin palkatun toimitusjohtajan ${mkt}. Ostaja laskee markkinapalkalla, joten ${d} lisätään tulokseen. Se nostaa arvoa verrattuna pelkkään raportoidun EBITDA:n kertoimeen.`,
     normLowSal: (own, mkt, d) => `Maksat itsellesi ${own}, vähemmän kuin palkatun toimitusjohtajan ${mkt}, esimerkiksi nostaaksesi enemmän osinkoina. Ostajan on palkattava toimitusjohtaja, joten ${d} vähennetään tuloksesta. Siksi tulos on tässä pienempi kuin tilinpäätöksessä.`,
@@ -2063,7 +2063,7 @@ function mkFI() {
     adIndep: "Riippumaton: ei lainoja eikä sijoitussuosituksia. Vain sinun tuloksesi ratkaisee.",
     pkgs: [
       { name: "Pika-arvio", items: ["Arvohaarukka suoraan sivulla", "Myyntivalmiuspisteet", "Kolme tärkeintä havaintoa"] },
-      { name: "Raportti", tag: "Suositeltu", items: ["Täydellinen suomenkielinen PDF-raportti", "Skenaariot ja herkkyysanalyysi", "Arvonnostosuunnitelma 12–24 kuukaudelle", "Kasvuarvio liiketoimintasuunnitelman pohjalta", "Ostajatyypit ja myyntiprosessi", "Kokeneen neuvonantajan tarkistama, toimitus 1–2 arkipäivässä"] },
+      { name: "Raportti", tag: "Suositeltu", items: ["Täydellinen suomenkielinen PDF-raportti", "Skenaariot ja herkkyysanalyysi", "Arvonluontisuunnitelma 12–24 kuukaudelle", "Kasvuarvio liiketoimintasuunnitelman pohjalta", "Ostajatyypit ja myyntiprosessi", "Kokeneen neuvonantajan tarkistama, toimitus 1–2 arkipäivässä"] },
       { name: "Raportti + läpikäynti", tag: "Partnerin kanssa", items: ["Kaikki raportista", "60 minuuttia Adsco Capital Partnersin partnerin kanssa (englanniksi tai ruotsiksi)", "Normalisointien ja seuraavien askelten läpikäynti"] }
     ],
     startFree: "Aloita maksutta", choose: ["Valitse raportti", "Valitse läpikäynnin kanssa"], buy: ["Osta raportti", "Osta läpikäynnin kanssa"], haveFree: "Tämä sinulla jo on ✓",
@@ -2076,8 +2076,8 @@ function mkFI() {
     to3: "Näytä arvioni", back1: "Takaisin",
     need: "Syötä vähintään viimeisimmän vuoden liikevaihto tai EBITDA.",
     orgGo: "Aloita arvio →", micro1: "Kestää noin kolme minuuttia", micro2: "Maksuton, ei rekisteröitymistä",
-    lockH: "Täydellisessä raportissa", lockP: "Myyntivalmius osa-alueittain, strateginen arvo, herkkyysanalyysi, koko arvonnostosuunnitelma 12–24 kuukaudelle ja mitkä ostajat maksaisivat eniten kaltaisestasi yrityksestä.",
-    lockExit: "Myyntivalmius osa-alueittain", lockStrat: "Strateginen arvo", lockSvPrem: "Strateginen preemio", lockSvVal: "Arvo preemion kanssa", lockSvDrv: "Arvoajurit", lockSens: "Herkkyysanalyysi", lockPlan: "Arvonnostosuunnitelma 12–24 kk", lockBuyers: "Ostajatyypit ja kertoimet",
+    lockH: "Täydellisessä raportissa", lockP: "Myyntivalmius osa-alueittain, strateginen arvo, herkkyysanalyysi, koko arvonluontisuunnitelma 12–24 kuukaudelle ja mitkä ostajat maksaisivat eniten kaltaisestasi yrityksestä.",
+    lockExit: "Myyntivalmius osa-alueittain", lockStrat: "Strateginen arvo", lockSvPrem: "Strateginen preemio", lockSvVal: "Arvo preemion kanssa", lockSvDrv: "Arvoajurit", lockSens: "Herkkyysanalyysi", lockPlan: "Arvonluontisuunnitelma 12–24 kk", lockBuyers: "Ostajatyypit ja kertoimet",
     lockBtn: p => `Avaa raportissa · ${p}`, lockDeliv: "Toimitus 1–2 arkipäivässä, kokeneen neuvonantajan tarkistama.",
     delivPaid: "⏱ Toimitus 1–2 arkipäivässä", delivFree: "⚡ Heti sivulla",
     largeH: "Yrityksesi on suurempi kuin mihin Exitkompass on tehty",
@@ -2312,7 +2312,7 @@ const XK = {
       s2PAuto: "Žali laukai nuskaityti iš finansinių ataskaitų. Pataisykite, kas atrodo neteisinga, papildykite trūkstamus duomenis ir atsakykite į pirkėjo klausimus.", keyGreen: "Iš ataskaitų",
       advP: "Biudžetuojamos pajamos tūkst. PLN trejiems metams, laukiama EBITDA marža 3-iais metais ir reikalaujama grąža. Suteikia augimo vertinimą ataskaitoje.", emailPh: "jus@imone.pl",
       discSrc: "Įmonės duomenys paimami iš viešų registrų (Lenkijos teismų registro KRS ir PVM mokėtojų registro), o skaičiai nuskaitomi iš jūsų įkeltų ataskaitų. Nuskaitymas automatinis ir gali būti klaidingas ar neišsamus. Duomenų netikriname. Visada palyginkite su įmonės finansinėmis ataskaitomis.",
-      discMult: "Sektorių daugikliai paimti iš Šiaurės šalių sandorių tyrimo (Dealsuite) ir Lenkijai sumažinti pagal Adsco vertinimą, nes viešo Lenkijos MVĮ sandorių daugiklių šaltinio nėra. Korekcija atskirai parodyta daugiklio tilte."
+      discMult: "Sektorių daugikliai paimti iš Šiaurės šalių sandorių tyrimo (Dealsuite) ir Lenkijai sumažinti pagal Adsco vertinimą, nes viešo Lenkijos MVĮ sandorių daugiklių šaltinio nėra. Korekcija atskirai parodyta daugiklio koregavimų lentelėje."
     }
   },
   /* ---------- Lithuania, in other languages ---------- */
@@ -2657,7 +2657,7 @@ XK.SN.NL = cc => {
   const S = cc === "SE", CUR = S ? "SEK" : "NOK", K = "duizend " + CUR, REG = S ? "Bolagsverket (het Zweedse handelsregister)" : "Brønnøysundregistrene (het Noorse register)";
   const cb = src => /riksbank/i.test(src || "") ? "Riksbank" : "Norges Bank";
   return {
-    heroP: "Een gratis indicatieve waardering in ongeveer drie minuten. We halen de jaarrekeningen voor u op, u beantwoordt zeven vragen en krijgt een waardebandbreedte, een exit-score en de acties die de waarde het meest verhogen.",
+    heroP: "Een gratis indicatieve waardering in ongeveer drie minuten. We halen de jaarrekeningen voor u op, u beantwoordt zeven vragen en krijgt een waardebandbreedte, een score voor verkoopgereedheid en de acties die de waarde het meest verhogen.",
     heroFit: "Gemaakt voor het mkb met een omzet tot ongeveer 500 miljoen " + CUR + ". Grotere bedrijven waardeert u het best in een gesprek met een partner.",
     step1: "Upload de jaarrekeningen (PDF) of vul omzet en EBITDA in " + K + " in.", legFin: "Cijfers (" + K + ")",
     dropTitle: "Upload de jaarrekeningen (PDF)", dropSub: "We lezen omzet, EBITDA, liquide middelen, schulden en het directeurssalaris tot drie jaar terug. Sleep het bestand hierheen of klik.",
@@ -2761,13 +2761,13 @@ XK.FI = {
     discMult: "Branschmultiplarna kommer från en undersökning av nordiska affärer (Dealsuite), där Finland ingår, så ingen landjustering görs."
   },
   NO: {
-    heroP: "Gratis indikativ verdivurdering på omtrent tre minutter. Vi henter selskapets opplysninger og digitale regnskap fra det finske Patent- og registerstyret (PRH), du svarer på sju spørsmål og får et verdiintervall, en exit-score og tiltakene som løfter verdien mest.",
+    heroP: "Gratis indikativ verdivurdering på omtrent tre minutter. Vi henter selskapets opplysninger og digitale regnskap fra det finske Patent- og registerstyret (PRH), du svarer på sju spørsmål og får et verdiintervall, en poengsum for salgsklarhet og tiltakene som løfter verdien mest.",
     heroFit: "Laget for små og mellomstore selskaper med omsetning opp til rundt 45 millioner euro. Større selskaper og konsern verdsettes best i en samtale med en partner.",
     step1: "Skriv selskapsnavnet eller organisasjonsnummeret (Y-tunnus), så henter vi regnskapet fra PRH, eller fyll inn omsetning og EBITDA i tusen euro.", legFin: "Tall (tusen EUR)",
     dropTitle: "Last opp regnskapet (PDF)", dropSub: "En rådgiver går gjennom det når du bestiller rapporten. Dra filen hit eller klikk for å velge.",
     s1P: "Skriv selskapsnavnet eller organisasjonsnummeret (Y-tunnus). Vi henter selskapet fra PRHs åpne data og fyller inn tallene fra det digitale regnskapet, hvis selskapet har levert et slikt. Ellers fyller du inn tallene selv.",
     nav1s: "Navn eller organisasjonsnummer",
-    how: [["Skriv navnet eller organisasjonsnummeret", "Vi henter selskapet og det digitale regnskapet fra PRHs åpne data."], ["Få resultatet med en gang", "Verdiintervall, exit-score og de viktigste tiltakene."]],
+    how: [["Skriv navnet eller organisasjonsnummeret", "Vi henter selskapet og det digitale regnskapet fra PRHs åpne data."], ["Få resultatet med en gang", "Verdiintervall, salgsklarhet og de viktigste tiltakene."]],
     orgL: "Selskapsnavn eller organisasjonsnummer", orgPh: "1234567-8 eller selskapsnavn",
     srchNone: "Fant ikke noe selskap med det navnet. Prøv et annet navn eller oppgi organisasjonsnummeret.", srchShort: "Skriv minst tre bokstaver av navnet, eller organisasjonsnummeret.",
     orgEmpty: "Oppgi selskapsnavnet eller organisasjonsnummeret først.", orgBad: "Kontroller organisasjonsnummeret (8 sifre, f.eks. 1234567-8).", orgNotFound: "Fant ikke noe selskap med det organisasjonsnummeret.", orgFail: "Kunne ikke hente opplysninger akkurat nå. Fyll inn tallene selv.",
@@ -2890,7 +2890,7 @@ function applyLanguage() {
   const u = U(), rt = RT();
   document.documentElement.lang = u.html;
   if (typeof renderArNote === "function") renderArNote();
-  const sp = { SE: ["/exempelrapport.pdf", "Se en exempelrapport (PDF)"], NO: ["/no/eksempelrapport.pdf", "Se en eksempelrapport (PDF)"], EN: ["/en/sample-report.pdf", "See a sample report (PDF)"], PL: ["/pl/przykladowy-raport.pdf", "Zobacz przykładowy raport (PDF)"], LT: ["/lt/pavyzdine-ataskaita.pdf", "Peržiūrėti ataskaitos pavyzdį (PDF)"], NL: ["/en/sample-report.pdf", "Bekijk een voorbeeldrapport (PDF, Engels)"], FI: ["/en/sample-report.pdf", "Katso esimerkkiraportti (PDF, englanniksi)"] }[lang] || [];
+  const sp = { SE: ["/exempelrapport.pdf", "Se en exempelrapport (PDF)"], NO: ["/no/eksempelrapport.pdf", "Se en eksempelrapport (PDF)"], EN: ["/en/sample-report.pdf", "See a sample report (PDF)"], PL: ["/pl/przykladowy-raport.pdf", "Zobacz przykładowy raport (PDF)"], LT: ["/lt/pavyzdine-ataskaita.pdf", "Peržiūrėti ataskaitos pavyzdį (PDF)"], NL: ["/nl/voorbeeldrapport.pdf", "Bekijk een voorbeeldrapport (PDF)"], FI: ["/fi/esimerkkiraportti.pdf", "Katso esimerkkiraportti (PDF)"] }[lang] || [];
   if ($("hero-trust")) $("hero-trust").innerHTML = (u.heroTrust || []).map(x => "<li>" + x + "</li>").join("");
   const lg = { SE: [["/integritetspolicy/", "Integritetspolicy"], ["/kopvillkor/", "Köpvillkor"]], NO: [["/no/personvern/", "Personvernerklæring"], ["/no/kjopsvilkar/", "Kjøpsvilkår"]], EN: [["/en/privacy/", "Privacy policy"], ["/en/terms/", "Terms of purchase"]], PL: [["/pl/polityka-prywatnosci/", "Polityka prywatności"], ["/pl/regulamin/", "Regulamin zakupu"]], LT: [["/lt/privatumo-politika/", "Privatumo politika"], ["/lt/pirkimo-salygos/", "Pirkimo sąlygos"]], NL: [["/nl/privacybeleid/", "Privacybeleid"], ["/nl/aankoopvoorwaarden/", "Aankoopvoorwaarden"]], FI: [["/fi/tietosuoja/", "Tietosuojaseloste"], ["/fi/ostoehdot/", "Ostoehdot"]] }[lang] || [];
   document.querySelectorAll(".legallinks").forEach(p => { p.innerHTML = lg.map(x => '<a href="https://www.exitkompass.se' + x[0] + '" target="_blank" rel="noopener">' + x[1] + '</a>').join(" · "); });
