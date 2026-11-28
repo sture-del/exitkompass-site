@@ -47,7 +47,9 @@ const INDUSTRIES = {
 /* Size: Dealsuite's average EV/EBITDA by normalised EBITDA (EUR million), same edition, interpolated on a log scale and held flat
    outside the published range (EUR 0.2-10 million). Applied proportionally: the industry multiple is scaled by curve / overall average,
    so a low-multiple industry is not penalised more in absolute terms than a high-multiple one. */
-const SIZE_CURVE = [[0.2, 3.6], [0.5, 4.1], [1, 4.5], [2, 5.2], [5, 6.0], [10, 7.2]];
+/* EUR 0.2-10 million is Dealsuite's published range. The points below 0.2 and at 20 are Adsco's extension, so the multiple keeps
+   falling gently for the smallest companies and rises slightly for the largest the tool values (revenue up to about SEK 1 billion). */
+const SIZE_CURVE = [[0.05, 2.9], [0.1, 3.2], [0.2, 3.6], [0.5, 4.1], [1, 4.5], [2, 5.2], [5, 6.0], [10, 7.2], [20, 7.8]];
 const EUR_FX = { SE: 11.0, NO: 11.7, PL: 4.25, LT: 1, NL: 1, FI: 1 }; /* SEK, NOK and PLN per EUR, approximate */
 function sizeAdj(normK, base) {
   const m = Math.max(0, normK) / EUR_FX[country] / 1000, c = SIZE_CURVE;

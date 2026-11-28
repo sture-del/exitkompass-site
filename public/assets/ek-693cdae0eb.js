@@ -605,8 +605,8 @@ Object.assign(UI.NO, {
 });
 
 /* Who the tool is for */
-UI.SE.heroFit = "Byggt för små och medelstora bolag med en omsättning upp till cirka 500 MSEK. Större bolag och koncerner värderas bäst i ett samtal med en partner.";
-UI.NO.heroFit = "Laget for små og mellomstore selskaper med omsetning opp til rundt 500 MNOK. Større selskaper og konsern verdsettes best i en samtale med en partner.";
+UI.SE.heroFit = "Byggt för små och medelstora bolag med en omsättning upp till cirka 1 miljard kronor. Större bolag och koncerner värderas bäst i ett samtal med en partner.";
+UI.NO.heroFit = "Laget for små og mellomstore selskaper med omsetning opp til rundt 1 milliard kroner. Større selskaper og konsern verdsettes best i en samtale med en partner.";
 
 /* Free view: locked parts of exit readiness and strategic value */
 Object.assign(UI.SE, { potFree: "Hur mycket värdet kan öka när bolaget är exitklart redovisas i rapporten.", scoreFree: "Poängen per område och vad som drar ner den redovisas i rapporten." });
@@ -792,7 +792,7 @@ function mkEN(cc) {
     upAskNO: "The register only provides key figures. Upload the three latest annual accounts as PDF (from your accountant or Altinn) for a more precise analysis:",
     noReports: "We could not find the company's accounts automatically. Upload the three latest " + AR + "s as PDF here:",
     fetchedH: n => `Fetched: ${n}`, fetchedSrc: S ? "From Bolagsverket (TSEK). The figures are filled in in the next step." : "From the Register of Company Accounts, Brønnøysund Register Centre (TNOK). The figures are filled in in the next step.", ebitL: "Operating profit (EBIT)",
-    fetchedSrcAB: "From the annual reports filed with Bolagsverket (TSEK). The figures are filled in in the next step.", fetchedGroup: "Group figures (consolidated accounts).", heroFit: "Built for small and medium-sized companies with revenue up to about " + CUR + " 500 million. Larger companies and groups are best valued in a conversation with a partner.",
+    fetchedSrcAB: "From the annual reports filed with Bolagsverket (TSEK). The figures are filled in in the next step.", fetchedGroup: "Group figures (consolidated accounts).", heroFit: "Built for small and medium-sized companies with revenue up to about " + CUR + " 1 billion. Larger companies and groups are best valued in a conversation with a partner.",
     pdfLink: S ? "Download the annual reports as PDF from Allabolag and upload them here →" : "Open the annual accounts →",
     noDep: "",
     orgBad: S ? "Check the registration number (10 digits, for example 556677-8899)." : "Check the registration number (9 digits, for example 912 345 678).",
@@ -989,7 +989,7 @@ function mkPL() {
     h1: "Ile Twoja firma jest warta dla kupującego i jak podnieść jej wartość?",
     heroP: "Bezpłatna, orientacyjna wycena w około trzy minuty. Pobieramy dane spółki z KRS, Ty wgrywasz sprawozdanie finansowe (plik XML) i odpowiadasz na siedem pytań. Otrzymujesz przedział wartości, ocenę gotowości do sprzedaży i działania, które najbardziej podnoszą wartość.",
     heroTrust: ["Bezpłatnie", "Bez rejestracji", "Ok. 3 minuty", "Mnożniki z transakcji M&A"],
-    heroFit: "Dla małych i średnich spółek z przychodami do ok. 250 mln PLN. Większe spółki i grupy kapitałowe najlepiej wycenić w rozmowie z partnerem.",
+    heroFit: "Dla małych i średnich spółek z przychodami do ok. 380 mln PLN. Większe spółki i grupy kapitałowe najlepiej wycenić w rozmowie z partnerem.",
     step1: "Wgraj sprawozdanie finansowe (XML) albo wpisz przychody i EBITDA w " + K + ".",
     step2: "Odpowiedz na pytania kupującego o zależność od właściciela, klientów i umowy.",
     step3: "Zobacz wycenę i zamów pełny raport.",
@@ -1294,7 +1294,7 @@ function mkLT() {
     h1: "Kiek jūsų įmonė verta pirkėjui ir kaip padidinti jos vertę?",
     heroP: "Nemokamas orientacinis vertinimas per maždaug tris minutes. Iš Registrų centro atvirų duomenų paimame jūsų įmonės pajamas ir pelną, jūs atsakote į septynis klausimus ir gaunate vertės intervalą, pasirengimo pardavimui balą ir veiksmus, kurie labiausiai padidina vertę.",
     heroTrust: ["Nemokamai", "Be registracijos", "Apie 3 minutes", "M&A sandorių daugikliai"],
-    heroFit: "Skirta mažoms ir vidutinėms įmonėms, kurių pajamos siekia iki maždaug 45 mln. EUR. Didesnes įmones ir grupes geriausia vertinti pokalbyje su partneriu.",
+    heroFit: "Skirta mažoms ir vidutinėms įmonėms, kurių pajamos siekia iki maždaug 90 mln. EUR. Didesnes įmones ir grupes geriausia vertinti pokalbyje su partneriu.",
     step1: "Įveskite įmonės kodą arba pavadinimą – paimsime duomenis iš registro, arba įrašykite pajamas ir EBITDA " + K + ".",
     step2: "Atsakykite į pirkėjo klausimus apie priklausomybę nuo savininko, klientus ir sutartis.",
     step3: "Peržiūrėkite vertinimą ir užsisakykite išsamią ataskaitą.",
@@ -1586,7 +1586,7 @@ function mkNL() {
     h1: "Wat is uw bedrijf waard voor een koper, en hoe verhoogt u die waarde?",
     heroP: "Een gratis indicatieve waardering in ongeveer drie minuten. We halen de gedeponeerde jaarrekening op bij de KVK, u vult aan wat ontbreekt en beantwoordt zeven vragen, en u krijgt een waardebandbreedte, een score voor verkoopgereedheid en de acties die de waarde het meest verhogen.",
     heroTrust: ["Gratis", "Zonder registratie", "Ongeveer 3 minuten", "Multiples uit M&A-transacties"],
-    heroFit: "Gemaakt voor mkb-bedrijven met een omzet tot ongeveer 45 miljoen euro. Grotere bedrijven en groepen waardeert u het best in een gesprek met een partner.",
+    heroFit: "Gemaakt voor mkb-bedrijven met een omzet tot ongeveer 90 miljoen euro. Grotere bedrijven en groepen waardeert u het best in een gesprek met een partner.",
     step1: "Vul het KVK-nummer in, dan halen we de gedeponeerde jaarrekening op, of vul omzet en EBITDA in " + K + " zelf in.",
     step2: "Beantwoord de vragen van de koper over afhankelijkheid van de eigenaar, klanten en contracten.",
     step3: "Bekijk de waardering en bestel het volledige rapport.",
@@ -1881,7 +1881,7 @@ function mkFI() {
     h1: "Mitä yrityksesi on ostajalle arvoinen, ja miten nostat arvoa?",
     heroP: "Maksuton suuntaa antava arvonmääritys noin kolmessa minuutissa. Haemme yrityksen tiedot ja digitaalisen tilinpäätöksen PRH:n avoimesta datasta, vastaat seitsemään kysymykseen ja saat arvohaarukan, myyntivalmiuspisteet ja toimenpiteet, jotka nostavat arvoa eniten.",
     heroTrust: ["Maksuton", "Ei rekisteröitymistä", "Noin 3 minuuttia", "Kertoimet M&A-kaupoista"],
-    heroFit: "Tehty pienille ja keskisuurille yrityksille, joiden liikevaihto on enintään noin 45 miljoonaa euroa. Suuremmat yritykset ja konsernit arvioidaan parhaiten keskustelussa partnerin kanssa.",
+    heroFit: "Tehty pienille ja keskisuurille yrityksille, joiden liikevaihto on enintään noin 90 miljoonaa euroa. Suuremmat yritykset ja konsernit arvioidaan parhaiten keskustelussa partnerin kanssa.",
     step1: "Kirjoita yrityksen nimi tai Y-tunnus, niin haemme tilinpäätöksen PRH:sta, tai syötä liikevaihto ja EBITDA (" + K + ") itse.",
     step2: "Vastaa ostajan kysymyksiin omistajariippuvuudesta, asiakkaista ja sopimuksista.",
     step3: "Katso arvonmääritys ja tilaa täydellinen raportti.",
@@ -2184,7 +2184,7 @@ const XK = {
   PL: {
     EN: {
       heroP: "A free indicative valuation in about three minutes. We fetch the company's details from the Polish court register (KRS), you upload the financial statements (XML file) and answer seven questions, and you get a value range, an exit readiness score and the actions that raise the value most.",
-      heroFit: "Built for small and medium-sized companies with revenue up to about PLN 200 million. Larger companies and groups are best valued in a conversation with a partner.",
+      heroFit: "Built for small and medium-sized companies with revenue up to about PLN 380 million. Larger companies and groups are best valued in a conversation with a partner.",
       step1: "Upload the financial statements (XML) or enter revenue and EBITDA in PLN thousands.", legFin: "Figures (PLN thousands)",
       dropTitle: "Upload the financial statements (XML)", dropSub: "We read revenue, EBITDA, cash and debt. One XML file holds two years. Drag the file here or click to choose.",
       s1P: "Enter the KRS or NIP number. We fetch the company's details from the KRS register, and you upload the financial statements as XML files from the Financial Documents Repository (RDF). One file holds two years.",
@@ -2217,7 +2217,7 @@ const XK = {
     },
     SE: {
       heroP: "Gratis indikativ värdering på cirka tre minuter. Vi hämtar bolagets uppgifter ur det polska domstolsregistret (KRS), du laddar upp bokslutet (XML-fil) och svarar på sju frågor och får värdeintervall, exitpoäng och de åtgärder som höjer värdet mest.",
-      heroFit: "Byggt för små och medelstora bolag med en omsättning upp till cirka 200 miljoner PLN. Större bolag och koncerner värderas bäst i ett samtal med en partner.",
+      heroFit: "Byggt för små och medelstora bolag med en omsättning upp till cirka 380 miljoner PLN. Större bolag och koncerner värderas bäst i ett samtal med en partner.",
       step1: "Ladda upp bokslutet (XML) eller fyll i omsättning och EBITDA i tusen PLN.", legFin: "Siffror (tusen PLN)",
       dropTitle: "Ladda upp bokslutet (XML)", dropSub: "Vi läser av omsättning, EBITDA, kassa och skulder. En XML-fil innehåller två år. Dra filen hit eller klicka för att välja.",
       s1P: "Ange KRS- eller NIP-numret. Vi hämtar bolagets uppgifter ur KRS och du laddar upp boksluten som XML-filer från dokumentregistret RDF. En fil innehåller två år.",
@@ -2250,7 +2250,7 @@ const XK = {
     },
     NO: {
       heroP: "Gratis indikativ verdivurdering på rundt tre minutter. Vi henter selskapets opplysninger fra det polske domstolsregisteret (KRS), du laster opp regnskapet (XML-fil) og svarer på sju spørsmål og får verdiintervall, salgsklarhet og tiltakene som øker verdien mest.",
-      heroFit: "Laget for små og mellomstore selskaper med omsetning opp til rundt 200 millioner PLN. Større selskaper og konsern verdsettes best i en samtale med en partner.",
+      heroFit: "Laget for små og mellomstore selskaper med omsetning opp til rundt 380 millioner PLN. Større selskaper og konsern verdsettes best i en samtale med en partner.",
       step1: "Last opp regnskapet (XML) eller fyll inn omsetning og EBITDA i tusen PLN.", legFin: "Tall (tusen PLN)",
       dropTitle: "Last opp regnskapet (XML)", dropSub: "Vi leser av omsetning, EBITDA, kontanter og gjeld. Én XML-fil inneholder to år. Dra filen hit eller klikk for å velge.",
       s1P: "Oppgi KRS- eller NIP-nummeret. Vi henter selskapets opplysninger fra KRS, og du laster opp regnskapene som XML-filer fra dokumentregisteret RDF. Én fil inneholder to år.",
@@ -2283,7 +2283,7 @@ const XK = {
     },
     LT: {
       heroP: "Nemokamas orientacinis vertinimas per maždaug tris minutes. Įmonės duomenis paimame iš Lenkijos teismų registro (KRS), jūs įkeliate finansines ataskaitas (XML failą) ir atsakote į septynis klausimus, o gaunate vertės intervalą, pasirengimo pardavimui balą ir veiksmus, kurie labiausiai didina vertę.",
-      heroFit: "Skirta mažoms ir vidutinėms įmonėms, kurių pajamos siekia iki maždaug 200 mln. PLN. Didesnes įmones ir grupes geriausia vertinti pokalbyje su partneriu.",
+      heroFit: "Skirta mažoms ir vidutinėms įmonėms, kurių pajamos siekia iki maždaug 380 mln. PLN. Didesnes įmones ir grupes geriausia vertinti pokalbyje su partneriu.",
       step1: "Įkelkite finansines ataskaitas (XML) arba įrašykite pajamas ir EBITDA tūkst. PLN.", legFin: "Skaičiai (tūkst. PLN)",
       dropTitle: "Įkelkite finansines ataskaitas (XML)", dropSub: "Nuskaitome pajamas, EBITDA, pinigus ir skolas. Viename XML faile yra dvejų metų duomenys. Nutempkite failą čia arba spustelėkite.",
       s1P: "Įveskite KRS arba NIP numerį. Įmonės duomenis paimsime iš KRS, o jūs įkelsite finansines ataskaitas kaip XML failus iš dokumentų registro RDF. Viename faile – dveji metai.",
@@ -2319,7 +2319,7 @@ const XK = {
   LT: {
     EN: {
       heroP: "A free indicative valuation in about three minutes. We take your company's revenue and profit from the Lithuanian Centre of Registers' open data, you answer seven questions, and you get a value range, an exit readiness score and the actions that raise the value most.",
-      heroFit: "Built for small and medium-sized companies with revenue up to about EUR 45 million. Larger companies and groups are best valued in a conversation with a partner.",
+      heroFit: "Built for small and medium-sized companies with revenue up to about EUR 90 million. Larger companies and groups are best valued in a conversation with a partner.",
       step1: "Enter the company code or name and we fetch the figures from the register, or enter revenue and EBITDA in EUR thousands.", legFin: "Figures (EUR thousands)",
       dropTitle: "Upload the financial statements (PDF)", dropSub: "An adviser reviews them when you order the report. Drag the file here or click to choose.",
       s1P: "Enter the company code (9 digits) or the name. We take revenue and profit before tax for the last three years from the Centre of Registers' open data and fill in the figures for you.",
@@ -2347,7 +2347,7 @@ const XK = {
     },
     SE: {
       heroP: "Gratis indikativ värdering på cirka tre minuter. Vi hämtar bolagets omsättning och resultat ur det litauiska bolagsregistrets (Registrų centras) öppna data, du svarar på sju frågor och får värdeintervall, exitpoäng och de åtgärder som höjer värdet mest.",
-      heroFit: "Byggt för små och medelstora bolag med en omsättning upp till cirka 45 miljoner euro. Större bolag och koncerner värderas bäst i ett samtal med en partner.",
+      heroFit: "Byggt för små och medelstora bolag med en omsättning upp till cirka 90 miljoner euro. Större bolag och koncerner värderas bäst i ett samtal med en partner.",
       step1: "Ange bolagskod eller namn så hämtar vi siffrorna ur registret, eller fyll i omsättning och EBITDA i tusen euro.", legFin: "Siffror (tusen EUR)",
       dropTitle: "Ladda upp boksluten (PDF)", dropSub: "En rådgivare går igenom dem när du beställer rapporten. Dra filen hit eller klicka för att välja.",
       s1P: "Ange bolagskoden (9 siffror) eller namnet. Vi hämtar omsättning och resultat före skatt för de tre senaste åren ur Registrų centras öppna data och fyller i siffrorna åt dig.",
@@ -2375,7 +2375,7 @@ const XK = {
     },
     NO: {
       heroP: "Gratis indikativ verdivurdering på rundt tre minutter. Vi henter selskapets omsetning og resultat fra det litauiske foretaksregisterets (Registrų centras) åpne data, du svarer på sju spørsmål og får verdiintervall, salgsklarhet og tiltakene som øker verdien mest.",
-      heroFit: "Laget for små og mellomstore selskaper med omsetning opp til rundt 45 millioner euro. Større selskaper og konsern verdsettes best i en samtale med en partner.",
+      heroFit: "Laget for små og mellomstore selskaper med omsetning opp til rundt 90 millioner euro. Større selskaper og konsern verdsettes best i en samtale med en partner.",
       step1: "Oppgi selskapskode eller navn, så henter vi tallene fra registeret, eller fyll inn omsetning og EBITDA i tusen euro.", legFin: "Tall (tusen EUR)",
       dropTitle: "Last opp regnskapene (PDF)", dropSub: "En rådgiver går gjennom dem når du bestiller rapporten. Dra filen hit eller klikk for å velge.",
       s1P: "Oppgi selskapskoden (9 sifre) eller navnet. Vi henter omsetning og resultat før skatt for de tre siste årene fra Registrų centras' åpne data og fyller inn tallene for deg.",
@@ -2403,7 +2403,7 @@ const XK = {
     },
     PL: {
       heroP: "Bezpłatna, orientacyjna wycena w około trzy minuty. Przychody i zysk spółki pobieramy z otwartych danych litewskiego Centrum Rejestrów (Registrų centras), Ty odpowiadasz na siedem pytań i otrzymujesz przedział wartości, ocenę gotowości do sprzedaży i działania, które najbardziej podnoszą wartość.",
-      heroFit: "Dla małych i średnich spółek z przychodami do ok. 45 mln EUR. Większe spółki i grupy kapitałowe najlepiej wycenić w rozmowie z partnerem.",
+      heroFit: "Dla małych i średnich spółek z przychodami do ok. 90 mln EUR. Większe spółki i grupy kapitałowe najlepiej wycenić w rozmowie z partnerem.",
       step1: "Wpisz kod lub nazwę spółki, a pobierzemy dane z rejestru, albo wpisz przychody i EBITDA w tys. EUR.", legFin: "Dane finansowe (tys. EUR)",
       dropTitle: "Wgraj sprawozdania finansowe (PDF)", dropSub: "Przejrzy je doradca po zamówieniu raportu. Przeciągnij plik tutaj lub kliknij, aby go wybrać.",
       s1P: "Wpisz kod spółki (9 cyfr) lub nazwę. Przychody i zysk przed opodatkowaniem za ostatnie trzy lata pobierzemy z otwartych danych Registrų centras i uzupełnimy dane za Ciebie.",
@@ -2437,7 +2437,7 @@ const XK = {
       const cb = src => /riksbank/i.test(src || "") ? "Riksbanku" : "Norges Bank";
       return {
         heroP: "Bezpłatna, orientacyjna wycena w około trzy minuty. Pobieramy sprawozdania finansowe za Ciebie, Ty odpowiadasz na siedem pytań i otrzymujesz przedział wartości, ocenę gotowości do sprzedaży i działania, które najbardziej podnoszą wartość.",
-        heroFit: "Dla małych i średnich spółek z przychodami do ok. 500 mln " + CUR + ". Większe spółki i grupy najlepiej wycenić w rozmowie z partnerem.",
+        heroFit: "Dla małych i średnich spółek z przychodami do ok. 1 mld " + CUR + ". Większe spółki i grupy najlepiej wycenić w rozmowie z partnerem.",
         step1: "Wgraj sprawozdanie roczne (PDF) albo wpisz przychody i EBITDA w " + K + ".", legFin: "Dane finansowe (" + K + ")",
         dropTitle: "Wgraj sprawozdanie roczne (PDF)", dropSub: "Odczytujemy przychody, EBITDA, środki pieniężne, zadłużenie i wynagrodzenie prezesa za maks. trzy lata. Przeciągnij plik tutaj lub kliknij.",
         s1P: "Wpisz numer rejestrowy, a pobierzemy sprawozdania z " + REG + " i uzupełnimy dane. Jeśli się nie uda, wgraj je jako PDF.",
@@ -2477,7 +2477,7 @@ const XK = {
       const cb = src => /riksbank/i.test(src || "") ? "Riksbank" : "Norges Bank";
       return {
         heroP: "Nemokamas orientacinis vertinimas per maždaug tris minutes. Finansines ataskaitas paimame už jus, jūs atsakote į septynis klausimus ir gaunate vertės intervalą, pasirengimo pardavimui balą ir veiksmus, kurie labiausiai didina vertę.",
-        heroFit: "Skirta mažoms ir vidutinėms įmonėms, kurių pajamos siekia iki maždaug 500 mln. " + CUR + ". Didesnes įmones geriausia vertinti pokalbyje su partneriu.",
+        heroFit: "Skirta mažoms ir vidutinėms įmonėms, kurių pajamos siekia iki maždaug 1 mlrd. " + CUR + ". Didesnes įmones geriausia vertinti pokalbyje su partneriu.",
         step1: "Įkelkite metines finansines ataskaitas (PDF) arba įrašykite pajamas ir EBITDA " + K + ".", legFin: "Skaičiai (" + K + ")",
         dropTitle: "Įkelkite metines ataskaitas (PDF)", dropSub: "Nuskaitome pajamas, EBITDA, pinigus, skolas ir vadovo atlyginimą iki trejų metų. Nutempkite failą čia arba spustelėkite.",
         s1P: "Įveskite įmonės kodą ir paimsime ataskaitas iš " + REG + " bei užpildysime skaičius. Jei nepavyks, įkelkite jas kaip PDF.",
@@ -2559,7 +2559,7 @@ function uiFor(l, cc) {
 XK.NL = {
   EN: {
     heroP: "A free indicative valuation in about three minutes. We fetch the filed annual accounts from the Dutch Chamber of Commerce (KVK), you fill in what is missing and answer seven questions, and you get a value range, an exit readiness score and the actions that raise the value most.",
-    heroFit: "Built for small and medium-sized companies with revenue up to about EUR 45 million. Larger companies and groups are best valued in a conversation with a partner.",
+    heroFit: "Built for small and medium-sized companies with revenue up to about EUR 90 million. Larger companies and groups are best valued in a conversation with a partner.",
     step1: "Enter the KVK number and we fetch the filed annual accounts, or enter revenue and EBITDA in EUR thousands.", legFin: "Figures (EUR thousands)",
     dropTitle: "Upload the annual accounts (PDF)", dropSub: "An adviser reviews them when you order the report. Drag the file here or click to choose.",
     s1P: "Enter the KVK number (8 digits). We fetch the latest filed annual accounts from the KVK open dataset and fill in the figures for you. Small companies often file only a balance sheet; then add revenue and profit yourself.",
@@ -2590,7 +2590,7 @@ XK.NL = {
   },
   SE: {
     heroP: "Gratis indikativ värdering på cirka tre minuter. Vi hämtar det deponerade bokslutet från den nederländska handelskammaren (KVK), du fyller i det som saknas och svarar på sju frågor och får värdeintervall, exitpoäng och de åtgärder som höjer värdet mest.",
-    heroFit: "Byggt för små och medelstora bolag med en omsättning upp till cirka 45 miljoner euro. Större bolag och koncerner värderas bäst i ett samtal med en partner.",
+    heroFit: "Byggt för små och medelstora bolag med en omsättning upp till cirka 90 miljoner euro. Större bolag och koncerner värderas bäst i ett samtal med en partner.",
     step1: "Ange KVK-numret så hämtar vi det deponerade bokslutet, eller fyll i omsättning och EBITDA i tusen euro.", legFin: "Siffror (tusen EUR)",
     dropTitle: "Ladda upp årsredovisningen (PDF)", dropSub: "En rådgivare går igenom den när du beställer rapporten. Dra filen hit eller klicka för att välja.",
     s1P: "Ange KVK-numret (8 siffror). Vi hämtar det senast deponerade bokslutet ur KVK:s öppna data och fyller i siffrorna åt dig. Små bolag deponerar ofta bara en balansräkning; fyll då själv i omsättning och resultat.",
@@ -2621,7 +2621,7 @@ XK.NL = {
   },
   NO: {
     heroP: "Gratis indikativ verdivurdering på omtrent tre minutter. Vi henter det deponerte regnskapet fra det nederlandske handelskammeret (KVK), du fyller inn det som mangler og svarer på sju spørsmål, og får verdiintervall, exit-poeng og tiltakene som øker verdien mest.",
-    heroFit: "Laget for små og mellomstore selskaper med omsetning opp til rundt 45 millioner euro. Større selskaper og konsern verdsettes best i en samtale med en partner.",
+    heroFit: "Laget for små og mellomstore selskaper med omsetning opp til rundt 90 millioner euro. Større selskaper og konsern verdsettes best i en samtale med en partner.",
     step1: "Oppgi KVK-nummeret så henter vi det deponerte regnskapet, eller fyll inn omsetning og EBITDA i tusen euro.", legFin: "Tall (tusen EUR)",
     dropTitle: "Last opp årsregnskapet (PDF)", dropSub: "En rådgiver går gjennom det når du bestiller rapporten. Dra filen hit eller klikk for å velge.",
     s1P: "Oppgi KVK-nummeret (8 sifre). Vi henter det sist deponerte regnskapet fra KVKs åpne data og fyller inn tallene for deg. Små selskaper deponerer ofte bare en balanse; fyll da inn omsetning og resultat selv.",
@@ -2658,7 +2658,7 @@ XK.SN.NL = cc => {
   const cb = src => /riksbank/i.test(src || "") ? "Riksbank" : "Norges Bank";
   return {
     heroP: "Een gratis indicatieve waardering in ongeveer drie minuten. We halen de jaarrekeningen voor u op, u beantwoordt zeven vragen en krijgt een waardebandbreedte, een score voor verkoopgereedheid en de acties die de waarde het meest verhogen.",
-    heroFit: "Gemaakt voor het mkb met een omzet tot ongeveer 500 miljoen " + CUR + ". Grotere bedrijven waardeert u het best in een gesprek met een partner.",
+    heroFit: "Gemaakt voor het mkb met een omzet tot ongeveer 1 miljard " + CUR + ". Grotere bedrijven waardeert u het best in een gesprek met een partner.",
     step1: "Upload de jaarrekeningen (PDF) of vul omzet en EBITDA in " + K + " in.", legFin: "Cijfers (" + K + ")",
     dropTitle: "Upload de jaarrekeningen (PDF)", dropSub: "We lezen omzet, EBITDA, liquide middelen, schulden en het directeurssalaris tot drie jaar terug. Sleep het bestand hierheen of klik.",
     s1P: "Voer het organisatienummer in; we halen de jaarrekeningen op bij " + REG + " en vullen de cijfers in. Lukt dat niet, upload ze dan als PDF.",
@@ -2698,7 +2698,7 @@ XK.SN.NL = cc => {
 XK.FI = {
   EN: {
     heroP: "A free indicative valuation in about three minutes. We fetch the company's details and its digital financial statements from the Finnish Patent and Registration Office (PRH), you answer seven questions, and you get a value range, an exit readiness score and the actions that raise the value most.",
-    heroFit: "Built for small and medium-sized companies with revenue up to about EUR 45 million. Larger companies and groups are best valued in a conversation with a partner.",
+    heroFit: "Built for small and medium-sized companies with revenue up to about EUR 90 million. Larger companies and groups are best valued in a conversation with a partner.",
     step1: "Type the company name or business ID and we fetch the financial statements from PRH, or enter revenue and EBITDA in EUR thousands.", legFin: "Figures (EUR thousands)",
     dropTitle: "Upload the financial statements (PDF)", dropSub: "An adviser reviews them when you order the report. Drag the file here or click to choose.",
     s1P: "Type the company name or business ID (Y-tunnus). We fetch the company from PRH's open data and fill in the figures from its digital financial statements, if it has filed them digitally. Otherwise you enter the figures yourself.",
@@ -2730,7 +2730,7 @@ XK.FI = {
   },
   SE: {
     heroP: "Gratis indikativ värdering på cirka tre minuter. Vi hämtar bolagets uppgifter och digitala bokslut från finska Patent- och registerstyrelsen (PRH), du svarar på sju frågor och får värdeintervall, exitpoäng och de åtgärder som höjer värdet mest.",
-    heroFit: "Byggt för små och medelstora bolag med en omsättning upp till cirka 45 miljoner euro. Större bolag och koncerner värderas bäst i ett samtal med en partner.",
+    heroFit: "Byggt för små och medelstora bolag med en omsättning upp till cirka 90 miljoner euro. Större bolag och koncerner värderas bäst i ett samtal med en partner.",
     step1: "Skriv företagsnamnet eller FO-numret så hämtar vi bokslutet från PRH, eller fyll i omsättning och EBITDA i tusen euro.", legFin: "Siffror (tusen EUR)",
     dropTitle: "Ladda upp bokslutet (PDF)", dropSub: "En rådgivare går igenom det när du beställer rapporten. Dra filen hit eller klicka för att välja.",
     s1P: "Skriv företagsnamnet eller FO-numret (Y-tunnus). Vi hämtar bolaget ur PRH:s öppna data och fyller i siffrorna från det digitala bokslutet, om bolaget lämnat in ett sådant. Annars fyller du i siffrorna själv.",
@@ -2762,7 +2762,7 @@ XK.FI = {
   },
   NO: {
     heroP: "Gratis indikativ verdivurdering på omtrent tre minutter. Vi henter selskapets opplysninger og digitale regnskap fra det finske Patent- og registerstyret (PRH), du svarer på sju spørsmål og får et verdiintervall, en poengsum for salgsklarhet og tiltakene som løfter verdien mest.",
-    heroFit: "Laget for små og mellomstore selskaper med omsetning opp til rundt 45 millioner euro. Større selskaper og konsern verdsettes best i en samtale med en partner.",
+    heroFit: "Laget for små og mellomstore selskaper med omsetning opp til rundt 90 millioner euro. Større selskaper og konsern verdsettes best i en samtale med en partner.",
     step1: "Skriv selskapsnavnet eller organisasjonsnummeret (Y-tunnus), så henter vi regnskapet fra PRH, eller fyll inn omsetning og EBITDA i tusen euro.", legFin: "Tall (tusen EUR)",
     dropTitle: "Last opp regnskapet (PDF)", dropSub: "En rådgiver går gjennom det når du bestiller rapporten. Dra filen hit eller klikk for å velge.",
     s1P: "Skriv selskapsnavnet eller organisasjonsnummeret (Y-tunnus). Vi henter selskapet fra PRHs åpne data og fyller inn tallene fra det digitale regnskapet, hvis selskapet har levert et slikt. Ellers fyller du inn tallene selv.",
@@ -2800,7 +2800,7 @@ XK.SN.FI = cc => {
   const cb = src => /riksbank/i.test(src || "") ? "Riksbankin" : "Norges Bankin";
   return {
     heroP: "Maksuton suuntaa antava arvonmääritys noin kolmessa minuutissa. Haemme tilinpäätökset puolestasi, vastaat seitsemään kysymykseen ja saat arvohaarukan, myyntivalmiuspisteet ja toimenpiteet, jotka nostavat arvoa eniten.",
-    heroFit: "Tehty pk-yrityksille, joiden liikevaihto on enintään noin 500 miljoonaa " + CUR + ". Suuremmat yritykset arvioidaan parhaiten keskustelussa partnerin kanssa.",
+    heroFit: "Tehty pk-yrityksille, joiden liikevaihto on enintään noin 1 miljardi " + CUR + ". Suuremmat yritykset arvioidaan parhaiten keskustelussa partnerin kanssa.",
     step1: "Lataa tilinpäätökset (PDF) tai syötä liikevaihto ja EBITDA (" + K + ").", legFin: "Luvut (" + K + ")",
     dropTitle: "Lataa tilinpäätökset (PDF)", dropSub: "Luemme liikevaihdon, EBITDA:n, rahavarat, velat ja toimitusjohtajan palkan enintään kolmelta vuodelta. Vedä tiedosto tähän tai napsauta.",
     s1P: "Kirjoita y-tunnus, niin haemme tilinpäätökset " + REG + " ja täytämme luvut. Jos se ei onnistu, lataa ne PDF-muodossa.",
@@ -3605,7 +3605,7 @@ function docNotes() {
   if (x.b) l.push("Vikt enligt modellen: " + Math.round(x.b.w * 100) + " %. Sammanvägt aktievärde " + fmtM(x.b.eq) + " (historiskt " + fmtM(x.v.eq) + ", tillväxtvärde " + fmtM(x.gv.eq) + ").");
   return l.join("\n");
 }
-const LARGE_EBITDA = 100000, LARGE_REV = 500000; /* thousands of SEK; other currencies are converted via EUR_FX */
+const LARGE_EBITDA = 200000, LARGE_REV = 1000000; /* thousands of SEK; other currencies are converted via EUR_FX */
 /* Very small earnings: under 50 TSEK (converted for other currencies) in both EBITDA and EBIT the value would rest on revenue alone and mislead, so no figure is shown */
 const SMALL_EB = 50;
 function isSmall(d, v) { const f = EUR_FX[country] / EUR_FX.SE; return !d.noEb && v.norm < SMALL_EB * f && v.ebit < SMALL_EB * f; }
