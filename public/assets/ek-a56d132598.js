@@ -4143,7 +4143,8 @@ async function fetchReportsSE(org, r0) {
     box.innerHTML = repList(u.repSavedBV(r.reports.length), r.reports);
     if (r.text) setReportText(analyzeText(r.text.body + "\n" + r.text.audit, { year: r.text.year, source: "bolagsverket" }));
     reportsFound();
-    if (!r0.consolidated && r.years && r.years.length && !slots.some(s => s && s.state === "ok")) {
+    const lastY = a => (a && a.length) ? Math.max(...a.map(y => +y.year || 0)) : 0;
+    if (!r0.consolidated && r.years && r.years.length && lastY(r.years) > lastY(r0.years) && !slots.some(s => s && s.state === "ok")) {
       const last = r.years[r.years.length - 1];
       applyExtraction({ years: r.years.map(y => ({ year: y.year, revenue: y.revenue, ebitda: y.ebitda != null ? y.ebitda : y.ebit, depFound: y.ebitda != null, primary: true })),
         cash: last.cash, debt: last.debt, name: r0.name, org: r0.org });
