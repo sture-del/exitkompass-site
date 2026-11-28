@@ -2873,7 +2873,8 @@ function loadSeoText(l) {
   const own = document.querySelector("[data-seo-lang]");
   if (!own || !SEO_HOME[l] || seoLoading[l] || !window.fetch || !window.DOMParser) return;
   seoLoading[l] = true;
-  fetch(SEO_HOME[l] + (SEO_HOME[l] === "/" && /\.eu$/i.test(location.hostname) ? "?l=se" : "")).then(r => r.ok ? r.text() : "").then(h => {
+  /* ?seo=1 is excluded from the .se/.eu redirect rules, so this same-origin fetch is never sent to the other domain */
+  fetch(SEO_HOME[l] + "?seo=1" + (SEO_HOME[l] === "/" && /\.eu$/i.test(location.hostname) ? "&l=se" : "")).then(r => r.ok ? r.text() : "").then(h => {
     const sec = h && new DOMParser().parseFromString(h, "text/html").querySelector('[data-seo-lang="' + l + '"]');
     if (!sec || document.querySelector('[data-seo-lang="' + l + '"]')) return;
     sec.querySelectorAll("[id]").forEach(e => e.id = e.id + "-" + l.toLowerCase());
