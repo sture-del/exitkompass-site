@@ -4313,13 +4313,23 @@ async function plJson(url) { const r = await fetch(url); if (r.status === 404) r
 /* KRS: direct first; if that fails (e.g. maintenance page without CORS), retry via our relay worker */
 async function krsJson(krs, reg) {
   try { return await plJson("https://api-krs.ms.gov.pl/api/krs/OdpisAktualny/" + krs + "?rejestr=" + reg + "&format=json"); } catch (e) {}
-  const r = await fetch(LT_RELAY + "/krs?krs=" + encodeURIComponent(krs) + "&r=" + reg);
-  if (!r.ok) throw new Error("HTTP " + r.status);
-  const j = await r.json();
+  const down = () => { const e = new Error("KRS_DOWN"); e.krsDown = true; return e; };
+  const r = await fetch(LT_RELAY + "/krs?krs=" + encodeURIComponent(krs) + "&r=" + reg).catch(() => null);
+  const j = r ? await r.json().catch(() => ({})) : {};
   if (j.notFound) return { notFound: true };
-  if (!j.ok || !j.data) throw new Error(j.reason || "KRS");
+  if (!j.ok || !j.data) throw down();
   return j.data;
 }
+/* Shown when the KRS register itself is unavailable (maintenance page, outage) */
+const KRS_DOWN = {
+  PL: "Rejestr KRS (Ministerstwo Sprawiedliwości) jest chwilowo niedostępny – trwa przerwa techniczna po ich stronie. Spróbuj ponownie później albo kontynuuj już teraz, wgrywając sprawozdania finansowe.",
+  EN: "The Polish company register (KRS, Ministry of Justice) is temporarily unavailable due to maintenance on their side. Please try again later, or continue now by uploading the financial statements.",
+  SE: "Det polska bolagsregistret (KRS, justitieministeriet) är tillfälligt nere för underhåll hos dem. Försök igen senare, eller fortsätt direkt genom att ladda upp årsredovisningarna.",
+  NO: "Det polske foretaksregisteret (KRS, justisdepartementet) er midlertidig nede for vedlikehold hos dem. Prøv igjen senere, eller fortsett nå ved å laste opp årsregnskapene.",
+  LT: "Lenkijos įmonių registras (KRS, Teisingumo ministerija) laikinai nepasiekiamas dėl techninių darbų. Bandykite vėliau arba tęskite dabar įkeldami finansines ataskaitas.",
+  NL: "Het Poolse handelsregister (KRS, ministerie van Justitie) is tijdelijk niet beschikbaar wegens onderhoud aan hun kant. Probeer het later opnieuw, of ga nu verder door de jaarrekeningen te uploaden.",
+  FI: "Puolan kaupparekisteri (KRS, oikeusministeriö) on tilapäisesti poissa käytöstä huoltokatkon vuoksi. Yritä myöhemmin uudelleen tai jatka heti lataamalla tilinpäätökset."
+};
 async function lookupPL(v) {
   const u = U(), id = plId(v);
   let krs = id && id.krs, nip = id && id.nip, wl = null;
@@ -4355,7 +4365,7 @@ async function lookupPL(v) {
     orgMsg("");
     renderFetchPL(r);
     showUpload("");
-  } catch (e) { console.warn(e); lookedUp = ""; orgMsg(u.orgFail, "err"); showUpload(u.noReports); }
+  } catch (e) { console.warn(e); lookedUp = ""; orgMsg(e && e.krsDown ? (KRS_DOWN[lang] || KRS_DOWN.EN) : u.orgFail, "err"); showUpload(u.noReports); }
 }
 function renderFetchPL(r) {
   const u = U(), box = $("fetch-res"), R = u.plRows;
