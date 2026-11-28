@@ -5,6 +5,7 @@
   let log = [], sentN = 0;
   function flush() {
     if (log.length <= sentN) return;
+    try { if (localStorage.getItem("ek_intern") === "1") return; } catch (e) {}  /* internal browser, see ?intern=1 */
     const items = log.slice(sentN, sentN + 25); sentN = log.length;
     const body = JSON.stringify({ fn: "botLog", args: [{ lang: L(), page: location.pathname, items }] });
     try { if (!(navigator.sendBeacon && navigator.sendBeacon(API, body))) fetch(API, { method: "POST", body, keepalive: true, mode: "no-cors" }); } catch (e) {}

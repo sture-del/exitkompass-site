@@ -3336,10 +3336,15 @@ async function api(fn, args) {
 }
 /* Funnel: visit → company lookup → free result → "unlock" click → order sent. One row per session and step, not in advisor mode. */
 const SID = (() => { try { let x = sessionStorage.getItem("ek_sid"); if (!x) { x = Math.random().toString(36).slice(2, 10); sessionStorage.setItem("ek_sid", x); } return x; } catch (e) { return Math.random().toString(36).slice(2, 10); } })();
+/* Internal browsers (Adsco staff testing the tool): open any page once with ?intern=1 and nothing from this browser is
+   logged in the deal database (visits, lookups, valuations). ?intern=0 switches it back. Stored in localStorage. */
+const INTERNAL = (() => { try { const q = new URLSearchParams(location.search).get("intern");
+  if (q === "1") localStorage.setItem("ek_intern", "1"); else if (q === "0") localStorage.removeItem("ek_intern");
+  return localStorage.getItem("ek_intern") === "1"; } catch (e) { return false; } })();
 const tracked = {};
 function track(ev, extra) {
   try {
-    if (!API_URL || INIT.advisor || new URLSearchParams(location.search).has("advisor")) return;
+    if (!API_URL || INTERNAL || INIT.advisor || new URLSearchParams(location.search).has("advisor")) return;
     const k = ev + (extra && extra.pkg ? ":" + extra.pkg : "") + (extra && extra.org && (ev === "result" || ev === "lookup") ? ":" + extra.org : "");
     let seen = tracked[k]; try { seen = seen || sessionStorage.getItem("ek_t_" + k); sessionStorage.setItem("ek_t_" + k, "1"); } catch (e) {}
     if (seen) return; tracked[k] = 1;
@@ -4268,7 +4273,7 @@ async function lookupOrg() {
   if (country === "NL") { try { await lookupNL(d); } finally { $("org-go").disabled = false; } return; }
   if (country === "FI") { try { await lookupFI(d); } finally { $("org-go").disabled = false; } return; }
   try {
-    const r = await gs("lookupCompany", { cc: country, org: d });
+    const r = await gs("lookupCompany", Object.assign({ cc: country, org: d }, INTERNAL ? { internal: true } : {}));
     if (!r || r.local || !r.ok) {
       const nf = r && r.reason === "NOT_FOUND";
       orgMsg(nf ? u.orgNotFound : "", nf ? "err" : "");
