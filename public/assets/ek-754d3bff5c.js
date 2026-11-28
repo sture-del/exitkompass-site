@@ -3137,7 +3137,7 @@ function render() {
   { const st = SMALL_T[lang] || SMALL_T.EN, q = (sel, t) => { const el = $("large").querySelector(sel); if (el) el.textContent = t; };
     if (big) { $("large-p").textContent = u.largeP(fmtM(d.rev[2]), fmtM(Math.max(0, d.eb[2]))); q("h3", u.largeH); q('[data-t="largeP2"]', u.largeP2); q('[data-t="largeNote"]', u.largeNote); }
     if (excl) { const xt = EXCL_T[lang] || EXCL_T.EN; $("large-p").textContent = xt[1]; q("h3", xt[0]); q('[data-t="largeP2"]', xt[2]); q('[data-t="largeNote"]', st[3]); }
-    if (small) { $("large-p").textContent = st[1](fmtT(Math.max(0, v.norm)) + " " + C().unit); q("h3", st[0]); q('[data-t="largeP2"]', st[2]); q('[data-t="largeNote"]', st[3]); } }
+    if (small) { $("large-p").textContent = st[1]((v.norm < 0 ? "−" : "") + fmtT(Math.abs(v.norm)) + " " + C().unit); q("h3", st[0]); q('[data-t="largeP2"]', st[2]); q('[data-t="largeNote"]', st[3]); } }
   if (large) window.EK_LAST = null;
   if ($("blend")) $("blend").hidden = large;
   if (large) $("top-act").hidden = true;
