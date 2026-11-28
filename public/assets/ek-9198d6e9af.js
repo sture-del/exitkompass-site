@@ -4310,8 +4310,9 @@ function plName(n) {
     .replace(/\s+PROSTA SPÓŁKA AKCYJNA$/i, " P.S.A.").replace(/\s+SPÓŁKA AKCYJNA$/i, " S.A.").replace(/\s+SPÓŁKA KOMANDYTOWA$/i, " sp.k.").trim();
 }
 async function plJson(url) { const r = await fetch(url); if (r.status === 404) return { notFound: true }; if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); }
-/* api-krs.ms.gov.pl no longer sends CORS headers, so it goes through our relay worker */
+/* KRS: direct first; if that fails (e.g. maintenance page without CORS), retry via our relay worker */
 async function krsJson(krs, reg) {
+  try { return await plJson("https://api-krs.ms.gov.pl/api/krs/OdpisAktualny/" + krs + "?rejestr=" + reg + "&format=json"); } catch (e) {}
   const r = await fetch(LT_RELAY + "/krs?krs=" + encodeURIComponent(krs) + "&r=" + reg);
   if (!r.ok) throw new Error("HTTP " + r.status);
   const j = await r.json();
