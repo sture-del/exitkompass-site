@@ -490,7 +490,7 @@ Object.assign(UI.NO, {
   adIndep: "Uavhengig: ingen utlån og ingen analyse. Bare ditt resultat teller.",
   pkgs: [
     { name: "Hurtigvurdering", items: ["Verdiintervall direkte på siden", "Poengsum for salgsklarhet", "De tre viktigste funnene"] },
-    { name: "Rapport", tag: "Anbefales", items: ["Fullstendig PDF-rapport på norsk", "Scenarioer og sensitivitetsanalyse", "Verdiskapingsplan for 12–24 måneder", "Vekstverdivurdering ut fra forretningsplanen", "Kjøpertyper og salgsprosess", "Gjennomgått av en senior rådgiver, levert innen 1–2 arbeidsdager"] },
+    { name: "Rapport", tag: "Anbefales", items: ["Fullstendig PDF-rapport på norsk", "Scenarioer og sensitivitetsanalyse", "Verdiskapingsplan for 12–24 måneder", "Vekstverdivurdering ut fra forretningsplanen", "Kjøpertyper og salgsprosess", "Gjennomgått av en senior rådgiver, levert innen 1–2 virkedager"] },
     { name: "Rapport + gjennomgang", tag: "Med partner", items: ["Alt i rapporten", "60 minutter med en partner i Adsco Capital Partners", "Gjennomgang av normaliseringer og neste steg"] }
   ],
   startFree: "Start gratis", choose: ["Velg rapport", "Velg med gjennomgang"], buy: ["Kjøp rapporten", "Kjøp med gjennomgang"], haveFree: "Du har denne ✓",
@@ -503,10 +503,10 @@ Object.assign(UI.NO, {
   to3: "Vis min verdivurdering", back1: "Tilbake til underlaget",
   need: "Fyll inn driftsinntekter og EBITDA for minst det siste året.",
   orgGo: "Start verdivurdering →", micro1: "Tar om lag tre minutter", micro2: "Gratis og uten registrering",
-  lockH: "Inngår i den fullstendige rapporten", lockP: "Exitberedskap per område, strategisk verdi, sensitivitetsanalyse, hele verdiskapingsplanen for 12–24 måneder og hvilke kjøpere som betaler mest for et selskap som ditt.",
-  lockExit: "Exitberedskap per område", lockStrat: "Strategisk verdi", lockSvPrem: "Strategisk påslag", lockSvVal: "Verdi med påslag", lockSvDrv: "Verdidrivere", lockSens: "Sensitivitetsanalyse", lockPlan: "Verdiskapingsplan 12–24 mnd", lockBuyers: "Kjøpertyper og multipler",
-  lockBtn: p => `Lås opp i rapporten · ${p}`, lockDeliv: "Leveres innen 1–2 arbeidsdager, gjennomgått av en senior rådgiver.",
-  delivPaid: "⏱ Leveres innen 1–2 arbeidsdager", delivFree: "⚡ Direkte på siden",
+  lockH: "Inngår i den fullstendige rapporten", lockP: "Salgsklarhet per område, strategisk verdi, sensitivitetsanalyse, hele verdiskapingsplanen for 12–24 måneder og hvilke kjøpere som betaler mest for et selskap som ditt.",
+  lockExit: "Salgsklarhet per område", lockStrat: "Strategisk verdi", lockSvPrem: "Strategisk påslag", lockSvVal: "Verdi med påslag", lockSvDrv: "Verdidrivere", lockSens: "Sensitivitetsanalyse", lockPlan: "Verdiskapingsplan 12–24 mnd", lockBuyers: "Kjøpertyper og multipler",
+  lockBtn: p => `Lås opp i rapporten · ${p}`, lockDeliv: "Leveres innen 1–2 virkedager, gjennomgått av en senior rådgiver.",
+  delivPaid: "⏱ Leveres innen 1–2 virkedager", delivFree: "⚡ Direkte på siden",
   largeH: "Selskapet er større enn det Exitkompass er laget for",
   largeP: (r, e) => `Med en omsetning på ${r} og EBITDA på ${e} settes verdien av børsnoterte sammenlignbare selskaper og strategiske transaksjoner, ikke av multipler for små og mellomstore selskaper. Et automatisk tall her ville blitt misvisende, oftest kraftig for lavt, så vi viser ikke noe.`,
   largeP2: "Book et kostnadsfritt og konfidensielt møte med en partner i Adsco Capital Partners. Vi går gjennom verdsettelsen, kjøperbildet og de strategiske alternativene.",
@@ -514,11 +514,11 @@ Object.assign(UI.NO, {
   largeBtn: "Book møte med en partner →",
   mName: "Møte med en partner", mPrice: "Kostnadsfritt", mTag: "Konfidensielt",
   mItems: ["Verdsettelse ut fra børsnoterte sammenlignbare selskaper og transaksjoner", "Kjøperbilde: strategiske kjøpere og private equity", "Strategiske alternativer og tidsplan", "60 minutter med en senior partner"],
-  mH: "Book møte med en partner", mP: "Fyll inn opplysningene dine, så tar vi kontakt innen én arbeidsdag for å finne et tidspunkt. Alt behandles konfidensielt.",
-  mSend: "Send møteforespørsel", mDoneH: n => `Takk${n ? ", " + n : ""}! Vi har mottatt forespørselen.`, mDoneP: e => `Vi kontakter deg på ${e} innen én arbeidsdag for å avtale møtet.`,
-  mFine: "Kostnadsfritt og uforpliktende.", mWhen: "Svar", mWhenV: "Innen én arbeidsdag",
+  mH: "Book møte med en partner", mP: "Fyll inn opplysningene dine, så tar vi kontakt innen én virkedag for å finne et tidspunkt. Alt behandles konfidensielt.",
+  mSend: "Send møteforespørsel", mDoneH: n => `Takk${n ? ", " + n : ""}! Vi har mottatt forespørselen.`, mDoneP: e => `Vi kontakter deg på ${e} innen én virkedag for å avtale møtet.`,
+  mFine: "Kostnadsfritt og uforpliktende.", mWhen: "Svar", mWhenV: "Innen én virkedag",
   oEye: "Bestilling", oH: "Bestill rapporten",
-  oP: "Fyll inn opplysningene dine, så kommer vi tilbake innen én arbeidsdag. Tallene og de opplastede dokumentene sendes med automatisk.",
+  oP: "Fyll inn opplysningene dine, så kommer vi tilbake innen én virkedag. Tallene og de opplastede dokumentene sendes med automatisk.",
   oBack: "Tilbake", oName: "Ditt navn *", oEmail: "E-post *", oPhone: "Telefon", oCompany: "Selskap *", oOrg: "Organisasjonsnummer",
   oMsg: "Melding (valgfritt)",
   oConsent: "Jeg godtar kjøpsvilkårene og at Adsco Capital Partners behandler opplysningene og dokumentene mine for å lage rapporten og kontakte meg om bestillingen.",
@@ -527,10 +527,10 @@ Object.assign(UI.NO, {
   oNeed: "Fyll inn navn, en gyldig e-postadresse og selskap.", oNeedOk: "Bekreft at vi kan behandle opplysningene.",
   oFail: "Bestillingen kunne ikke sendes akkurat nå.", oFailLink: "Send via skjemaet vårt i stedet →",
   oDocs: n => `${n} dokumenter og verdivurderingen sendes med bestillingen.`,
-  oDelivery: "Levering", oDeliveryV: "1–2 arbeidsdager", oPayL: "Betaling", oPayV: "Faktura, 10 dager, uten mva.", oDocsL: "Underlag", oDocsV: n => n ? `${n} dokumenter` : "Kan sendes senere",
+  oDelivery: "Levering", oDeliveryV: "1–2 virkedager", oPayL: "Betaling", oPayV: "Faktura, 10 dager (eks. mva.)", oDocsL: "Underlag", oDocsV: n => n ? `${n} dokumenter` : "Kan sendes senere",
   oWho: "Gjennomgås av en senior rådgiver i Adsco Capital Partners.",
   oDoneH: n => `Takk${n ? ", " + n : ""}! Bestillingen er mottatt.`,
-  oDoneP: e => `Vi kommer tilbake til ${e} innen én arbeidsdag med bekreftelse og neste steg. Oppgi ordrenummeret hvis du kontakter oss.`,
+  oDoneP: e => `Vi kommer tilbake til ${e} innen én virkedag med bekreftelse og neste steg. Oppgi ordrenummeret hvis du kontakter oss.`,
   oDoneBack: "Tilbake til verdivurderingen",
   basis: "Verdien bygger på historiske tall fra årsregnskapene og er et gulvnivå. Månedsrapporter, budsjett og forretningsplan vektes inn først i rapporten. Modellen ser ikke vekstplaner, teknologi, avtaler eller hva selskapet er strategisk verdt for en kjøper.",
   upsideH: "Selskapet kan være verdt mer enn tallene viser",
@@ -585,7 +585,7 @@ Object.assign(UI.NO, {
 /* ---------- Strategic value ---------- */
 Object.assign(UI.SE, {
   svH: "Strategiskt värde",
-  svLevel: ["Lågt strategiskt intresse", "Visst strategiskt intresse", "Högt strategiskt intresse"],
+  svLevel: ["Lågt strategiskt intresse", "Måttligt strategiskt intresse", "Högt strategiskt intresse"],
   svP: "En strategisk köpare, till exempel en konkurrent, kund, leverantör eller serieförvärvare, kan betala mer än det finansiella värdet ovan om bolaget ger synergier: nya kunder, marknader, produkter, teknik eller kompetens. Vår bedömning bygger på:",
   svDrv: { ind: n => `Branschen (${n}) där köpare aktivt förvärvar och betalar för synergier`, recur: "Återkommande intäkter som en köpare kan bygga vidare på", growth: "Tillväxt som stärker en köpares egen plattform", margin: "Marginal i branschens bästa fjärdedel", cust: "En bred kundbas utan beroende av enskilda kunder", buyers: "Aktiva serieförvärvare som köper bolag i branschen" },
   svNone: "Få av de faktorer som brukar locka strategiska köpare syns i siffrorna. Ett strategiskt påslag beror då främst på vem köparen är.",
@@ -595,7 +595,7 @@ Object.assign(UI.SE, {
 });
 Object.assign(UI.NO, {
   svH: "Strategisk verdi",
-  svLevel: ["Lav strategisk interesse", "Noe strategisk interesse", "Høy strategisk interesse"],
+  svLevel: ["Lav strategisk interesse", "Moderat strategisk interesse", "Høy strategisk interesse"],
   svP: "En strategisk kjøper, for eksempel en konkurrent, kunde, leverandør eller serieoppkjøper, kan betale mer enn den finansielle verdien over dersom selskapet gir synergier: nye kunder, markeder, produkter, teknologi eller kompetanse. Vurderingen bygger på:",
   svDrv: { ind: n => `Bransjen (${n}), der kjøpere aktivt kjøper opp og betaler for synergier`, recur: "Gjentakende inntekter som en kjøper kan bygge videre på", growth: "Vekst som styrker kjøperens egen plattform", margin: "Margin blant den beste fjerdedelen i bransjen", cust: "En bred kundebase uten avhengighet av enkeltkunder", buyers: "Aktive serieoppkjøpere som kjøper selskaper i bransjen" },
   svNone: "Få av faktorene som vanligvis tiltrekker strategiske kjøpere, synes i tallene. Et strategisk påslag avhenger da først og fremst av hvem kjøperen er.",
@@ -619,7 +619,7 @@ function mkEN(cc) {
   const REG = S ? "Bolagsverket (the Swedish Companies Registration Office)" : "the Brønnøysund Register Centre";
   const STAT = S ? "Statistics Sweden (SCB)" : "Statistics Norway (SSB)";
   const ORGEX = S ? "556677-8899" : "912 345 678";
-  const VATL = S ? "excl. VAT" : "no VAT";
+  const VATL = "excl. VAT";
   const cb = src => /riksbank/i.test(src || "") ? "the Riksbank" : (src || (S ? "the Riksbank" : "Norges Bank"));
   const AR = S ? "annual report" : "annual accounts";
   return {
@@ -751,7 +751,7 @@ function mkEN(cc) {
     tipsH: "Good to know",
     tips: [["Where do I find EBITDA?", "Operating profit plus depreciation and amortisation in the income statement. We calculate it for you from the " + AR + "."], ["Owner's salary and market salary", "If you pay yourself more or less than an employed CEO would cost, earnings are adjusted by the difference."], ["One-off costs", "Costs that will not recur, such as a move or a dispute, are added back to earnings."]],
     whyH: "Why do we ask this?",
-    whyP: "Two companies with the same earnings can sell for very different prices. A buyer pays more when revenue is spread and recurring, and when the business runs without the owner. Your answers move the multiple up or down.",
+    whyP: "Two companies with the same earnings can sell for very different prices. A buyer pays more when revenue is diversified and recurring, and when the business runs without the owner. Your answers move the multiple up or down.",
     orgL: "Registration number or company name", orgPh: S ? "556677-8899 or Company AB" : "912 345 678 or Company AS",
     srchLooking: "Searching…", srchPick: "Choose the company in the list.", srchNone: "No company found with that name. Try another name or enter the registration number.", srchShort: "Type at least three letters of the name.",
     orgEmpty: "Enter the registration number first and click Fetch.",
@@ -853,7 +853,7 @@ function mkEN(cc) {
     oNeed: "Enter your name, a valid email address and the company.", oNeedOk: "Please confirm that we may process the information.",
     oFail: "The order could not be sent right now.", oFailLink: "Send it via our form instead →",
     oDocs: n => `${n} ${n === 1 ? "document" : "documents"} and your valuation are sent with the order.`,
-    oDelivery: "Delivery", oDeliveryV: "1–2 working days", oPayL: "Payment", oPayV: S ? "Invoice, 10 days + VAT" : "Invoice, 10 days, no VAT", oDocsL: "Documents", oDocsV: n => n ? `${n} ${n === 1 ? "document" : "documents"}` : "Can be sent later",
+    oDelivery: "Delivery", oDeliveryV: "1–2 working days", oPayL: "Payment", oPayV: S ? "Invoice, 10 days + VAT" : "Invoice, 10 days (excl. VAT)", oDocsL: "Documents", oDocsV: n => n ? `${n} ${n === 1 ? "document" : "documents"}` : "Can be sent later",
     oWho: "Reviewed by a senior adviser at Adsco Capital Partners.",
     oDoneH: n => `Thank you${n ? ", " + n : ""}! Your order has been received.`,
     oDoneP: e => `We will get back to ${e} within one working day with a confirmation and next steps. Please quote the order number if you contact us.`,
@@ -908,9 +908,9 @@ function mkEN(cc) {
     privacy: "Information and documents fetched or uploaded are stored in Adsco Capital Partners' Google Workspace and used only to produce your valuation and report. Contact us to have them deleted.",
     langH: "Language",
     svH: "Strategic value",
-    svLevel: ["Low strategic interest", "Some strategic interest", "High strategic interest"],
+    svLevel: ["Low strategic interest", "Moderate strategic interest", "High strategic interest"],
     svP: "A strategic buyer, such as a competitor, customer, supplier or serial acquirer, may pay more than the financial value above if the company brings synergies: new customers, markets, products, technology or skills. Our assessment is based on:",
-    svDrv: { ind: n => `The industry (${n}), where buyers actively acquire and pay for synergies`, recur: "Recurring revenue a buyer can build on", growth: "Growth that strengthens a buyer's own platform", margin: "A margin in the industry's top quarter", cust: "A broad customer base without dependence on single customers", buyers: "Active serial acquirers buying companies in the industry" },
+    svDrv: { ind: n => `The industry (${n}), where buyers actively acquire and pay for synergies`, recur: "Recurring revenue a buyer can build on", growth: "Growth that strengthens a buyer's own platform", margin: "A margin in the industry's top quarter", cust: "A broad customer base without reliance on individual customers", buyers: "Active serial acquirers buying companies in the industry" },
     svNone: "Few of the factors that usually attract strategic buyers show in the figures. A strategic premium then depends mainly on who the buyer is.",
     svFree: "What drives the strategic interest, the indicative premium in money and which buyers could pay it are shown in the report.",
     potFree: "How much the value could rise once the company is exit-ready is shown in the report.", scoreFree: "The score per area and what pulls it down are shown in the report.",
@@ -954,7 +954,7 @@ UI.X = {
     step1: "Last opp årsregnskapet (PDF) eller fyll inn driftsinntekter og EBITDA i TSEK.",
     legFin: "Tall (TSEK)",
     buildHint: "Fra bransjens basismultippel for svenske selskaper til selskapets multippel, og normaliseringen av EBITDA.",
-    emailPh: "deg@selskap.se", vat: "eks. mva.",
+    emailPh: "navn@selskap.se", vat: "eks. mva.",
     orgPh: "556677-8899 eller Selskapet AB",
     orgBad: "Kontroller organisasjonsnummeret (10 siffer, for eksempel 556677-8899).",
     orgLooking: "Henter opplysninger…",
@@ -2277,7 +2277,7 @@ const XK = {
       rateFree: r => `Multiplene er justert for rentenivået (NBPs referanserente ${r} %).`,
       s2PManual: "Fyll inn omsetning og EBITDA for de tre siste årene i tusen PLN og svar på kjøperens spørsmål.",
       s2PAuto: "Grønne felt er lest av fra regnskapene. Rett det som ser feil ut, fyll inn det som mangler og svar på kjøperens spørsmål.", keyGreen: "Lest av fra regnskapet",
-      advP: "Budsjettert omsetning i tusen PLN for de tre neste årene, forventet EBITDA-margin år 3 og avkastningskrav. Gir en vekstverdivurdering i rapporten.", emailPh: "deg@selskap.pl",
+      advP: "Budsjettert omsetning i tusen PLN for de tre neste årene, forventet EBITDA-margin år 3 og avkastningskrav. Gir en vekstverdivurdering i rapporten.", emailPh: "navn@selskap.pl",
       discSrc: "Selskapsopplysninger hentes fra offentlige registre (det polske domstolsregisteret KRS og mva-registeret), og tallene leses av fra regnskapene du laster opp. Avlesningen er automatisk og kan bli feil eller ufullstendig. Vi verifiserer ikke opplysningene. Sammenlign alltid med selskapets regnskap.",
       discMult: "Bransjemultiplene kommer fra en undersøkelse av nordiske transaksjoner (Dealsuite) og er senket for Polen etter Adscos vurdering, fordi det mangler en offentlig kilde til multipler i polske SMB-transaksjoner. Justeringen vises separat i multippelbroen."
     },
@@ -2396,7 +2396,7 @@ const XK = {
       rateFree: r => `Multiplene er justert for rentenivået (ECBs innskuddsrente ${r} %).`,
       s2PManual: "Fyll inn omsetning og EBITDA for de tre siste årene i tusen EUR og svar på kjøperens spørsmål.",
       s2PAuto: "Grønne felt kommer fra registeret, de gule må du kontrollere: EBITDA-feltene inneholder foreløpig resultat før skatt. Legg til avskrivninger og renter, fyll inn det som mangler og svar på kjøperens spørsmål.", keyGreen: "Fra registeret", keyYellow: "Kontroller",
-      advP: "Budsjettert omsetning i tusen EUR for de tre neste årene, forventet EBITDA-margin år 3 og avkastningskrav. Gir en vekstverdivurdering i rapporten.", emailPh: "deg@selskap.lt",
+      advP: "Budsjettert omsetning i tusen EUR for de tre neste årene, forventet EBITDA-margin år 3 og avkastningskrav. Gir en vekstverdivurdering i rapporten.", emailPh: "navn@selskap.lt",
       badTypeAnnual: "Last opp regnskapene som PDF (eller som bilde hvis du bare har en skannet kopi).",
       discSrc: "Selskapsopplysninger og nøkkeltall hentes fra åpne data fra Registrų centras og den litauiske skatteetaten (data.gov.lt). Registeret publiserer ikke driftsresultat eller avskrivninger, så EBITDA tar utgangspunkt i resultat før skatt og må kontrolleres. Vi verifiserer ikke opplysningene. Sammenlign alltid med selskapets regnskap.",
       discMult: "Bransjemultiplene kommer fra en undersøkelse av nordiske transaksjoner (Dealsuite) og er senket for Litauen etter Adscos vurdering, fordi det mangler en offentlig kilde til multipler i litauiske SMB-transaksjoner. Justeringen vises separat i multippelbroen."
@@ -2645,7 +2645,7 @@ XK.NL = {
     rateFree: r => `Multiplene justeres for rentenivået (ECBs innskuddsrente ${r} %).`,
     s2PManual: "Fyll inn omsetning og EBITDA for de siste tre årene i tusen euro og svar på kjøperens spørsmål.",
     s2PAuto: "Grønne felt kommer fra KVK; kontroller de gule. Fyll inn omsetning og EBITDA som mangler (små selskaper deponerer ofte bare en balanse) og svar på kjøperens spørsmål.", keyGreen: "Fra KVK", keyYellow: "Kontroller",
-    advP: "Budsjettert omsetning i tusen euro for tre år, forventet EBITDA-margin år 3 og avkastningskrav. Gir en vekstverdivurdering i rapporten.", emailPh: "deg@selskap.nl",
+    advP: "Budsjettert omsetning i tusen euro for tre år, forventet EBITDA-margin år 3 og avkastningskrav. Gir en vekstverdivurdering i rapporten.", emailPh: "navn@selskap.nl",
     badTypeAnnual: "Last opp årsregnskapet som PDF (eller som bilde hvis du bare har en skannet kopi).",
     discSrc: "Tallene kommer fra det nederlandske handelskammerets (KVK) åpne data over deponerte regnskap (CC BY 4.0). De inneholder bare det selskapet har deponert; små selskaper leverer ofte bare en forkortet balanse. Vi kontrollerer ikke opplysningene. Sammenlign alltid med selskapets årsregnskap.",
     discMult: "Bransjemultiplene kommer fra en undersøkelse av nordiske transaksjoner (Dealsuite) og er justert opp 10 % for Nederland etter Adscos vurdering av det større og mer likvide nederlandske M&A-markedet. Justeringen vises separat i multippelbroen."
@@ -2787,7 +2787,7 @@ XK.FI = {
     rateFree: r => `Multiplene justeres for rentenivået (ECBs innskuddsrente ${r} %).`,
     s2PManual: "Fyll inn omsetning og EBITDA for de tre siste årene i tusen euro og svar på kjøperens spørsmål.",
     s2PAuto: "Grønne felt kommer fra det digitale regnskapet hos PRH. Rett det som ser feil ut, fyll inn det som mangler og svar på kjøperens spørsmål.", keyGreen: "Fra PRH", keyYellow: "Kontroller",
-    advP: "Budsjettert omsetning i tusen euro for tre år, forventet EBITDA-margin år 3 og avkastningskrav. Gir en vekstverdsettelse i rapporten.", emailPh: "deg@selskap.fi",
+    advP: "Budsjettert omsetning i tusen euro for tre år, forventet EBITDA-margin år 3 og avkastningskrav. Gir en vekstverdsettelse i rapporten.", emailPh: "navn@selskap.fi",
     badTypeAnnual: "Last opp regnskapet som PDF (eller som bilde hvis du bare har en skannet kopi).",
     discSrc: "Selskapsopplysninger og digitale regnskap kommer fra det finske Patent- og registerstyrets åpne data (YTJ og XBRL-regnskap, CC BY 4.0). Bare digitalt innleverte regnskap er tilgjengelige. Vi kontrollerer ikke opplysningene. Sammenlign alltid med selskapets regnskap.",
     discMult: "Bransjemultiplene kommer fra en undersøkelse av nordiske transaksjoner (Dealsuite), der Finland inngår, så det gjøres ingen landjustering."
@@ -3610,7 +3610,7 @@ const SMALL_EB = 50;
 function isSmall(d, v) { const f = EUR_FX[country] / EUR_FX.SE; return !d.noEb && v.norm < SMALL_EB * f && v.ebit < SMALL_EB * f; }
 const SMALL_T = {
   SE: ["Värdering kan inte göras för tillfället", e => `Med en EBITDA på ${e} är resultatet för litet för att en multipelvärdering ska ge en rättvisande bild. Värdet skulle i praktiken bara bygga på omsättningen och bli missvisande, så vi visar ingen siffra.`, "Har resultatet belastats av engångskostnader eller en ägarlön över marknadsnivå kan du justera siffrorna i föregående steg. Annars bokar du gärna ett kostnadsfritt, konfidentiellt möte med en partner på Adsco Capital Partners, så går vi igenom vad som driver värdet i ert bolag.", "Exitberedskapen och iakttagelserna nedan gäller fullt ut även för ert bolag."],
-  NO: ["Verdivurdering kan ikke gjøres for øyeblikket", e => `Med en EBITDA på ${e} er resultatet for lite til at en multippelvurdering gir et riktig bilde. Verdien ville i praksis bare bygge på omsetningen og bli misvisende, så vi viser ikke noe tall.`, "Er resultatet belastet med engangskostnader eller en eierlønn over markedsnivå, kan du justere tallene i forrige steg. Ellers er du velkommen til å bestille et kostnadsfritt, konfidensielt møte med en partner i Adsco Capital Partners, så går vi gjennom hva som driver verdien i selskapet.", "Exit-beredskapen og funnene nedenfor gjelder fullt ut også for ditt selskap."],
+  NO: ["Verdivurdering kan ikke gjøres for øyeblikket", e => `Med en EBITDA på ${e} er resultatet for lite til at en multippelvurdering gir et riktig bilde. Verdien ville i praksis bare bygge på omsetningen og bli misvisende, så vi viser ikke noe tall.`, "Er resultatet belastet med engangskostnader eller en eierlønn over markedsnivå, kan du justere tallene i forrige steg. Ellers er du velkommen til å bestille et kostnadsfritt, konfidensielt møte med en partner i Adsco Capital Partners, så går vi gjennom hva som driver verdien i selskapet.", "Salgsklarheten og funnene nedenfor gjelder fullt ut også for ditt selskap."],
   EN: ["A valuation cannot be made at the moment", e => `With EBITDA of ${e}, earnings are too small for a multiple-based valuation to give a fair picture. The value would rest on revenue alone and be misleading, so we do not show a figure.`, "If earnings were hit by one-off costs or an owner's salary above the market rate, you can adjust the figures in the previous step. Otherwise, book a free, confidential meeting with a partner at Adsco Capital Partners and we will go through what drives the value of your company.", "The exit readiness score and findings below apply in full to your company too."],
   PL: ["Wycena nie jest obecnie możliwa", e => `Przy EBITDA na poziomie ${e} wynik jest zbyt niski, aby wycena mnożnikowa dawała rzetelny obraz. Wartość opierałaby się praktycznie wyłącznie na przychodach i wprowadzałaby w błąd, dlatego nie pokazujemy liczby.`, "Jeśli wynik obciążyły koszty jednorazowe lub wynagrodzenie właściciela powyżej poziomu rynkowego, możesz poprawić liczby w poprzednim kroku. W przeciwnym razie umów bezpłatne, poufne spotkanie z partnerem Adsco Capital Partners – omówimy, co napędza wartość Twojej spółki.", "Ocena gotowości do sprzedaży i wnioski poniżej w pełni dotyczą także Twojej spółki."],
   LT: ["Vertinimo šiuo metu atlikti negalima", e => `Kai EBITDA yra ${e}, rezultatas per mažas, kad vertinimas daugikliais parodytų teisingą vaizdą. Vertė praktiškai remtųsi tik pajamomis ir būtų klaidinanti, todėl skaičiaus nerodome.`, "Jei rezultatą sumažino vienkartinės išlaidos arba savininko atlyginimas viršija rinkos lygį, galite pakoreguoti skaičius ankstesniame žingsnyje. Kitu atveju užsisakykite nemokamą, konfidencialų susitikimą su Adsco Capital Partners partneriu – aptarsime, kas lemia jūsų įmonės vertę.", "Pasirengimo pardavimui įvertinimas ir išvados žemiau visiškai tinka ir jūsų įmonei."],

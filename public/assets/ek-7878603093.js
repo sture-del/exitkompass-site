@@ -219,7 +219,7 @@
       s6cols: ["Kjøpertype", "Hva de betaler for", "Typisk struktur", "Multippel", "Egnethet"],
       buyers: [
         ["Strategisk kjøper (bransjeaktør)", "Synergier, kunder, geografi og kompetanse", "Større kontantandel, kortere earn-out"],
-        ["Private equity / seriekjøper", "Stabil kontantstrøm, ledelse på plass, vekstplattform", "Kontant + reinvestering (10–30 %), iblant earn-out"],
+        ["Private equity / serieoppkjøper", "Stabil kontantstrøm, ledelse på plass, vekstplattform", "Kontant + reinvestering (10–30 %), iblant earn-out"],
         ["Privat kjøper / søkefond", "Et veldrevet selskap å drive selv", "Banklån + selgerkreditt, ofte earn-out"],
         ["Ledelsen (MBO)", "Kontinuitet og kjent virksomhet", "Selgerkreditt og trinnvis betaling"]
       ],
@@ -279,7 +279,7 @@
   /* Strategic value (section 6.1) */
   Object.assign(T.SE, {
     svTitle: "6.1 Strategiskt värde",
-    svLevel: ["lågt", "visst", "högt"],
+    svLevel: ["lågt", "måttligt", "högt"],
     svIntro: l => `Vi bedömer det strategiska intresset för bolaget som ${l}. En strategisk köpare – en konkurrent, kund, leverantör eller serieförvärvare – kan betala mer än det finansiella värdet när bolaget ger synergier i form av kunder, marknader, produkter, teknik eller kompetens.`,
     svDrv: { ind: n => `Branschen (${n}) har köpare som aktivt förvärvar och betalar för synergier.`, recur: "Återkommande intäkter som en köpare kan bygga vidare på.", growth: "Tillväxt som stärker en köpares egen plattform.", margin: "Marginal i branschens bästa fjärdedel.", cust: "En bred kundbas utan beroende av enskilda kunder.", buyers: "Aktiva serieförvärvare köper bolag i branschen." },
     svPrem: (r, a) => `Indikativt strategiskt påslag: ${r} över företagsvärdet, motsvarande ${a}.`,
@@ -288,7 +288,7 @@
   });
   Object.assign(T.NO, {
     svTitle: "6.1 Strategisk verdi",
-    svLevel: ["lav", "noe", "høy"],
+    svLevel: ["lav", "moderat", "høy"],
     svIntro: l => `Vi vurderer den strategiske interessen for selskapet som ${l}. En strategisk kjøper – en konkurrent, kunde, leverandør eller serieoppkjøper – kan betale mer enn den finansielle verdien når selskapet gir synergier i form av kunder, markeder, produkter, teknologi eller kompetanse.`,
     svDrv: { ind: n => `Bransjen (${n}) har kjøpere som aktivt kjøper opp og betaler for synergier.`, recur: "Gjentakende inntekter som en kjøper kan bygge videre på.", growth: "Vekst som styrker kjøperens egen plattform.", margin: "Margin blant den beste fjerdedelen i bransjen.", cust: "En bred kundebase uten avhengighet av enkeltkunder.", buyers: "Aktive serieoppkjøpere kjøper selskaper i bransjen." },
     svPrem: (r, a) => `Indikativt strategisk påslag: ${r} over selskapsverdien, tilsvarende ${a}.`,

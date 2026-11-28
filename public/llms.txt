@@ -121,7 +121,7 @@ All three, because that is how buyers calculate in acquisitions. EV/EBITDA is th
 Enterprise value is the value of the business itself, regardless of how it is financed. Equity value is what the owners receive: enterprise value plus cash minus interest-bearing debt. Exitkompass shows both.
 
 ### What raises the value before a sale?
-Buyers pay more for companies with spread and recurring revenue, that run without the owner, have written contracts with customers and key people, grow steadily and have clear, reliable financial reporting. Exitkompass shows which of these actions matter most for your company.
+Buyers pay more for companies with diversified and recurring revenue, that run without the owner, have written contracts with customers and key people, grow steadily and have clear, reliable financial reporting. Exitkompass shows which of these actions matter most for your company.
 
 ### Can I use the valuation for divorce, probate or a dispute?
 No. Exitkompass is built for a sale and shows what a buyer might pay for the company, that is the going-concern market value based on multiples. Divorce, estate settlement, inheritance, disputes, minority buy-outs and tax matters often require other methods, such as net asset value, and a formal valuation.
