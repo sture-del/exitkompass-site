@@ -4310,6 +4310,15 @@ function plName(n) {
     .replace(/\s+PROSTA SPÓŁKA AKCYJNA$/i, " P.S.A.").replace(/\s+SPÓŁKA AKCYJNA$/i, " S.A.").replace(/\s+SPÓŁKA KOMANDYTOWA$/i, " sp.k.").trim();
 }
 async function plJson(url) { const r = await fetch(url); if (r.status === 404) return { notFound: true }; if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); }
+/* api-krs.ms.gov.pl no longer sends CORS headers, so it goes through our relay worker */
+async function krsJson(krs, reg) {
+  const r = await fetch(LT_RELAY + "/krs?krs=" + encodeURIComponent(krs) + "&r=" + reg);
+  if (!r.ok) throw new Error("HTTP " + r.status);
+  const j = await r.json();
+  if (j.notFound) return { notFound: true };
+  if (!j.ok || !j.data) throw new Error(j.reason || "KRS");
+  return j.data;
+}
 async function lookupPL(v) {
   const u = U(), id = plId(v);
   let krs = id && id.krs, nip = id && id.nip, wl = null;
@@ -4322,8 +4331,8 @@ async function lookupPL(v) {
       krs = wl.krs || null;
       if (!krs) { $("name").value = wl.name || ""; lastOrgNumber = nip; orgMsg(u.orgFoundName(wl.name || nip), "ok"); showUpload(u.noReports); return; }
     }
-    let j = await plJson("https://api-krs.ms.gov.pl/api/krs/OdpisAktualny/" + krs + "?rejestr=P&format=json");
-    if (j.notFound) j = await plJson("https://api-krs.ms.gov.pl/api/krs/OdpisAktualny/" + krs + "?rejestr=S&format=json");
+    let j = await krsJson(krs, "P");
+    if (j.notFound) j = await krsJson(krs, "S");
     if (j.notFound || !j.odpis) { orgMsg(u.orgNotFound, "err"); showUpload(u.noReports); return; }
     const o = j.odpis.dane, d1 = o.dzial1 || {}, dp = d1.danePodmiotu || {}, d3 = o.dzial3 || {};
     const pd = (d3.przedmiotDzialalnosci || {}), main = (pd.przedmiotPrzewazajacejDzialalnosci || [])[0];
